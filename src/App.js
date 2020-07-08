@@ -1,14 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
+import ecotrain from "./ecotrain sur un pont.png";
 import "./App.css";
+// On définit une liste de règles publicodes
 import résultat from "./Calcul.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Bonjour</p>
+        <h1>Ecotrain</h1>
+        <img src={ecotrain} className="App-logo" alt="logo" />
         <p>{résultat}</p>
       </header>
     </div>
