@@ -1,5 +1,5 @@
 import Engine, { formatValue } from "publicodes";
-import rules from "./modèle.js";
+import rules from "./modèle.yaml";
 
 // On initialise un moteur en lui donnant le publicode.
 // Ce publicode va être parsé
