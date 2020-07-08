@@ -42,6 +42,11 @@ contenu carbone électricité . photovoltaïque:
   unité: t
   note: Pourquoi tonne ? Pourquoi ce montant ? Que veut dire "longue vie"
 
+empreinte . exploitation: 
+  titre: Empreinte de l'exploitation sur la durée de vie
+  formule: 1.8
+  unité: tonnes
+
 empreinte . durée de vie: 
   formule: 172 tonnes
   description: |
@@ -50,19 +55,21 @@ empreinte . durée de vie:
     En fin de vie, la navette et les panneaux PV sont totalement recyclés, ayant été conçus pour être aisément démontables et recyclables. 
 
 empreinte: 
-  formule: construction + durée de vie
+  formule: construction + exploitation
 
 empreinte . par km:
-  formule: empreinte / distance parcourue
+  formule: (empreinte * 1000) / distance parcourue
+  unité: kgCO2e/km
 
 
 navette:
-navette . places: 30
-navette . remplissage moyen: 60%
+navette . places: 30 personnes
+navette . remplissage moyen: 60 %
 navette . passagers moyens: 
   formule: places * remplissage moyen
 
 empreinte . par km voyageur:
-  formule: par km / navette . passagers moyens
+  formule: (1000 * par km) / navette . passagers moyens
+  unité: gCO2e/passager.km
   note: | 
-    Objectif : retrouver les 2gCO2e/km.passager des calculs initiaux.
+    Objectif : retrouver les 3gCO2e/km.passager des calculs initiaux.
