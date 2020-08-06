@@ -11,7 +11,11 @@ function App() {
 		<Router>
 			<header>
 				<h1>Ecotrain</h1>
-				<img src={ecotrain} title="L'écotrain sur un pont dans la nature" />
+				<img
+					src={'/' + ecotrain}
+					css="width: 20rem"
+					title="L'écotrain sur un pont dans la nature"
+				/>
 			</header>
 			<Documentation engine={engine} documentationPath={'/documentation'} />
 			{/* Composants de l'app */}
