@@ -8,18 +8,25 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
 	return (
-		<Router>
-			<header>
-				<h1>Ecotrain</h1>
-				<img
-					src={'/' + ecotrain}
-					css="width: 20rem"
-					title="L'écotrain sur un pont dans la nature"
-				/>
-			</header>
-			<Documentation engine={engine} documentationPath={'/documentation'} />
-			{/* Composants de l'app */}
-		</Router>
+		<div
+			css={`
+				margin: 0 auto;
+				max-width: 800px;
+			`}
+		>
+			<Router>
+				<header>
+					<h1>Ecotrain</h1>
+					<img
+						src={'/' + ecotrain}
+						css="width: 20rem"
+						title="L'écotrain sur un pont dans la nature"
+					/>
+				</header>
+				<Documentation engine={engine} documentationPath={'/documentation'} />
+				{/* Composants de l'app */}
+			</Router>
+		</div>
 	)
 }
 
