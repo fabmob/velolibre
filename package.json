@@ -9,7 +9,7 @@
 		"compile": "NODE_ENV=production webpack -p -c webpack.config.js"
 	},
 	"dependencies": {
-		"css-loader": "^3.6.0",
+		"css-loader": "^4.2.0",
 		"front-matter": "^4.0.2",
 		"publicodes": "1.0.0-beta.3",
 		"raw-loader": "^4.0.1",
@@ -19,23 +19,23 @@
 		"react-markdown": "^4.3.1",
 		"react-router": "^5.2.0",
 		"react-router-dom": "^5.2.0",
-		"react-router-hash-link": "^1.2.2",
+		"react-router-hash-link": "^2.0.0",
 		"style-loader": "^1.2.1",
 		"yaml-loader": "^0.6.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.10.4",
-		"@babel/preset-env": "^7.9.6",
-		"@babel/preset-react": "^7.7.0",
-		"@pmmmwh/react-refresh-webpack-plugin": "0.3.3",
-		"babel-loader": "^8.0.6",
-		"babel-plugin-styled-components": "^1.10.6",
+		"@babel/core": "7.11.1",
+		"@babel/preset-env": "^7.11.0",
+		"@babel/preset-react": "^7.10.4",
+		"@pmmmwh/react-refresh-webpack-plugin": "0.4.1",
+		"babel-loader": "^8.1.0",
+		"babel-plugin-styled-components": "^1.11.1",
 		"file-loader": "^6.0.0",
 		"html-webpack-plugin": "^4.3.0",
-		"react-refresh": "^0.8.2",
-		"styled-components": "^5.1.0",
-		"webpack": "^4.43.0",
-		"webpack-cli": "^3.3.10",
+		"react-refresh": "^0.8.3",
+		"styled-components": "^5.1.1",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
 		"webpack-dev-server": "^3.11.0"
 	},
 	"keywords": []
