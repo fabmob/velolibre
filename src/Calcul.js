@@ -1,4 +1,5 @@
 import Engine, { formatValue } from 'publicodes'
+import './ui/index.css'
 import rules from './modèle.yaml'
 
 // On initialise un moteur en lui donnant le publicode.
