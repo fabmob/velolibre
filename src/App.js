@@ -21,14 +21,31 @@ function App() {
 		>
 			<Router>
 				<header>
-					<h1>Ecotrain</h1>
+					<h1>Écotrain - empreinte carbone</h1>
 					<img
 						src={'/' + ecotrain}
 						css="width: 20rem"
 						title="L'écotrain sur un pont dans la nature"
 					/>
 				</header>
-				<div>{résultat}</div>
+				<div>
+					<p>
+						L'empreinte totale de l'
+						<a href="https://wiki.lafabriquedesmobilites.fr/wiki/ECOTRAIN">
+							écotrain
+						</a>{' '}
+						est estimée à <strong>{résultat}</strong>
+					</p>
+					<p>
+						Cet excellente estimation tranche avec tous les autres modes de
+						transport qui sont largement plus polluants, excepté le TGV qui
+						obtient un résultat similaire.{' '}
+					</p>
+					<p>
+						Nous publions donc ci-dessous le calcul dans son intégralité pour
+						que chacun puisse le comprendre et le remettre en question.
+					</p>
+				</div>
 				<h2>Explication du calcul</h2>
 				<Switch>
 					<Route path="/">

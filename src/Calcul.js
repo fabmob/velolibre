@@ -7,9 +7,6 @@ import rules from './modèle.yaml'
 export const engine = new Engine(rules)
 const evaluation = engine.evaluate('empreinte . par km voyageur')
 
-export const résultat = `Empreinte totale de l'écotrain : ${formatValue(
-	evaluation,
-	{
-		precision: 1,
-	}
-)}`
+export const résultat = formatValue(evaluation, {
+	precision: 1,
+})
