@@ -71,5 +71,3 @@ navette . passagers moyens:
 empreinte . par km voyageur:
   formule: (1000 * par km) / navette . passagers moyens
   unité: gCO2e/passager.km
-  note: | 
-    Objectif : retrouver les 3gCO2e/km.passager des calculs initiaux.

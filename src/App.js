@@ -4,7 +4,12 @@ import './App.css'
 // On définit une liste de règles publicodes
 import { résultat, engine } from './Calcul.js'
 import { Documentation } from 'publicodes'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+	BrowserRouter as Router,
+	Redirect,
+	Switch,
+	Route,
+} from 'react-router-dom'
 
 function App() {
 	return (
@@ -23,7 +28,14 @@ function App() {
 						title="L'écotrain sur un pont dans la nature"
 					/>
 				</header>
-				<Documentation engine={engine} documentationPath={'/documentation'} />
+				<div>{résultat}</div>
+				<h2>Explication du calcul</h2>
+				<Switch>
+					<Route path="/">
+						<Redirect to="/empreinte/par-km-voyageur" />
+					</Route>
+				</Switch>
+				<Documentation engine={engine} documentationPath={''} />
 				{/* Composants de l'app */}
 			</Router>
 		</div>
