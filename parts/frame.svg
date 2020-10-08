@@ -11,9 +11,9 @@
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg899"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   viewBox="0 0 297 210"
+   height="210mm"
+   width="297mm">
   <defs
      id="defs893" />
   <sodipodi:namedview
@@ -26,9 +26,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="556.67152"
-     inkscape:cx="393.85658"
-     inkscape:zoom="1.5944932"
+     inkscape:cy="585.15807"
+     inkscape:cx="323.23528"
+     inkscape:zoom="0.52173305"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -52,20 +52,20 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <path
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 118.93783,168.40801 33.06128,-30.56174 -1.63234,-6.24126 -47.51417,4.25515 10.19203,31.32858"
+       style="fill:none;stroke:#000000;stroke-width:17.1094;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 164.52549,152.64698 271.42183,53.832348 266.14402,33.652613 112.51745,47.4107 145.47113,148.70475"
        id="path876"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 103.84821,142.33165 -24.374566,23.08647 5.821356,4.30961 24.09178,2.16188"
+       style="fill:none;stroke:#000000;stroke-width:17.1094;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 115.73653,68.334833 36.926758,142.97984 55.748827,156.914 133.64428,163.90397"
        id="path878"
        sodipodi:nodetypes="cccc" />
     <circle
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.97964;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:12.8672;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path880"
-       cx="114.5714"
-       cy="172.1505"
-       r="4.0499525" />
+       cx="150.40761"
+       cy="164.7475"
+       r="13.094626" />
   </g>
 </svg>

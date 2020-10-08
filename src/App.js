@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import velos from './velos.yaml'
 import composants from './composants.yaml'
-
+import correspondance from './correspondance-icônes.yaml'
 
 function App() {
 	return (
@@ -93,13 +93,33 @@ opacity: 0.65;
 					))}
 				</ul>
 
-				<div>
-					{Object.entries(composants).map(([composant, { marque }]) => (
-						<li>
-							<img src={} />
-							{marque}
-						</li>
-					))}
+				<div
+					css={`
+						ul {
+							list-style-type: none;
+						}
+						li {
+							display: flex;
+							margin: 1rem;
+							align-items: center;
+						}
+						li img {
+							margin-right: 1rem;
+						}
+					`}
+				>
+					<ul>
+						{Object.entries(composants).map(([composant, { marque }]) => (
+							<li>
+								<img
+									css="width: 5rem"
+									src={correspondance[composant] + '.svg'}
+								/>
+								{marque}
+							</li>
+						))}
+					</ul>
+				</div>
 			</Router>
 		</div>
 	)
