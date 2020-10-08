@@ -11,7 +11,6 @@
 	"dependencies": {
 		"css-loader": "^4.2.0",
 		"front-matter": "^4.0.2",
-		"publicodes": "1.0.0-beta.3",
 		"raw-loader": "^4.0.1",
 		"react": "16.13.1",
 		"react-dom": "16.13.1",

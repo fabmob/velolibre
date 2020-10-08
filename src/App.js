@@ -7,6 +7,8 @@ import {
 	Route,
 } from 'react-router-dom'
 import velos from './velos.yaml'
+import composants from './composants.yaml'
+
 
 function App() {
 	return (
@@ -90,6 +92,14 @@ opacity: 0.65;
 						</a>
 					))}
 				</ul>
+
+				<div>
+					{Object.entries(composants).map(([composant, { marque }]) => (
+						<li>
+							<img src={} />
+							{marque}
+						</li>
+					))}
 			</Router>
 		</div>
 	)
