@@ -19,7 +19,7 @@ composants:
   leviers de frein: 
     marque: BLB
     modèle: BLEVERS CROSSTOP LEVERS (SET) – BLACK
-  transmission: 
+  transmission:  # trop vague
     marque: Shimano
   roues: 
     modèle: wheelset

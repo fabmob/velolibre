@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import velos from './velos.yaml'
 import composants from './composants.yaml'
+import vélo from '../vélos/vélo1.yaml'
 import correspondance from './correspondance-icônes.yaml'
 
 function App() {
@@ -109,15 +110,23 @@ opacity: 0.65;
 					`}
 				>
 					<ul>
-						{Object.entries(composants).map(([composant, { marque }]) => (
-							<li>
-								<img
-									css="width: 5rem"
-									src={correspondance[composant] + '.svg'}
-								/>
-								{marque}
-							</li>
-						))}
+						{Object.entries(vélo.composants).map(
+							([composant, { modèle, marque }]) => (
+								<li>
+									<img
+										css="width: 5rem"
+										src={correspondance[composant] + '.svg'}
+									/>
+									<div>
+										<div css="text-transform: uppercase; font-size: 85%; color: #666">
+											{composant}
+										</div>
+										<div>{marque}</div>
+										<div>{modèle}</div>
+									</div>
+								</li>
+							)
+						)}
 					</ul>
 				</div>
 			</Router>

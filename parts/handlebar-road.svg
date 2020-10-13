@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="handlebar-road.svg"
+   id="svg1506"
+   clip-rule="evenodd"
+   fill-rule="evenodd"
+   y="0px"
+   x="0px"
+   viewBox="0 0 50000 62500"
+   style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;"
+   version="1.1"
+   xml:space="preserve"><metadata
+     id="metadata1510"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     inkscape:current-layer="g1500"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-6"
+     inkscape:window-x="-6"
+     inkscape:cy="33333.692"
+     inkscape:cx="29587.768"
+     inkscape:zoom="0.01"
+     showgrid="false"
+     id="namedview1508"
+     inkscape:window-height="898"
+     inkscape:window-width="1440"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" /><defs
+     id="defs1496"><style
+       id="style1494"
+       type="text/css">
+   
+    .str0 {stroke:black;stroke-width:564.44}
+    .fil0 {fill:none}
+   
+  </style></defs><g
+     transform="translate(300,5100)"
+     id="g1500"><path
+       style="stroke-width:1000;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1498"
+       d="m 30107,16767 c 1359,266 2496,531 3886,666 2963,287 8047,607 7294,3641 -486,2492 -6063,6171 -1605,10194 2242,1879 4404,-194 6547,-1230 1185,-415 2478,1512 1194,2328 -1680,1068 -4289,2296 -6259,2155 -5644,-404 -7348,-7597 -3835,-12646 1629,-2340 -6542,-1716 -8135,-1785 -4345,-149 -6603,-478 -12454,-1705 -1096,-209 -2096,-328 -3240,-385 -3205,-160 -7782,292 -8949,3749 -786,2329 171,5047 2949,5561 1553,288 3396,-547 4780,-1333 1355,-770 2358,1059 1275,1911 -493,387 -1168,700 -1874,987 -5093,2072 -10011,-717 -9619,-6349 421,-6039 7944,-7270 12800,-7037 5568,266 9544,165 15245,1278 z"
+       class="fil0 str0" /></g><text
+     id="text1502"
+     font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+     font-weight="bold"
+     font-size="5px"
+     fill="#000000"
+     y="50015"
+     x="0">Created by Oleksandr Panasovskyi</text><text
+     id="text1504"
+     font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+     font-weight="bold"
+     font-size="5px"
+     fill="#000000"
+     y="50020"
+     x="0">from the Noun Project</text></svg>
