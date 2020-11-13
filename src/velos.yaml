@@ -1,0 +1,14 @@
+- nom: gravel
+  statut:  🏗️ novembre 2020
+  prix: ~1200€
+  image: gravel.svg
+- nom: ville 1 vitesse
+  grisé: oui
+  statut: ⏳ fin 2020
+  prix: 850€
+  image: fixie.svg
+- nom: vélo français
+  grisé: oui
+  statut: ⏳ un jour
+  prix: ça va faire mal
+ # image: bleublancrouge.svg
