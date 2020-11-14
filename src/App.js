@@ -25,7 +25,7 @@ function App() {
 					</h1>
 				</header>
 				<div css="display:flex; max-width: 90vw; margin: 0 auto; flex-wrap: wrap; justify-content: center">
-					<p css="max-width: 50rem;font-size: 400%">
+					<p css="max-width: 50rem;font-size: 300%">
 						Un vélo aussi libre qu'un logiciel libre.
 					</p>
 				</div>
@@ -43,6 +43,7 @@ function App() {
 						}
 						li {
 							margin: 1rem;
+							width: 12rem;
 							height: 24rem;
 							background: white;
 							padding: 0.4rem 1rem;
@@ -53,12 +54,16 @@ function App() {
 							align-items: center;
 							justify-content: center;
 						}
+						li img {
+							width: 90%;
+						}
+
 						button {
-							padding: 0.1rem 0.3rem;
+							padding: 0.2rem 0.5rem;
 							border: none;
 							background: black;
 							color: white;
-							font-size: 140%;
+							font-size: 130%;
 							cursor: pointer;
 						}
 					`}
@@ -67,14 +72,20 @@ function App() {
 						<a href={grisé ? '' : '/nom'}>
 							<li
 								css={`
-									${grisé ? 'border: 1px dashed grey !important;' : ''}
+									${grisé
+										? ` 
+
+									border: 1px dashed grey !important;
+opacity: 0.65;
+									button {visibility: hidden}`
+										: ''}
 								`}
 							>
 								<h2>{nom}</h2>
 								<p>{statut}</p>
 								<p>{prix}</p>
 								{image && <img src={require('./' + image).default} />}
-								{!grisé && <button>CONSTRUIRE</button>}
+								<button>CONSTRUIRE</button>
 							</li>
 						</a>
 					))}
