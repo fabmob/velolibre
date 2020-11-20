@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "webpack serve --hot --mode development --inline",
-		"compile": "NODE_ENV=production webpack -p -c webpack.config.js"
+		"compile": "NODE_ENV=production webpack --mode production -c webpack.config.js"
 	},
 	"dependencies": {
 		"copy-webpack-plugin": "^6.2.0",
