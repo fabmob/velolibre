@@ -1,3 +1,6 @@
 # À propos
 
-Voilà on y est. C'est la fin de la vie quotidienne telle qu'on la connaît. 
+Ce site est en construction, au fil de l'eau. 
+
+Il participe au <a href="https://www.hackathonvelo.fr">hackathon vélo 2020</a>. 
+
