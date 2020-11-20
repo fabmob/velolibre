@@ -7,7 +7,6 @@ import {
 	Route,
 } from 'react-router-dom'
 import velos from './velos.yaml'
-import composants from './composants.yaml'
 import vélo from '../vélos/vélo1.yaml'
 import correspondance from './correspondance-icônes.yaml'
 
