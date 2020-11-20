@@ -5,8 +5,26 @@ const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
 	mode: isDevelopment ? 'development' : 'production',
+	resolve: {
+		fallback: {
+			path: 'path-browserify',
+			buffer: 'buffer',
+		},
+	},
 	module: {
 		rules: [
+			{
+				test: /node_modules\/vfile\/core\.js/,
+				use: [
+					{
+						loader: 'imports-loader',
+						options: {
+							type: 'commonjs',
+							imports: ['single process/browser process'],
+						},
+					},
+				],
+			},
 			{
 				test: /\.css$/i,
 				use: ['style-loader', 'css-loader'],

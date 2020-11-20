@@ -8,6 +8,17 @@ export default ({}) => (
 				Un vélo aussi libre qu'un logiciel libre.
 			</p>
 		</div>
+		<nav
+			css={`
+				text-align: center;
+				a {
+					margin: 0 1rem;
+				}
+			`}
+		>
+			<Link to="/documentation/à-propos">À propos</Link>
+			<Link to="/documentation/index">Documentation</Link>
+		</nav>
 		<ul
 			css={`
 				display: flex;
