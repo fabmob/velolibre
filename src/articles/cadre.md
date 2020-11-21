@@ -38,7 +38,7 @@ Voir cet article qui parle des "moules dont le design est ouvert", c'est-à-dire
 
 > The FM086 time-trial bike is also available from many vendors. Even though it’s an open-mold frame, available to all and sundry, German brand Stevens sells an FM086 under the product name "Super Trofeo". The bike’s blurb makes no mention of its generic origins. Instead "countless hours" were spent "in the wind tunnel to create these aero-optimized tube shapes" and "countless hours of engineers’ know-how" were used to hide the brake behind the fork. "We did our work," claims Stevens, "now it’s your turn."
 
-Voir leur [série entière d'articles](https://www.dropbox.com/s/crpy25e0m5drrs7/FAKING IT BikeBiz 2018.pdf?dl=0), et [cet article Do you care where your bike is made](https://www.bikeradar.com/features/do-you-care-where-your-bike-is-made/).
+Voir leur [série entière d'articles](https://www.dropbox.com/s/crpy25e0m5drrs7/FAKING%20fIT%20fBikeBiz%20f2018.pdf?dl=0), et cet article [Do you care where your bike is made](https://www.bikeradar.com/features/do-you-care-where-your-bike-is-made/).
 
 Le but ici n'est évidemment pas de faire un cadre aerodynamique de contre la montre.
 
@@ -47,6 +47,7 @@ Mais outre l'hypothèse de reproductibilité très intéressante pour un vélo o
 Un vélo léger, c'est 1) un vélo qui permet de grimper une côté, la raison principale de l'achat d'un électrique. On peut se demander si le moteur électrique des vélibs v2 ne sont pas là que pour compenser les 25 kilos du vélo. Un vélo léger, c'est aussi un vélo qu'on peut facilement porter dans un escalier, au boulot, chez soi, pendre dans un local vélo et un TER, porter désossé dans un TGV. Expérience personnelle : avec mon vélo de 11kg, j'ai faille louper une correspondance TGV/TER (il était désossé, d'où le besoin de le porter) et j'ai eu mal au biceps le lendemain. Avec un vélo de 7kg, mes muscles le portaient sans difficulté !
 
 [Tuto d'un échec](https://www.instructables.com/id/My-Carbon-frame-flop/)
+
 Tuto d'un cadre carbone ou bambou - carbone : https://www.instructables.com/id/How-I-built-a-carbon-bike-frame-at-home-and-a-bam
 Et plein d'autres : https://www.instructables.com/id/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/
 

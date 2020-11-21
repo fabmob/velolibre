@@ -24,6 +24,7 @@
 		"react-router": "^5.2.0",
 		"react-router-dom": "^5.2.0",
 		"react-router-hash-link": "^2.0.0",
+		"remark-gfm": "^1.0.0",
 		"style-loader": "^2.0.0",
 		"yaml-loader": "^0.6.0"
 	},

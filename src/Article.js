@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown/with-html'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import frontMatter from 'front-matter'
+import gfm from 'remark-gfm'
 
 var req = require.context('./articles', true, /\.md$/)
 const rawArticles = [...req.keys()]
@@ -110,6 +111,7 @@ export default ({}) => {
 					renderers={{ image: ImageRenderer, link: RouterLink }}
 					source={body}
 					escapeHtml={false}
+					plugins={[gfm]}
 				/>
 				<hr />
 			</div>
