@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const isDevelopment = process.env.NODE_ENV !== 'production'
-const CopyPlugin = require('copy-webpack-plugin')
+const path = require('path')
 
 module.exports = {
 	mode: isDevelopment ? 'development' : 'production',
@@ -83,16 +83,14 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
+		contentBase: path.join(__dirname, 'dist'),
 	},
 
 	plugins: [
 		isDevelopment && new ReactRefreshWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'Ecotrain',
+			title: 'Vélolibre',
 			template: 'index.html',
-		}),
-		new CopyPlugin({
-			patterns: [{ from: 'parts' }],
 		}),
 	].filter(Boolean),
 }

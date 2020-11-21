@@ -22,7 +22,10 @@ export default ({}) => (
 				{Object.entries(vélo.composants).map(
 					([composant, { modèle, marque }]) => (
 						<li>
-							<img css="width: 5rem" src={correspondance[composant] + '.svg'} />
+							<img
+								css="width: 5rem"
+								src={'composants/' + correspondance[composant] + '.svg'}
+							/>
 							<div>
 								<div css="text-transform: uppercase; font-size: 85%; color: #666">
 									{composant}
