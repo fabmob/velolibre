@@ -1,10 +1,13 @@
 import correspondance from './correspondance-icônes.yaml'
-import vélo from '../vélos/vélo1.yaml'
+import vélo from '../vélos/1.yaml'
 
 export default ({}) => (
 	<div>
 		<div
+
 			css={`
+			max-width: 700px;
+			margin: 0 auto;
 				ul {
 					list-style-type: none;
 				}
@@ -17,10 +20,11 @@ export default ({}) => (
 					margin-right: 1rem;
 				}
 			`}
-		>
+		><h1>{vélo.nom}</h1>
+			<p>{vélo.description}</p>
 			<ul>
 				{Object.entries(vélo.composants).map(
-					([composant, { modèle, marque }]) => (
+					([composant, {modèle, marque}]) => (
 						<li>
 							<img
 								css="width: 5rem"

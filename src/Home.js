@@ -1,10 +1,10 @@
 import velos from './velos.yaml'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export default ({}) => (
 	<div>
 		<div css="display:flex; max-width: 90vw; margin: 0 auto; flex-wrap: wrap; justify-content: center">
-			<p css="max-width: 50rem;font-size: 300%">
+			<p css="max-width: 50rem;font-size: 250%">
 				Un vélo aussi libre qu'un logiciel libre.
 			</p>
 		</div>
@@ -56,7 +56,7 @@ export default ({}) => (
 				}
 			`}
 		>
-			{velos.map(({ nom, statut, prix, image, grisé }) => (
+			{velos.map(({nom, statut, prix, image, grisé}) => (
 				<Link to={grisé ? '' : '/vl1'}>
 					<li
 						css={`

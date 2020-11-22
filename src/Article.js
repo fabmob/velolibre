@@ -89,9 +89,6 @@ export default ({}) => {
 						font-style: italic;
 						opacity: 0.8;
 						margin-bottom: 2rem;
-						small {
-							font-size: 70%;
-						}
 					`}
 				>
 					<small>
@@ -130,7 +127,6 @@ function RouterLink(props) {
 }
 
 const articleStyle = `
-font-size: 125%;
 	max-width: 700px;
 	margin: 0 auto 4rem;
 	h1 {
