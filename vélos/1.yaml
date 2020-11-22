@@ -3,20 +3,54 @@ description: |
   Le vélo libre 1 est un gravel : un vélo polyvalent à l'aise sur chemins ou en forêt 🌳, confortable en ville 🏙️ grâce à ses gros pneus, et respectable pour prendre de la vitesse sur route, quitte à s'acheter une deuxième paire de pneus 🚵.
 composants:
   cadre: 
-    marque: bamboobicycleclub
-    prix: 435.39€
-    note: A assembler soi-même (assez facile).
-    modèle: lugged kit frame
+    note: | 
+    Trouver un cadre ou kit de cadre n'est pas chose aisée. L'assemblage de vélos est un sport de niche, souvent fait d'amateurs ou de boutiques n'hésitant pas à mettre des prix élevés pour créer un vélo très performant. 
+    
+    C'est donc très compliqué de trouver un cadre gravel à moins de 400€ ! Ce cadre Merlin en alu, avec sa fourche carbone, pas très lourd, et passages de cables internes, est le plus compétitif trouvé. 
+
+    En sachant qu'on peut trouver des cadres routes à fourche carbone à 180€ (le Brand X RD01), on imagine que les cadres sont vendus avec une marge dépassant les 50%. 
+
+    Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
+
+    Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
+    marque: Merlin
+    url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
+    prix: 400.74€
+    alternatives:
+      - marque: Octane One
+        modèle: Gridd Gravel 2019
+        note: Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes contrairement au Merlin.
+        prix: 369€
+        url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
+      - marque: Bike components
+        modèle: BC originals Flint
+        prix: 554.62€
+        rupture: oui
+        note: Ce cadre est intéressant, c'est un cadre "basique" d'un magasin en ligne, moins cher que les cadres de marque, au style... basique donc parfait pour assembler un vélo.
+    modèle: Malt G2X Gravel Frameset
+    inclus: 
+      - fourche
+      - axe avant
+      - axe arrière
+    poids: 2100g # mettre {taille M: 2100, L: etc}
     matériaux: 
-      - bambou
-      - composite
-    url: https://www.bamboobicycleclub.org/en/product/lugged-kit-frame/
-  fourche: 
-    marque: BLB
-    modèle: aluminium fork - black
+      - aluminium
   freins: 
-    marque: 
-    modèle: ALLOY DUAL PIVOT FRONT & REAR CALIPER BRAKES – BLACK 57MM
+    note: |
+      Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques: 
+      - il est tout simplement très difficile de trouver un cadre gravel (donc qui au moins accueille des pneus de diamètre > 30mm) à freins sur jante
+      - pour l'utilisation en chemin, les freins à disques sont moins vulnérables à la boue et à l'eau projetée sur les jantes.
+
+      Pourtant, il semblerait que la puissance de freins v-brake sur jante suffirait, et qu'ils accomoderaient de larges pneus, comme expliqué [ici](http://mapage.noos.fr/ptis.trucs.sympas/freins_velo.htm#vbrakes). 
+
+      Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué. 
+
+      Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
+    alternative: 
+      marque: TRP 
+      modèle: Spyre
+      url: https://www.bike24.com/p2225128.html?menu=1000,4,322
+      note: En rupture de stock partout.
   leviers de frein: 
     marque: BLB
     modèle: BLEVERS CROSSTOP LEVERS (SET) – BLACK
