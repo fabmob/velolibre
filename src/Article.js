@@ -97,7 +97,7 @@ export default ({}) => {
 					<small>
 						{lastEditDate && (
 							<span>
-								Mis à jour le
+								Mis à jour le{' '}
 								<a
 									href={`https://github.com/${repo}/blob/master/articles/${id}.md`}
 								>
