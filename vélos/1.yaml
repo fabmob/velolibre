@@ -46,19 +46,37 @@ composants:
       Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué. 
 
       Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
-    alternative: 
-      marque: TRP 
-      modèle: Spyre
-      url: https://www.bike24.com/p2225128.html?menu=1000,4,322
-      note: En rupture de stock partout.
-  leviers de frein: 
-    marque: BLB
-    modèle: BLEVERS CROSSTOP LEVERS (SET) – BLACK
-  transmission:  # trop vague
-    marque: Shimano
+    étriers: 
+      alternatives:
+        - url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique-arriere/_/R-p-202955
+        - url: https://www.decathlon.fr/p/kit-frein-mecanique-hayes-mx-5-disque-160mm/_/R-p-196567
+        - marque: Décathlon
+          modèle: KIT FREIN A DISQUE MECANIQUE
+          url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique/_/R-p-141530
+          prix: 29.90€
+          note: Alternative bas coût. Quel format, postmount, flatmount ? En tout cas vendu avec adaptateur
+        - marque: TRP 
+          modèle: Spyre
+          rupture: partout
+          prix: 70.58€
+          url: https://www.bike24.com/p2225128.html?menu=1000,4,322
+          note: J'ai pu essayer ces freins, ils ne sont pas incroyable mais font bien l'affaire pour un prix contenu.
+  leviers: 
+  cintre: 
+  ruban de cintre:
+  potence: 
+  cassette: 
+  moyeu arrière: 
+  corps de roue libre:
+    marque:
+    nom: XD
+  moyeu avant: 
+  dérailleur: 
+  chaîne: 
+  plateaux: 
+  pédalier: 
+  boîtier: 
   roues: 
-    modèle: wheelset
-    marque: 6KU
   pneus: 
     modèle: wheelset
     marque: 6KU
