@@ -20,6 +20,10 @@ Ici un tuto dans un blog où les auteurs racontent leur vie (c'est passionnant).
 
 https://lespralinesenvadrouille.com/assembler-son-velo-soi-meme/
 
+Il y a même un [tableur avec les composants](https://drive.google.com/file/d/0B9y7ZKz_cDSdN3A4VVJCNHNyVDA/view).
+
+
+
 ### Vélo de course
 
 Ici l'auteur partage son assemblage d'un vélo de contre-la-montre (donc super profilé et assez cher). Il adopte une franchise très apréciable : plutôt que d'acheter un vélo à une marque dont les pièces seront de toute façon fabriquées en Chine ou à Taïwan, autant les acheter nous-même. 
