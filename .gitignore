@@ -11,6 +11,7 @@
 # production
 /dist/*
 !/dist/composants/
+!/dist/_redirects
 
 # misc
 .DS_Store
