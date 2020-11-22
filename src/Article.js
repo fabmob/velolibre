@@ -1,18 +1,17 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import ReactMarkdown from 'react-markdown/with-html'
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import frontMatter from 'front-matter'
+import {useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import gfm from 'remark-gfm'
 
 var req = require.context('./articles', true, /\.md$/)
 const rawArticles = [...req.keys()]
 	.filter((key) => !key.includes('brouillon'))
 	.map((key) => [key.replace('./', '').replace('.md', ''), req(key).default])
-console.log({ rawArticles })
 
 export const parsedArticles = rawArticles.map(([id, string]) => ({
-	...frontMatter(string),
+	body: string,
+	attributes: {},//no front matter here yet until we need attributes, it would load a yaml library
 	id,
 }))
 
@@ -47,25 +46,26 @@ export const imageResizer = (size) => (src) =>
 	src.includes('imgur.com')
 		? src.replace(/\.(png|jpg)$/, size + '.jpg')
 		: src.includes('unsplash.com')
-		? src.replace(
+			? src.replace(
 				/w=[0-9]+\&/,
 				(_, p1) => `w=${size === 'm' ? thumbnailWidth : fullWidth}&`
-		  )
-		: src.includes('medium.com')
-		? src.replace(
-				/max\/[0-9]+\//,
-				(_, p1) => `max/${size === 'm' ? thumbnailWidth : fullWidth}/`
-		  )
-		: src
+			)
+			: src.includes('medium.com')
+				? src.replace(
+					/max\/[0-9]+\//,
+					(_, p1) => `max/${size === 'm' ? thumbnailWidth : fullWidth}/`
+				)
+				: src
 
 export default ({}) => {
-	const { id } = useParams()
-	const theOne = parsedArticles.find(({ id: id2 }) => id === id2)
+	const {id} = useParams()
+	console.log(id, parsedArticles)
+	const theOne = parsedArticles.find(({id: id2}) => id === id2)
 
 	const [lastEditDate, setLastEditDate] = useState(null)
 
 	const {
-		attributes: { titre, date, image, sombre },
+		attributes: {titre, date, image, sombre},
 		body,
 	} = theOne
 
@@ -108,7 +108,7 @@ export default ({}) => {
 					</small>
 				</p>
 				<ReactMarkdown
-					renderers={{ image: ImageRenderer, link: RouterLink }}
+					renderers={{image: ImageRenderer, link: RouterLink}}
 					source={body}
 					escapeHtml={false}
 					plugins={[gfm]}
@@ -119,14 +119,14 @@ export default ({}) => {
 	)
 }
 
-const ImageRenderer = ({ src }) => <img src={imageResizer('l')(src)} />
+const ImageRenderer = ({src}) => <img src={imageResizer('l')(src)} />
 
 function RouterLink(props) {
 	return props.href.match(/^(https?:)?\/\//) ? (
 		<a href={props.href}>{props.children}</a>
 	) : (
-		<Link to={props.href}>{props.children}</Link>
-	)
+			<Link to={props.href}>{props.children}</Link>
+		)
 }
 
 const articleStyle = `
