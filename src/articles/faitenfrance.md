@@ -4,4 +4,6 @@
 
 Ici une liste de composants https://boutique.cycles-panache.fr/82-made-in-france
 
-Ici des conseils avisés : https://breizhbamboo.bike/velos/options/
+Ici des conseils avisés : https://breizhbamboo.bike/velos/options/ et https://breizhbamboo.bike/velos/composants/
+
+
