@@ -35,7 +35,7 @@ composants:
     poids: 2100g # mettre {taille M: 2100, L: etc}
     matériaux: 
       - aluminium
-  freins: 
+  étriers de frein: 
     inclus: disque
     note: |
       Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques: 
@@ -47,12 +47,7 @@ composants:
       Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué, même si contrairement aux mécaniques, pas besoin d'ajuster les vis avec une clé alen quand les patins s'usent. 
 
       Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
-    cables et gaines: 
-      note: |
-        Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
-        For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
 
-    étriers: 
       marque: Avid
       modèle: BB7
       note: |
@@ -90,6 +85,10 @@ composants:
 
             D'après [ces retours](https://www.reddit.com/r/gravelcycling/comments/gutw00/mech_disc_brake_suggestions_avid_bb5bb7_trp_spyre/), ils sont meilleurs que les BB7.
           
+  cables et gaines: 
+    note: |
+      Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
+      For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
   leviers: 
   cintre: 
   ruban de cintre:
