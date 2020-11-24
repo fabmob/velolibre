@@ -4,15 +4,15 @@ description: |
 composants:
   cadre: 
     note: | 
-    Trouver un cadre ou kit de cadre n'est pas chose aisée. L'assemblage de vélos est un sport de niche, souvent fait d'amateurs ou de boutiques n'hésitant pas à mettre des prix élevés pour créer un vélo très performant. 
-    
-    C'est donc très compliqué de trouver un cadre gravel à moins de 400€ ! Ce cadre Merlin en alu, avec sa fourche carbone, pas très lourd, et passages de cables internes, est le plus compétitif trouvé. 
+      Trouver un cadre ou kit de cadre n'est pas chose aisée. L'assemblage de vélos est un sport de niche, souvent fait d'amateurs ou de boutiques n'hésitant pas à mettre des prix élevés pour créer un vélo très performant. 
+      
+      C'est donc très compliqué de trouver un cadre gravel à moins de 400€ ! Ce cadre Merlin en alu, avec sa fourche carbone, pas très lourd, et passages de cables internes, est le plus compétitif trouvé. 
 
-    En sachant qu'on peut trouver des cadres routes à fourche carbone à 180€ (le Brand X RD01), on imagine que les cadres sont vendus avec une marge dépassant les 50%. 
+      En sachant qu'on peut trouver des cadres routes à fourche carbone à 180€ (le Brand X RD01), on imagine que les cadres sont vendus avec une marge dépassant les 50%. 
 
-    Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
+      Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
 
-    Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
+      Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
     marque: Merlin
     url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
     prix: 400.74€
@@ -36,6 +36,7 @@ composants:
     matériaux: 
       - aluminium
   freins: 
+    inclus: disque
     note: |
       Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques: 
       - il est tout simplement très difficile de trouver un cadre gravel (donc qui au moins accueille des pneus de diamètre > 30mm) à freins sur jante
@@ -92,7 +93,6 @@ composants:
   leviers: 
   cintre: 
   ruban de cintre:
-  potence: 
   cassette: 
   moyeu arrière: 
   corps de roue libre:
@@ -100,9 +100,7 @@ composants:
     nom: XD
   moyeu avant: 
   dérailleur: 
-  chaîne: 
   plateaux: 
-  pédalier: 
   boîtier: 
   roues: 
   pneus: 
