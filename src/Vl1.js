@@ -23,6 +23,7 @@ export default ({}) => (
 					display: flex;
 					margin: 1rem;
 					align-items: center;
+					justify-content: flex-start;
 				}
 				li img {
 					margin-right: 1rem;
@@ -34,12 +35,15 @@ export default ({}) => (
 				{Object.entries(vélo.composants).filter(([_, data]) => data != null).map(
 					([composant, {modèle, marque, prix, url}]) => (
 						<li>
-							<img
-							/>
-							<div>
+							<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
+								<img
+									css="width: 5rem" src={'composants/' + correspondance[composant] + '.svg'}
+								/>
 								<div css="text-transform: uppercase; font-size: 85%; color: #666">
 									{composant}
-								</div><div css={`
+								</div>
+							</div>
+							<div css={`
 box-shadow: 0 1px 3px rgba(41, 117, 209, 0.12), 0 1px 2px rgba(41, 117, 209, 0.24);
 border: 4px solid var(--lighterColor);
     border-radius: 0.3rem;
@@ -51,10 +55,9 @@ box-shadow: 0px 2px 4px -1px rgba(41, 117, 209, 0.2), 0px 4px 5px 0px rgba(41, 1
 	
 
 								`}><div>
-										<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
-										<span>{modèle}</span></div>
-									<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
-								</div>
+									<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
+									<span>{modèle}</span></div>
+								<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
 							</div>
 						</li>
 					)
