@@ -9,7 +9,7 @@
 		"compile": "NODE_ENV=production webpack --mode production -c webpack.config.js"
 	},
 	"dependencies": {
-		"buffer": "^6.0.2",
+		"buffer": "^6.0.3",
 		"copy-webpack-plugin": "^6.3.2",
 		"css-loader": "^5.0.1",
 		"imports-loader": "^1.2.0",
@@ -28,7 +28,7 @@
 		"yaml-loader": "^0.6.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.12.7",
+		"@babel/core": "7.12.9",
 		"@babel/preset-env": "^7.11.0",
 		"@babel/preset-react": "^7.10.4",
 		"@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
