@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import ReactMarkdown from 'react-markdown/with-html'
+import {Markdown} from './utils'
 import {useParams} from 'react-router-dom'
-import {Link} from 'react-router-dom'
-import gfm from 'remark-gfm'
+
 
 var req = require.context('./articles', true, /\.md$/)
 const rawArticles = [...req.keys()]
@@ -104,27 +103,13 @@ export default ({}) => {
 						)}
 					</small>
 				</p>
-				<ReactMarkdown
-					renderers={{image: ImageRenderer, link: RouterLink}}
-					source={body}
-					escapeHtml={false}
-					plugins={[gfm]}
-				/>
+				<Markdown source={body} />
 				<hr />
 			</div>
 		</div>
 	)
 }
 
-const ImageRenderer = ({src}) => <img src={imageResizer('l')(src)} />
-
-function RouterLink(props) {
-	return props.href.match(/^(https?:)?\/\//) ? (
-		<a href={props.href}>{props.children}</a>
-	) : (
-			<Link to={props.href}>{props.children}</Link>
-		)
-}
 
 const articleStyle = `
 	max-width: 700px;

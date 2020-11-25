@@ -1,1 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 60" x="0px" y="0px"><path d="M9.5,3 C10.0522847,3 10.5,3.44771525 10.5,4 C10.5,4.36968103 10.2994004,4.69250951 10.0011143,4.86557226 L10,7 C10.5522847,7 11,7.44771525 11,8 L11.0004472,14.6699284 C13.904716,10.6305664 18.6451571,8 24,8 C32.836556,8 40,15.163444 40,24 C40,24.2690618 39.9933586,24.5365724 39.9802308,24.8023769 C39.9932673,24.8661196 40,24.9322736 40,25 L40,41 C40,41.5522847 39.5522847,42 39,42 L39,44.5 C39,44.7761424 38.7761424,45 38.5,45 C38.2238576,45 38,44.7761424 38,44.5 L38,42 C37.4477153,42 37,41.5522847 37,41 L37.000275,33.3290671 C34.0960699,37.3689975 29.3552867,40 24,40 C15.163444,40 8,32.836556 8,24 L8,8 C8,7.44771525 8.44771525,7 9,7 L8.9998705,4.86614288 C8.70104123,4.69321974 8.5,4.37008772 8.5,4 C8.5,3.44771525 8.94771525,3 9.5,3 Z M24,11 C16.8202983,11 11,16.8202983 11,24 C11,31.1797017 16.8202983,37 24,37 C31.1797017,37 37,31.1797017 37,24 C37,16.8202983 31.1797017,11 24,11 Z"/><text x="0" y="63" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Timo Nagel</text><text x="0" y="68" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 48 60"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="cable-housing.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="3.9333333"
+     inkscape:cx="19.550847"
+     inkscape:cy="27.267331"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <path
+     d="m 7.4740466,4.5254237 c 0.6488178,0 1.1747878,0.5259706 1.1747878,1.1747881 0,0.4342969 -0.235662,0.813552 -0.586085,1.0168641 l -0.0013,2.5075003 c 0.648818,0 1.174788,0.5259706 1.174788,1.1747878 l 5.26e-4,7.835753 c 3.4118996,-4.745394 8.9809136,-7.835753 15.2717196,-7.835753 10.381081,0 18.79661,8.41553 18.79661,18.796611 0,0.31609 -0.0078,0.630359 -0.02322,0.942623 0.01531,0.07488 0.02322,0.152601 0.02322,0.232165 v 18.79661 c 0,0.648818 -0.52597,1.174788 -1.174788,1.174788 v 2.936971 c 0,0.324408 -0.262985,0.587394 -0.587394,0.587394 -0.324409,0 -0.587394,-0.262986 -0.587394,-0.587394 v -2.936971 c -0.648817,0 -1.174788,-0.52597 -1.174788,-1.174788 l 3.23e-4,-9.011721 c -3.411835,4.746062 -8.981251,7.836933 -15.272578,7.836933 -10.381081,0 -18.7966096,-8.415529 -18.7966096,-18.79661 V 10.399364 c 0,-0.6488172 0.5259706,-1.1747878 1.1747881,-1.1747878 l -1.521e-4,-2.50683 C 6.5354393,6.5145982 6.2992585,6.1349865 6.2992585,5.7002118 c 0,-0.6488175 0.5259705,-1.1747881 1.1747881,-1.1747881 z M 24.508474,13.923729 c -8.434628,0 -15.2722456,6.837617 -15.2722456,15.272246 0,8.434628 6.8376176,15.272246 15.2722456,15.272246 8.434629,0 15.272246,-6.837618 15.272246,-15.272246 0,-8.434629 -6.837617,-15.272246 -15.272246,-15.272246 z"
+     id="path2"
+     inkscape:connector-curvature="0"
+     style="stroke-width:1.17478812" />
+</svg>
