@@ -1,6 +1,10 @@
 nom: Gravel
 description: |
   Le vélo libre 1 est un gravel : un vélo polyvalent à l'aise sur chemins ou en forêt 🌳, confortable en ville 🏙️ grâce à ses gros pneus, et respectable pour prendre de la vitesse sur route, quitte à s'acheter une deuxième paire de pneus 🚵.
+note: |
+  Sources générales intéressantes sur le gravel.
+
+  Un [article](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php) assze intéressant de la marque Caminade.
 composants:
   cadre: 
     note: | 
@@ -89,19 +93,75 @@ composants:
     note: |
       Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
       For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
-  leviers: 
+  poignée droite: 
+    marque: SRAM
+    modèle: Rival 1 monoplateau
+    note: Les questions-réponses du lien probikeshop explicitent le fait que la poignée est adaptée au monoplateau.
+    poids: 166g
+    achat: 
+      - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
+      - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
+        prix: 95€
+    alternatives: 
+      - url: https://www.materiel-velo.com/1856144-poignee-droite-velo-route-sram-apex-1.html
+        prix: 86€
+  poignée gauche:
+    marque: SRAM
+    modèle: Rival 1 monoplateau
+    achat: 
+      - url: https://www.probikeshop.fr/levier-gauche-sram-rival-1-mono/115838.html
+        prix: 45€
+      - url: https://www.materiel-velo.com/1846262-poignee-gauche-velo-route-cyclo-cross-sram-rival-1-monoplateau.html
+        prix: 47€
+
   cintre: 
-    note: Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
+    note: |
+      Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
+      On m'a conseillé sinon le Richtey ventura max WCS.
   ruban de cintre:
   cassette: 
+    marque: SRAM
+    modèle: Rival 1 GX1 XG-1150 11v
+    url: https://www.materiel-velo.com/1846715-cassette-route-et-vtt-sram-rival-1-gx1-xg-1150-11v.html
+    prix: 88€
+    alternatives: 
+      - modèle: 
+        url: https://www.probikeshop.fr/cassette-11v-sunrace-csmx9x-sram-xd-noir/172183.html
+        prix: 90€
+        note: Option 10/42 ou même 10/46. Faudrait vérifier la compatibilité avec le reste du système qui est un groupe cohérent SRAM Rival 1.
   moyeu arrière: 
   corps de roue libre:
     marque: Je sais pas encore
     modèle: Modèle compatible XD
   moyeu avant: 
   dérailleur: 
-  plateaux: 
+    modèle: Rival 1 chape longue type 3
+    url: https://www.materiel-velo.com/1846652-derailleur-arriere-sram-rival-1-chape-longue-type-3.html
+    prix: 99€
+    poids: 275g
+    note: Pour cassettes 11-32 à 10-42. 
+  pédalier:
+    marque: SRAM
+    modèle: Rival 1 GXP 11v
+    achat: 
+      -
+      url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
+      prix: 130€
+      - url: https://www.probikeshop.fr/pedalier-aaaav-sram-rival-aa-mono-42/115830.html 
+      prix: 130€
+      à faire: Choisir la taille de manivelle
+  chaîne: 
+    marque: SRAM
+    modèle: PC-1130 11V 
+    url: https://www.materiel-velo.com/1843264-chaine-velo-route-sram-pc-1130-11v.html
+    prix: 16.50€
   boîtier: 
+    marque: SRAM
+    nom: SRAM GXP
+    option: BSA 1.37x24
+    à faire: le cadre est bien en BSA, mais y a-t-il une mesure à faire ?
+    url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
+    prix: 29€
   roues: 
   pneus: 
     note: |
