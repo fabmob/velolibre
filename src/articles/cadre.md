@@ -1,8 +1,10 @@
 # Le cadre
 
-Le cadre me semble être la clef de voute du vélo. Logiquement, c'est un des éléments qui relie tout, le plus visible et le plus lourd notamment. Mais pas que : c'est aussi le plus difficile à acheter ! Pour les autres éléments (les roues, la transmission), il y a un très large choix avec plein de variantes. Les cadres ? Les marques ne les vendent pas. Celles qui le font, à quel prix ! Chez Origine, marque "française", le cadre le moins cher en alu coûte 750€. Quelle est leur marge ? Probablement plus de 50%. La marque passe aussi [beaucoup de temps](https://m.youtube.com/watch?v=xCFUQ9tJg4M) à finaliser cette importation probablement d'asie.
+Le cadre me semble être la clef de voute du vélo. Logiquement, c'est un des éléments qui relie tout, le plus visible et le plus lourd notamment. Mais pas que : c'est aussi le plus difficile à acheter ! Pour les autres éléments (les roues, la transmission), il y a un très large choix avec plein de variantes et de sites d'achat.
 
-Il s'avère que l'Europe a une production de cadre, au Portugal ! Des millions de cadres par an. Dont 500k pour Decathlon, exclusivement. Impossible, il me semble, de leur acheter directemnt des cadres basiques :/
+Les cadres ? Les marques ne les vendent pas. Celles qui le font, à quel prix ! Chez Origine, marque "française", le cadre le moins cher en alu coûte 750€. Quelle est leur marge ? Probablement plus de 50%. La marque passe aussi [beaucoup de temps](https://m.youtube.com/watch?v=xCFUQ9tJg4M) à finaliser cette importation probablement d'asie.
+
+Il s'avère que l'Europe a une production de cadre, au Portugal ! Des millions de cadres par an. Dont 500k pour Decathlon, exclusivement. Impossible, il me semble, de leur acheter directemnt des cadres basiques :/ Seule exception : decathlon propose deux cadres, un bas de gamme pour singlespeed et un haut de gamme en carbone à 1000€...
 
 Au choix : acier, alu, titane, carbone, bois.
 
@@ -124,6 +126,6 @@ Et aussi la startup californienne, qui imprime un cadre en carbone. Pourtant, ve
 
 Sur bike-eu.com on peut lire plusieurs articles sur l'émergence d'une industrie du cadre : tout est résumé [sur cet article](https://www.bike-eu.com/home/nieuws/2020/04/frames-core-of-the-bicycle-industry-10137708?_ga=2.98561305.700063573.1604866908-172212205.1604866908). En bref : **l'Europe se réindustrialise ce qui rendra la chaine de production de vélos bien moins dépendante de l'Asie.** Mais rien en France pour l'instant.
 
-Au Portugal avec des millions de cadres produits par an, apparemment très robotisés donc probablement peu cher pour de très grandes séries (decathlon notamment). [source](https://www.bike-eu.com/market/nieuws/2015/12/first-fully-robotized-made-in-europe-aluminium-bike-frames-10125225?_ga=2.91299996.700063573.1604866908-172212205.1604866908). En [Pologne](https://www.bike-eu.com/home/nieuws/2019/08/robotized-aluminium-frame-production-starts-in-poland-10136337) aussi.
+Au Portugal avec des millions de cadres produits par an, apparemment très robotisés donc probablement peu chers pour de très grandes séries (decathlon notamment). [source](https://www.bike-eu.com/market/nieuws/2015/12/first-fully-robotized-made-in-europe-aluminium-bike-frames-10125225?_ga=2.91299996.700063573.1604866908-172212205.1604866908). En [Pologne](https://www.bike-eu.com/home/nieuws/2019/08/robotized-aluminium-frame-production-starts-in-poland-10136337) aussi.
 ça parle aussi d'un [retour de l'acier](https://www.bike-eu.com/market/nieuws/2019/07/will-new-hi-tech-steel-grade-revolutionize-frame-production-in-europe-10136176) nouvelle formule.
 [Ici robotisation du carbone](https://www.bike-eu.com/production/nieuws/2020/01/rein4ced-to-start-robotized-production-of-carbon-fiber-frames-for-accell-group-10137204).
