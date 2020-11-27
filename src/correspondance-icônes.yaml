@@ -25,3 +25,6 @@ cintre: handlebar-road
 poignée droite: road-brakeonly-lever
 poignée gauche: road-brakeonly-lever
 boîtier: threaded-bottom-bracket
+moyeu avant: moyeu
+moyeu arrière: moyeu
+ruban de cintre: ruban-cintre
