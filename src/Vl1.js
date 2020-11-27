@@ -51,7 +51,9 @@ const Composant = ({item:
 		{prix, url} = sold
 
 
-	return (<li key={composant}>
+	return (<li
+		css="border-bottom: 1px solid #ddd; padding-bottom: 1.6rem; "
+		key={composant}>
 		<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
 			<img
 				css="width: 5rem" src={'/composants/' + correspondance[composant] + '.svg'}
@@ -63,7 +65,7 @@ const Composant = ({item:
 		<div>
 			<Note data={note} />
 			{modèle ?
-				<Card><div>
+				<Card css="text-align: center;width: 16rem"><div>
 					<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
 					<span>{modèle}</span></div>
 					<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
@@ -81,12 +83,14 @@ const Note = ({data}) => {
 	const [intro] = data.split('\n')
 
 	return (
-		<div>
+		<div css={`p {margin-bottom: .3rem} button {margin: .3rem}`}>
 			<Markdown source={open ? data : intro} />
-			<p>
+			<div
+				css="display: flex; justify-content: end; margin-bottom: 1rem; padding-right: 1rem"
+			>
 				<button onClick={() => setOpen(!open)}> {open ? 'Réduire' : 'Lire plus'}</button>
-			</p>
-		</div>
+			</div>
+		</div >
 
 	)
 }
