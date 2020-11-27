@@ -6,7 +6,7 @@ import {
 	Switch,
 	Route,
 } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Vl1 from './Vl1'
 import Home from './Home'
 import Article from './Article'
@@ -28,7 +28,7 @@ function App() {
 						}
 					`}
 				>
-					<Link to="/">
+					<Link to="/accueil/alpha">
 						<h1>
 							vélo
 							<span css="border-radius: .3rem; padding: .1rem .6rem ;margin-left: .2rem; background: black; color: white">
@@ -41,8 +41,9 @@ function App() {
 					<Route path="/vl1">
 						<Vl1 />
 					</Route>
-					<Route path="/documentation/:id" component={Article} />
-					<Route path="/" component={Home} />
+					<Route path="/documentation/:id" ><Article /></Route>
+					<Route path="/accueil/alpha" ><Home /></Route>
+					<Route path="/"><Redirect to="accueil/alpha" /></Route>
 				</Switch>
 			</Router>
 		</div>

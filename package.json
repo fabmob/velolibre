@@ -5,7 +5,7 @@
 	"main": "index.html",
 	"license": "MIT",
 	"scripts": {
-		"start": "webpack serve --hot --mode development --inline",
+		"start": "webpack serve --mode development",
 		"compile": "NODE_ENV=production webpack --mode production -c webpack.config.js"
 	},
 	"dependencies": {
