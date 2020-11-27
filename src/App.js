@@ -38,7 +38,9 @@ function App() {
 					</Link>
 				</header>
 				<Switch>
-					<Route path="/vl1" component={Vl1} />
+					<Route path="/vl1">
+						<Vl1 />
+					</Route>
 					<Route path="/documentation/:id" component={Article} />
 					<Route path="/" component={Home} />
 				</Switch>

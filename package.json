@@ -27,6 +27,10 @@
 		"style-loader": "^2.0.0",
 		"yaml-loader": "^0.6.0"
 	},
+
+  "resolutions": {
+    "styled-components": "^5"
+  },
 	"devDependencies": {
 		"@babel/core": "7.12.9",
 		"@babel/preset-env": "^7.11.0",

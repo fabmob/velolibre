@@ -47,7 +47,7 @@ const Composant = ({item:
 		{prix, url} = sold
 
 
-	return (<li>
+	return (<li key={composant}>
 		<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
 			<img
 				css="width: 5rem" src={'composants/' + correspondance[composant] + '.svg'}
@@ -72,11 +72,11 @@ const Note = ({data}) => {
 
 	const [open, setOpen] = useState(false)
 	if (!data) return null
-	const [intro, ...rest] = data.split('\n')
+	const [intro] = data.split('\n')
 
 	return (
 		<div>
-			{open}
+			{open.toString()}
 			<Markdown source={open ? data : intro} />
 			<p>
 				<button onClick={() => console.log('yaya') || setOpen(!open)}> {open ? 'Réduire' : 'Lire plus'}</button>

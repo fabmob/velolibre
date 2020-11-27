@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom'
 export default ({}) => (
 	<div>
 		<div css="display:flex; max-width: 90vw; margin: 0 auto; flex-wrap: wrap; justify-content: center">
-			<p css="max-width: 50rem;font-size: 250%">
+			<p
+				onClick={() => console.log('yiyi')}
+				css="max-width: 50rem;font-size: 250%">
 				Un vélo aussi libre qu'un logiciel libre.
 			</p>
 		</div>
