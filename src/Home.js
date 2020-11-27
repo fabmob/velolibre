@@ -59,7 +59,7 @@ export default ({}) => (
 			`}
 		>
 			{velos.map(({nom, statut, prix, image, grisé}) => (
-				<Link to={grisé ? '' : '/vl1'}>
+				<Link to={grisé ? '' : '/vélos/vl1'}>
 					<li
 						css={`
 							${grisé

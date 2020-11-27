@@ -50,7 +50,7 @@ const Composant = ({item:
 	return (<li key={composant}>
 		<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
 			<img
-				css="width: 5rem" src={'composants/' + correspondance[composant] + '.svg'}
+				css="width: 5rem" src={'/composants/' + correspondance[composant] + '.svg'}
 			/>
 			<div css="text-transform: uppercase; font-size: 85%; color: #666">
 				{composant}
@@ -76,10 +76,9 @@ const Note = ({data}) => {
 
 	return (
 		<div>
-			{open.toString()}
 			<Markdown source={open ? data : intro} />
 			<p>
-				<button onClick={() => console.log('yaya') || setOpen(!open)}> {open ? 'Réduire' : 'Lire plus'}</button>
+				<button onClick={() => setOpen(!open)}> {open ? 'Réduire' : 'Lire plus'}</button>
 			</p>
 		</div>
 

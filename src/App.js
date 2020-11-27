@@ -38,7 +38,7 @@ function App() {
 					</Link>
 				</header>
 				<Switch>
-					<Route path="/vl1">
+					<Route path="/vélos/vl1">
 						<Vl1 />
 					</Route>
 					<Route path="/documentation/:id" ><Article /></Route>
