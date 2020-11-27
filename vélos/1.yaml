@@ -4,15 +4,15 @@ description: |
 composants:
   cadre: 
     note: | 
-    Trouver un cadre ou kit de cadre n'est pas chose aisée. L'assemblage de vélos est un sport de niche, souvent fait d'amateurs ou de boutiques n'hésitant pas à mettre des prix élevés pour créer un vélo très performant. 
-    
-    C'est donc très compliqué de trouver un cadre gravel à moins de 400€ ! Ce cadre Merlin en alu, avec sa fourche carbone, pas très lourd, et passages de cables internes, est le plus compétitif trouvé. 
+      Trouver un cadre ou kit de cadre n'est pas chose aisée. L'assemblage de vélos est un sport de niche, souvent fait d'amateurs ou de boutiques n'hésitant pas à mettre des prix élevés pour créer un vélo très performant. 
+      
+      C'est donc très compliqué de trouver un cadre gravel à moins de 400€ ! Ce cadre Merlin en alu, avec sa fourche carbone, pas très lourd, et passages de cables internes, est le plus compétitif trouvé. 
 
-    En sachant qu'on peut trouver des cadres routes à fourche carbone à 180€ (le Brand X RD01), on imagine que les cadres sont vendus avec une marge dépassant les 50%. 
+      En sachant qu'on peut trouver des cadres routes à fourche carbone à 180€ (le Brand X RD01), on imagine que les cadres sont vendus avec une marge dépassant les 50%. 
 
-    Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
+      Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
 
-    Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
+      Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
     marque: Merlin
     url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
     prix: 400.74€
@@ -35,78 +35,82 @@ composants:
     poids: 2100g # mettre {taille M: 2100, L: etc}
     matériaux: 
       - aluminium
-  freins: 
+  étriers de frein: 
     note: |
-      Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques: 
+      Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques. 
       - il est tout simplement très difficile de trouver un cadre gravel (donc qui au moins accueille des pneus de diamètre > 30mm) à freins sur jante
       - pour l'utilisation en chemin, les freins à disques sont moins vulnérables à la boue et à l'eau projetée sur les jantes.
 
       Pourtant, il semblerait que la puissance de freins v-brake sur jante suffirait, et qu'ils accomoderaient de larges pneus, comme expliqué [ici](http://mapage.noos.fr/ptis.trucs.sympas/freins_velo.htm#vbrakes). 
 
-      Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué. 
+      Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué, même si contrairement aux mécaniques, pas besoin d'ajuster les vis avec une clé alen quand les patins s'usent. 
 
       Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
-    étriers: 
-      alternatives:
-        - url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique-arriere/_/R-p-202955
-        - url: https://www.decathlon.fr/p/kit-frein-mecanique-hayes-mx-5-disque-160mm/_/R-p-196567
-        - marque: Décathlon
-          modèle: KIT FREIN A DISQUE MECANIQUE
-          url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique/_/R-p-141530
-          prix: 29.90€
-          note: Alternative bas coût. Quel format, postmount, flatmount ? En tout cas vendu avec adaptateur
-        - marque: TRP 
-          modèle: Spyre
-          rupture: partout
-          prix: 70.58€
-          url: https://www.bike24.com/p2225128.html?menu=1000,4,322
-          note: J'ai pu essayer ces freins, ils ne sont pas incroyable mais font bien l'affaire pour un prix contenu.
+
+    alternatives:
+      - 
+        marque: Avid
+        modèle: BB7
+        note: |
+          Les commentaires sur ces freins sont plutôt élogieux. Attention, avant/arrière semblent différents.
+
+          > Properly adjusted BB7's are awesome brakes. Key = Properly adjusted. The disc shouldn't be centered between the pads, but instead a slightly larger gap on the inside. This will give you the great "feel" that BB7s are known for.
+          Semblent être en fixation flat mount ✅.
+
+        achat: 
+          - url: https://www.materiel-velo.com/1858732-etrier-velo-route-avid-bb7-disque-mecanique.html
+            prix: 54€
+          - url: https://www.probikeshop.fr/frein-arriere-a-disque-sram-bb7-road/117408.html
+            prix: 85
+          - url: https://www.materiel-velo.com/1858732-etrier-velo-route-avid-bb7-disque-mecanique.html
+            prix: 54
+        inclus: 
+          - disques
+      - url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique-arriere/_/R-p-202955
+      - url: https://www.decathlon.fr/p/kit-frein-mecanique-hayes-mx-5-disque-160mm/_/R-p-196567
+      - marque: Décathlon
+        modèle: KIT FREIN A DISQUE MECANIQUE
+        url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique/_/R-p-141530
+        prix: 29.90€
+        note: Alternative bas coût. Quel format, postmount, flatmount ? En tout cas vendu avec adaptateur
+      - marque: TRP 
+        modèle: Spyre
+        rupture: partout
+        prix: 70.58€
+        url: https://www.bike24.com/p2225128.html?menu=1000,4,322
+        note: |
+          J'ai pu essayer ces freins, ils ne sont pas incroyables mais font bien l'affaire pour un prix contenu.
+          
+          A noter : les plaquettes bougent des deux côtés du disque, ce qui semble mieux pour éviter de le voiler. 
+
+          D'après [ces retours](https://www.reddit.com/r/gravelcycling/comments/gutw00/mech_disc_brake_suggestions_avid_bb5bb7_trp_spyre/), ils sont meilleurs que les BB7.
+        
+  cables et gaines: 
+    note: |
+      Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
+      For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
   leviers: 
   cintre: 
   ruban de cintre:
-  potence: 
   cassette: 
   moyeu arrière: 
   corps de roue libre:
-    marque:
-    nom: XD
+    marque: Je sais pas encore
+    modèle: Modèle compatible XD
   moyeu avant: 
   dérailleur: 
-  chaîne: 
   plateaux: 
-  pédalier: 
   boîtier: 
   roues: 
   pneus: 
-    modèle: wheelset
-    marque: 6KU
   collier de selle:
-    marque: Brand-X 
-    modèle: Seat Clamp & Bolt Black
   tige de selle: 
-    marque: Brand-X
-    modèle: Layback 6061
   selle: 
-    modèle: pas encore choisies
   pédalier:
-    modèle: PISTA CRANKSET – BLACK
-    marque: SUGINO 
   pédales: 
-    modèle: pas encore choisies
   potence: 
-    marque: Brand-X 
-    modèle: Road Stem
   jeu de direction: 
-    marque: M-part 
-    modèle: Headset Black
   guidon: 
-    marque: Brand-X
-    modèle: High Rise Bar
   chaîne: 
-    marque: YBN 
-    modèle: S512H CHAIN – SILVER
   roue libre: 
-    marque: DICTA 
-    modèle: 16T SINGLE FREEWHEEL – CP
   axe de pédalier: 
-    marque: TANGE 
