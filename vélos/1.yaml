@@ -17,10 +17,11 @@ composants:
       Les marques qui vendent des milliers de vélos ont elles accès à des productions directes, en Asie ou au Portugal par exemple.
 
       Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
-    marque: Merlin
-    url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
-    prix: 400.74€
     alternatives:
+      - modèle: Malt G2X
+        marque: Merlin
+        url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
+        prix: 400.74€
       - marque: Octane One
         modèle: Gridd Gravel 2019
         note: Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes contrairement au Merlin.
@@ -92,21 +93,25 @@ composants:
   cables et gaines: 
     note: |
       Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
-      For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
+
+      > For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
   poignée droite: 
-    marque: SRAM
-    modèle: Rival 1 monoplateau
-    note: Les questions-réponses du lien probikeshop explicitent le fait que la poignée est adaptée au monoplateau.
-    poids: 166g
-    achat: 
-      - url: https://www.alltricks.fr/F-114951-commandes-de-vitesses---arriere/P-77560-sram-manette-rival-22-droit-double-tap-11-vitesses
-        prix: 90€
-      - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
-      - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
-        prix: 95€
-    #alternatives: 
-    #  - url: https://www.materiel-velo.com/1856144-poignee-droite-velo-route-sram-apex-1.html
-    #    prix: 86€
+    alternatives:
+      - 
+        marque: SRAM
+        modèle: Rival 1 monoplateau
+        note: Les questions-réponses du lien probikeshop explicitent le fait que la poignée est adaptée au monoplateau.
+        poids: 166g
+        achat: 
+          - url: https://www.alltricks.fr/F-114951-commandes-de-vitesses---arriere/P-77560-sram-manette-rival-22-droit-double-tap-11-vitesses
+            prix: 90€
+          - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
+          - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
+            prix: 95€
+      - url: https://www.materiel-velo.com/1856144-poignee-droite-velo-route-sram-apex-1.html
+        marque: SRAM
+        modèle: APEX
+        prix: 86€
   poignée gauche:
     marque: SRAM
     modèle: Rival 1 monoplateau
@@ -124,12 +129,12 @@ composants:
 
   ruban de cintre:
   cassette: 
-    marque: SRAM
-    modèle: Rival 1 GX1 XG-1150 11v
-    url: https://www.materiel-velo.com/1846715-cassette-route-et-vtt-sram-rival-1-gx1-xg-1150-11v.html
-    note: Cette cassette dont le petit pignon est de 10 dents au lieu du classique 11 dents, permet de bourriner davantage en descente. 10 dents pour un monoplateau 42, c'est un rapport équivalent à 46/11, on se rapproche donc d'un rapport de route tout en ayant un rapport de 1 pour les montées (42/42).
-    prix: 88€
     alternatives: 
+      - marque: SRAM
+        modèle: Rival 1 GX1 XG-1150 11v
+        url: https://www.materiel-velo.com/1846715-cassette-route-et-vtt-sram-rival-1-gx1-xg-1150-11v.html
+        note: Cette cassette dont le petit pignon est de 10 dents au lieu du classique 11 dents, permet de bourriner davantage en descente. 10 dents pour un monoplateau 42, c'est un rapport équivalent à 46/11, on se rapproche donc d'un rapport de route tout en ayant un rapport de 1 pour les montées (42/42).
+        prix: 88€
       - url: https://www.materiel-velo.com/1849034-cassette-route-et-vtt-sram-pg-1130-11v.html
         note: Une cassette 11-42 au lieu de 10-42, qui donne moins de puissance en descente.
       - modèle: 
@@ -148,21 +153,22 @@ composants:
     poids: 275g
     note: Pour cassettes 11-32 à 10-42. 
   pédalier:
-    marque: SRAM
-    modèle: Rival 1 GXP 11v
-    à faire: Il semble que la ligne de chaîne soit un paramètre très important à étudier pour un monoplateau. Trouver de la doc.
     note: |
       Un [article d'expérience et documenté](https://caminade.eu/le.mono.plateau.sur.le.route-33-1626.php) qui fait l'éloge du monoplateau.
-
-      Notons qu'il est possible de changer le plateau du pédalier, par exemple passer à du 46, [48](https://www.materiel-velo.com/1846664-plateau-sram-rival-1-x-sync-48-dents.html) ou 50 dents si le rapport sur plat et descente est trop faible et qu'on a fait le plein de protéines (végétales).
-
-    achat: 
-      - url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
-        prix: 130€
-      - url: https://www.probikeshop.fr/pedalier-aaaav-sram-rival-aa-mono-42/115830.html 
-        prix: 130€
-        à faire: Choisir la taille de manivelle
     alternatives: 
+      - marque: SRAM
+        modèle: Rival 1 GXP 11v
+        à faire: Il semble que la ligne de chaîne soit un paramètre très important à étudier pour un monoplateau. Trouver de la doc.
+
+        note: |
+          Notons qu'il est possible de changer le plateau du pédalier, par exemple passer à du 46, [48](https://www.materiel-velo.com/1846664-plateau-sram-rival-1-x-sync-48-dents.html) ou 50 dents si le rapport sur plat et descente est trop faible et qu'on a fait le plein de protéines (végétales).
+
+        achat: 
+          - url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
+            prix: 130€
+          - url: https://www.probikeshop.fr/pedalier-aaaav-sram-rival-aa-mono-42/115830.html 
+            prix: 130€
+            à faire: Choisir la taille de manivelle
       - url: http://www.stronglight.com/stronglight/index.php/welcome/afficher_Produit?id=399
         note: |
           Il semble qu'on puisse mettre un pédalier d'une marque différente. Investiguer si un Stronlight Impact, fait en France, pourrait remplacer ce SRAM.
@@ -189,7 +195,6 @@ composants:
       Le tubeless semble important pour le confort. On va donc partir sur du tubeless ready.
       Pour la taille, on va viser du 35mm minimum pour être confortable sur chemins mais avec un usage majoritairement route.
       [Source](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php).
-
   collier de selle:
   tige de selle: 
   selle: 
