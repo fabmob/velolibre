@@ -104,9 +104,9 @@ composants:
       - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
       - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
         prix: 95€
-    alternatives: 
-      - url: https://www.materiel-velo.com/1856144-poignee-droite-velo-route-sram-apex-1.html
-        prix: 86€
+    #alternatives: 
+    #  - url: https://www.materiel-velo.com/1856144-poignee-droite-velo-route-sram-apex-1.html
+    #    prix: 86€
   poignée gauche:
     marque: SRAM
     modèle: Rival 1 monoplateau
@@ -118,8 +118,10 @@ composants:
 
   cintre: 
     note: |
-      Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
       On m'a conseillé sinon le Richtey ventura max WCS.
+
+      Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
+
   ruban de cintre:
   cassette: 
     marque: SRAM

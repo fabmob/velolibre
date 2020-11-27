@@ -62,11 +62,13 @@ const Composant = ({item:
 		</div>
 		<div>
 			<Note data={note} />
-			<Card><div>
-				<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
-				<span>{modèle}</span></div>
-				<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
-			</Card>
+			{modèle ?
+				<Card><div>
+					<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
+					<span>{modèle}</span></div>
+					<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
+				</Card>
+				: <div css="color: red">Composant manquant</div>}
 		</div>
 	</li>
 	)
