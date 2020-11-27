@@ -18,10 +18,18 @@ composants:
 
       Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
     alternatives:
-      - modèle: Malt G2X
+      - modèle: Malt G2X gravel
         marque: Merlin
         url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
         prix: 400.74€
+        inclus: 
+          - fourche
+        #  - axe avant
+        #  - axe arrière
+        poids: 2100g # mettre {taille M: 2100, L: etc}
+        matériaux: 
+          - aluminium
+          - carbone
       - marque: Octane One
         modèle: Gridd Gravel 2019
         note: Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes contrairement au Merlin.
@@ -32,15 +40,6 @@ composants:
         prix: 554.62€
         rupture: oui
         note: Ce cadre est intéressant, c'est un cadre "basique" d'un magasin en ligne, moins cher que les cadres de marque, au style... basique donc parfait pour assembler un vélo.
-    modèle: Malt G2X Gravel Frameset
-    inclus: 
-      - fourche
-      - axe avant
-      - axe arrière
-    poids: 2100g # mettre {taille M: 2100, L: etc}
-    matériaux: 
-      - aluminium
-      - carbone
   étriers de frein: 
     note: |
       Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques. 
@@ -142,14 +141,14 @@ composants:
         prix: 90€
         note: Option 10/42 ou même 10/46. Faudrait vérifier la compatibilité avec le reste du système qui est un groupe cohérent SRAM Rival 1.
   dérailleur: 
+    marque: SRAM
     modèle: Rival 1 chape longue type 3
     url: https://www.materiel-velo.com/1846652-derailleur-arriere-sram-rival-1-chape-longue-type-3.html
     prix: 99€
     poids: 275g
     note: Pour cassettes 11-32 à 10-42. 
   corps de roue libre:
-    marque: Je sais pas encore
-    modèle: Modèle compatible XD
+    note: Modèle compatible XD requis pour les larges cassettes SRAM.
   pédalier:
     note: |
       Un [article d'expérience et documenté](https://caminade.eu/le.mono.plateau.sur.le.route-33-1626.php) qui fait l'éloge du monoplateau.

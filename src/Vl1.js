@@ -62,15 +62,24 @@ const ComposantChoices = ({data, composant}) => {
 		chosen = data.alternatives ? data.alternatives[0] : data
 		, {modèle, marque} = chosen
 		, sold = chosen.achat ? chosen.achat[0] : chosen,
-		{prix, url} = sold
+		{prix, url} = sold,
+		inclus = chosen.inclus || sold.inclus
 	return (
 		<div>
 			<Note data={note} />
 			{modèle ?
-				<Card css="text-align: center;width: 16rem"><div>
+				<Card css="text-align: center;width: 20rem"><div>
 					<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">{marque}</span>
 					<span>{modèle}</span></div>
 					<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
+					{inclus && <div
+						css={`ul {padding: 0;display: inline-block; display: flex; align-items: center; justify-content: center} li{margin: 0 .6rem} `}
+					><ul ><li>Inclus : </li>{inclus.map(ci => <li>
+
+						<img alt={ci}
+							css="width: 2rem" src={'/composants/' + correspondance[ci] + '.svg'} />
+
+					</li>)}</ul></div>}
 				</Card>
 				: <Missing />}
 		</div>
