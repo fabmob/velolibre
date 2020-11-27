@@ -27,6 +27,9 @@ export default ({}) => (
 				}
 			`}
 		><h1>{vélo.nom}</h1>
+			<div css={` font-weight: bold;
+	padding: .1rem 1rem; border-radius: .1rem; color: white; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 74%, rgba(0,212,255,1) 100%); text-align: center;
+	`}>Stade actuel : conception</div>
 			<p>{vélo.description}</p>
 			<ul>
 				{Object.entries(vélo.composants).filter(([_, data]) => data != null).map(

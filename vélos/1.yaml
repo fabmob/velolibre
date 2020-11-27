@@ -91,6 +91,7 @@ composants:
       For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
   leviers: 
   cintre: 
+    note: Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
   ruban de cintre:
   cassette: 
   moyeu arrière: 
@@ -103,6 +104,11 @@ composants:
   boîtier: 
   roues: 
   pneus: 
+    note: |
+      Le tubeless semble important pour le confort. On va donc partir sur du tubeless ready.
+      Pour la taille, on va viser du 35mm minimum pour être confortable sur chemins mais avec un usage majoritairement route.
+      [Source](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php).
+
   collier de selle:
   tige de selle: 
   selle: 
