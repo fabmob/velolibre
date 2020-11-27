@@ -37,7 +37,7 @@ export default ({}) => (
 					width: 12rem;
 					height: 24rem;
 					background: white;
-					padding: 0.4rem 1rem;
+					padding: 1.6rem 1rem;
 					border: 4px solid black;
 					border-radius: 0.3rem;
 					display: flex;
