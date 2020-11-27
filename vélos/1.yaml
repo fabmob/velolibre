@@ -39,6 +39,7 @@ composants:
     poids: 2100g # mettre {taille M: 2100, L: etc}
     matériaux: 
       - aluminium
+      - carbone
   étriers de frein: 
     note: |
       Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques. 
@@ -52,8 +53,7 @@ composants:
       Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
 
     alternatives:
-      - 
-        marque: Avid
+      - marque: Avid
         modèle: BB7
         note: |
           Les commentaires sur ces freins sont plutôt élogieux. Attention, avant/arrière semblent différents.
@@ -99,6 +99,8 @@ composants:
     note: Les questions-réponses du lien probikeshop explicitent le fait que la poignée est adaptée au monoplateau.
     poids: 166g
     achat: 
+      - url: https://www.alltricks.fr/F-114951-commandes-de-vitesses---arriere/P-77560-sram-manette-rival-22-droit-double-tap-11-vitesses
+        prix: 90€
       - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
       - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
         prix: 95€
@@ -123,8 +125,11 @@ composants:
     marque: SRAM
     modèle: Rival 1 GX1 XG-1150 11v
     url: https://www.materiel-velo.com/1846715-cassette-route-et-vtt-sram-rival-1-gx1-xg-1150-11v.html
+    note: Cette cassette dont le petit pignon est de 10 dents au lieu du classique 11 dents, permet de bourriner davantage en descente. 10 dents pour un monoplateau 42, c'est un rapport équivalent à 46/11, on se rapproche donc d'un rapport de route tout en ayant un rapport de 1 pour les montées (42/42).
     prix: 88€
     alternatives: 
+      - url: https://www.materiel-velo.com/1849034-cassette-route-et-vtt-sram-pg-1130-11v.html
+        note: Une cassette 11-42 au lieu de 10-42, qui donne moins de puissance en descente.
       - modèle: 
         url: https://www.probikeshop.fr/cassette-11v-sunrace-csmx9x-sram-xd-noir/172183.html
         prix: 90€
@@ -143,13 +148,27 @@ composants:
   pédalier:
     marque: SRAM
     modèle: Rival 1 GXP 11v
+    à faire: Il semble que la ligne de chaîne soit un paramètre très important à étudier pour un monoplateau. Trouver de la doc.
+    note: |
+      Un [article d'expérience et documenté](https://caminade.eu/le.mono.plateau.sur.le.route-33-1626.php) qui fait l'éloge du monoplateau.
+
+      Notons qu'il est possible de changer le plateau du pédalier, par exemple passer à du 46, [48](https://www.materiel-velo.com/1846664-plateau-sram-rival-1-x-sync-48-dents.html) ou 50 dents si le rapport sur plat et descente est trop faible et qu'on a fait le plein de protéines (végétales).
+
     achat: 
-      -
-      url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
-      prix: 130€
+      - url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
+        prix: 130€
       - url: https://www.probikeshop.fr/pedalier-aaaav-sram-rival-aa-mono-42/115830.html 
-      prix: 130€
-      à faire: Choisir la taille de manivelle
+        prix: 130€
+        à faire: Choisir la taille de manivelle
+    alternatives: 
+      - url: http://www.stronglight.com/stronglight/index.php/welcome/afficher_Produit?id=399
+        note: |
+          Il semble qu'on puisse mettre un pédalier d'une marque différente. Investiguer si un Stronlight Impact, fait en France, pourrait remplacer ce SRAM.
+          Voir [cette question](https://bicycles.stackexchange.com/a/27374).
+        fabrication: France
+        marque: Stronglight
+        modèle: Impact "S"
+        poids: 720g
   chaîne: 
     marque: SRAM
     modèle: PC-1130 11V 
@@ -172,11 +191,9 @@ composants:
   collier de selle:
   tige de selle: 
   selle: 
-  pédalier:
   pédales: 
   potence: 
   jeu de direction: 
   guidon: 
-  chaîne: 
   roue libre: 
   axe de pédalier: 

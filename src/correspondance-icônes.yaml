@@ -10,7 +10,7 @@ selle: 034-seat-1
 pédales: 004-pedal
 chaîne: 036-chain
 dérailleur: 032-derailleur
-cassette arrière: 031-gear
+cassette: 001-gear-1
 roue libre: 029-hub-1
 tige de selle: seat-post
 guidon: handlebar
@@ -21,3 +21,7 @@ corps de roue libre: freehub-body
 étriers de frein: étrier-frein-disque
 disques: disque-frein 
 cables et gaines: cable-housing
+cintre: handlebar-road
+poignée droite: road-brakeonly-lever
+poignée gauche: road-brakeonly-lever
+boîtier: threaded-bottom-bracket
