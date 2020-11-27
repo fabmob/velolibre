@@ -33,7 +33,7 @@ export default ({}) => (
 	`}>Stade actuel : conception</div></Link>
 			<p>{vélo.description}</p>
 			<ul>
-				{Object.entries(vélo.composants).filter(([_, data]) => data != null).map(
+				{Object.entries(vélo.composants).sort(([_, data1], [_2, data2]) => data1 > data2).map(
 					item => <Composant item={item} />
 				)}
 			</ul>
@@ -41,27 +41,29 @@ export default ({}) => (
 	</div >
 )
 
-const Composant = ({item:
-	[composant, data]
-}) => {
+const ComposantImage = ({composant}) =>
+
+	<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
+		<img
+			css="width: 5rem" src={'/composants/' + correspondance[composant] + '.svg'}
+		/>
+		<div css="text-transform: uppercase; font-size: 85%; color: #666">
+			{composant}
+		</div>
+	</div>
+
+const Missing = () =>
+	<div css="color: red">A sélectionner</div>
+const ComposantChoices = ({data, composant}) => {
+
+	if (!data) return <Missing />
+
 	const note = data.note,
 		chosen = data.alternatives ? data.alternatives[0] : data
 		, {modèle, marque} = chosen
 		, sold = chosen.achat ? chosen.achat[0] : chosen,
 		{prix, url} = sold
-
-
-	return (<li
-		css="border-bottom: 1px solid #ddd; padding-bottom: 1.6rem; "
-		key={composant}>
-		<div css="text-align: center; max-width: 6rem; margin-right: 1rem">
-			<img
-				css="width: 5rem" src={'/composants/' + correspondance[composant] + '.svg'}
-			/>
-			<div css="text-transform: uppercase; font-size: 85%; color: #666">
-				{composant}
-			</div>
-		</div>
+	return (
 		<div>
 			<Note data={note} />
 			{modèle ?
@@ -70,8 +72,21 @@ const Composant = ({item:
 					<span>{modèle}</span></div>
 					<div>{prix} {domain(url) && <span>sur <a href={url}>{domain(url)}</a></span>}</div>
 				</Card>
-				: <div css="color: red">Composant manquant</div>}
+				: <Missing />}
 		</div>
+	)
+}
+const Composant = ({item:
+	[composant, data]
+}) => {
+
+
+
+	return (<li
+		css="border-bottom: 1px solid #ddd; padding-bottom: 1.6rem; "
+		key={composant}>
+		<ComposantImage composant={composant} />
+		<ComposantChoices composant={composant} data={data} />
 	</li>
 	)
 }
