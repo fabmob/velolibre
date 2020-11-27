@@ -33,7 +33,7 @@ export default ({}) => (
 	`}>Stade actuel : conception</div></Link>
 			<p>{vélo.description}</p>
 			<ul>
-				{Object.entries(vélo.composants).sort(([_, data1], [_2, data2]) => data1 > data2).map(
+				{Object.entries(vélo.composants).map(
 					item => <Composant item={item} />
 				)}
 			</ul>

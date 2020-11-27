@@ -141,17 +141,15 @@ composants:
         url: https://www.probikeshop.fr/cassette-11v-sunrace-csmx9x-sram-xd-noir/172183.html
         prix: 90€
         note: Option 10/42 ou même 10/46. Faudrait vérifier la compatibilité avec le reste du système qui est un groupe cohérent SRAM Rival 1.
-  moyeu arrière: 
-  corps de roue libre:
-    marque: Je sais pas encore
-    modèle: Modèle compatible XD
-  moyeu avant: 
   dérailleur: 
     modèle: Rival 1 chape longue type 3
     url: https://www.materiel-velo.com/1846652-derailleur-arriere-sram-rival-1-chape-longue-type-3.html
     prix: 99€
     poids: 275g
     note: Pour cassettes 11-32 à 10-42. 
+  corps de roue libre:
+    marque: Je sais pas encore
+    modèle: Modèle compatible XD
   pédalier:
     note: |
       Un [article d'expérience et documenté](https://caminade.eu/le.mono.plateau.sur.le.route-33-1626.php) qui fait l'éloge du monoplateau.
@@ -203,4 +201,6 @@ composants:
   jeu de direction: 
   guidon: 
   roue libre: 
+  moyeu arrière: 
+  moyeu avant: 
   axe de pédalier: 
