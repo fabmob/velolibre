@@ -5,10 +5,10 @@ export default ({}) => (
 	<div>
 		<div css="display:flex; max-width: 90vw; margin: 0 auto; flex-wrap: wrap; justify-content: center">
 			<p
-				onClick={() => console.log('yiyi')}
-				css="max-width: 50rem;font-size: 250%">
+				css="margin: 1rem 0 .4rem; max-width: 50rem;font-size: 250%">
 				Un vélo aussi libre qu'un logiciel libre.
 			</p>
+			<p>En commençant par l'assemblage.</p>
 		</div>
 		<nav
 			css={`
