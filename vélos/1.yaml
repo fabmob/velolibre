@@ -22,6 +22,11 @@ composants:
         marque: Merlin
         url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
         prix: 400.74€
+        note: |
+          > This frame can easily fit up to a 700c x 40mm tyre (or 650b x 42).
+          > Front Axle: 12 x 100 Thru-axle (included)
+          > Rear Axle: 142 x 12mm Thru-axle (included)
+
         inclus: 
           - fourche
         #  - axe avant
@@ -93,6 +98,10 @@ composants:
     note: |
       Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
 
+      Sur le [gravel entrée de gamme](https://www.decathlon.fr/p/velo-gravel-triban-grvl-120/_/R-p-312397) Decathlon : 
+      > Gaines anti-compression JAGWIRE KEB-SL pour garantir la précision et l'efficacité du freinage. Elles sont renforcées en Kevlar et ont un liner interne spécifiques pour permettre un excellent glissement des cables
+
+
       > For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
   poignée droite: 
     alternatives:
@@ -125,6 +134,11 @@ composants:
       On m'a conseillé sinon le Richtey ventura max WCS.
 
       Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
+    alternatives: 
+      - marque: Decathlon
+        modèle: Btwin cintre vélo gravel
+        url: https://www.decathlon.fr/p/cintre-velo-gravel/_/R-p-308975?mc=8551018
+        prix: 30€
 
   ruban de cintre:
   cassette: 
@@ -132,7 +146,11 @@ composants:
       - marque: SRAM
         modèle: Rival 1 GX1 XG-1150 11v
         url: https://www.materiel-velo.com/1846715-cassette-route-et-vtt-sram-rival-1-gx1-xg-1150-11v.html
-        note: Cette cassette dont le petit pignon est de 10 dents au lieu du classique 11 dents, permet de bourriner davantage en descente. 10 dents pour un monoplateau 42, c'est un rapport équivalent à 46/11, on se rapproche donc d'un rapport de route tout en ayant un rapport de 1 pour les montées (42/42).
+        note: |
+
+          Cette cassette dont le petit pignon est de 10 dents au lieu du classique 11 dents, permet de bourriner davantage en descente. 10 dents pour un monoplateau 42, c'est un rapport équivalent à 46/11, on se rapproche donc d'un rapport de route tout en ayant un rapport de 1 pour les montées (42/42).
+
+          Voir [cette vidéo](https://youtu.be/MQTPvhp5n3Q) qui parle en détial du monoplateau (anglais).
         prix: 88€
       - url: https://www.materiel-velo.com/1849034-cassette-route-et-vtt-sram-pg-1130-11v.html
         note: Une cassette 11-42 au lieu de 10-42, qui donne moins de puissance en descente.
@@ -187,11 +205,43 @@ composants:
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
   roues: 
+    note: |
+      Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready, compatibles corps de roue libre XD pour la cassette SRAM 10-42.
+
+      ### Diamètre des roues : 700c ou 650b ? 
+
+      On va partir sur le premier, qui est le plus classique aujourd'hui et recommandé pour un vélo majoritairement route et ville.
+
+      On peut lire ici des vues contradictoires sur ce choix [700c vs 650b](https://bike-cafe.fr/2017/11/le-650-b-un-petit-gout-de-revenez-y/).
+      [Cette vidéo](https://youtu.be/aYY7fGpnecE?t=49) explique visuellement l'affaire.
+
+      ### Rayonnage
+
+      Pour l'instant, on va éviter l'étape du rayonnage des jantes. Pour aller plus loin, voir [cette explication](https://breizhbamboo.bike/les-rayons/) du super Breizhbamboobike sur le sujet.
+
+    alternatives: 
+      - marque: Mavic
+        modèle: Aksium disk
+        prix: 200€
+        url: https://www.alltricks.com/F-46291-roues-route_ville_fixie/P-461643-mavic_aksium_disc_wheelset_2019___12_9x100mm___12x142mm_9x135mm___centerlock
+        note: Pour mettre la cassette 10-42, il faudra changer le corps de roue libre pour un XD. Voir aussi si disques centerlock ou 6 bolts.
+      - marque: Mach1
+        modèle: Gravel
+        fabrication: France
+        note: |
+          Je n'ai pas trouvé de roues gravel et tubeless ready chez Mach1, des roues faites en France. Dommage, à suivre.
+
+          Le catalogue propose pourtant les modèles Gravel 19c en TBLR ou les Pulse 17C, mais introuvables à la vente notamment sur velox.fr. Peut-être les Stormer, qui étaient classées en gravel en 2019 mais plus en 2021 ? [Le catalogue](http://www.mach1.fr/fichiers/Catalogue_Mach1_2021_Light2.pdf).
+
+        url: https://velox.fr/fr/251-mach1-gravel-disc
   pneus: 
     note: |
-      Le tubeless semble important pour le confort. On va donc partir sur du tubeless ready.
+      Le tubeless semble important pour le confort. On va donc partir sur du tubeless ready ([guide ici](https://www.cycletyres.fr/blog/tubetype-tubeless-ready-tubeless-quelles-differences.html)), comme le recommandent les marques [Caminade](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php) ou encore Decathlon qui s'est lancé à fond dans la gamme Gravel (5 vélos en 2 ans) :
+
+      > Nous préconisons fortement de passer votre vélo en tubeless
+
       Pour la taille, on va viser du 35mm minimum pour être confortable sur chemins mais avec un usage majoritairement route.
-      [Source](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php).
+
   collier de selle:
   tige de selle: 
   selle: 
