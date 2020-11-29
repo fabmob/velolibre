@@ -139,8 +139,15 @@ composants:
         modèle: Btwin cintre vélo gravel
         url: https://www.decathlon.fr/p/cintre-velo-gravel/_/R-p-308975?mc=8551018
         prix: 30€
+        note: Quelle taille ? Seul le 440mm semble en stock.
 
   ruban de cintre:
+    note: Idéalement, un ruban vert ou alors noir avec trous colorés verts ? Voir [ce colnago](https://www.colnago.com/en/bikes/c64/). Pour être dans le thème du cadre mais pas trop. 
+    alternatives: 
+      - url: https://www.materiel-velo.com/1844145-ruban-guidon-velo-bbb-speedribbon-perforee-bht-12.html#/18441450006-122-coloris-vert
+        prix: 15€
+        marque: BBB
+        modèle: Speedribbon perforé BHT-12
   cassette: 
     alternatives: 
       - marque: SRAM
