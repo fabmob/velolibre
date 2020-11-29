@@ -21,21 +21,41 @@ function App() {
 			<Router>
 				<header
 					css={`
-						margin-left: 1rem;
 						a {
 							text-decoration: none;
 							color: inherit;
 						}
 					`}
 				>
-					<Link to="/accueil/alpha">
-						<h1>
-							vélo
+					<nav
+						css={`
+				text-align: center;
+				margin: 0 0 3rem;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				overflow-x: scroll;
+				@media (min-width: 800px){
+  					overflow-x: visible;
+				}
+				a {
+					margin: 1rem;
+				}
+				h1{margin: 0; display: inline}
+
+			`}>
+						<Link to="/accueil/alpha">
+							<h1>
+								vélo
 							<span css="border-radius: .3rem; padding: .1rem .6rem ;margin-left: .2rem; background: black; color: white">
-								libre
+									libre
 							</span>
-						</h1>
-					</Link>
+							</h1>
+
+						</Link>
+						<Link to="/documentation/à-propos">À propos</Link>
+						<Link to="/documentation/index">Documentation</Link>
+					</nav>
 				</header>
 				<Switch>
 					<Route path="/vélos/vl1">
@@ -45,8 +65,8 @@ function App() {
 					<Route path="/accueil/alpha" ><Home /></Route>
 					<Route path="/"><Redirect to="accueil/alpha" /></Route>
 				</Switch>
-			</Router>
-		</div>
+			</Router >
+		</div >
 	)
 }
 

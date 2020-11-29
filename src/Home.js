@@ -3,24 +3,18 @@ import {Link} from 'react-router-dom'
 
 export default ({}) => (
 	<div>
-		<div css="display:flex; max-width: 90vw; margin: 0 auto; flex-wrap: wrap; justify-content: center">
+		<div css="max-width: 60rem;  text-align: center; margin: 0 auto 6vh; ">
 			<p
-				css="margin: 1rem 0 .4rem; max-width: 50rem;font-size: 250%">
+				css={`
+				margin: 1rem 0 .4rem; font-size: 250%;
+@media (max-width: 800px) {
+font-size: 180%
+}
+				`}>
 				Un vélo aussi libre qu'un logiciel libre.
 			</p>
 			<p>En commençant par l'assemblage.</p>
 		</div>
-		<nav
-			css={`
-				text-align: center;
-				a {
-					margin: 0 1rem;
-				}
-			`}
-		>
-			<Link to="/documentation/à-propos">À propos</Link>
-			<Link to="/documentation/index">Documentation</Link>
-		</nav>
 		<ul
 			css={`
 				display: flex;
