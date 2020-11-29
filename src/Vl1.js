@@ -29,8 +29,6 @@ export default ({}) => {
 			([c, d]) => !isChosen(d) && !inclus.find((i) => i === c)
 		)
 
-	console.log('AA', inclus)
-
 	return (
 		<div
 			css={`
@@ -125,7 +123,10 @@ const ComposantChoices = ({ data, composant }) => {
 						</span>
 						{domain(url) && (
 							<span>
-								sur <a href={url}>{domain(url)}</a>
+								sur{' '}
+								<a href={url} target="_blank">
+									{domain(url)}
+								</a>
 							</span>
 						)}
 					</div>
