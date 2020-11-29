@@ -1,7 +1,6 @@
-import React, {useState} from 'react'
-import {Markdown} from './utils'
-import {useParams} from 'react-router-dom'
-
+import React, { useState } from 'react'
+import { Markdown } from './utils'
+import { useParams } from 'react-router-dom'
 
 var req = require.context('./articles', true, /\.md$/)
 const rawArticles = [...req.keys()]
@@ -10,7 +9,7 @@ const rawArticles = [...req.keys()]
 
 export const parsedArticles = rawArticles.map(([id, string]) => ({
 	body: string,
-	attributes: {},//no front matter here yet until we need attributes, it would load a yaml library
+	attributes: {}, //no front matter here yet until we need attributes, it would load a yaml library
 	id,
 }))
 
@@ -39,14 +38,14 @@ const getLastEdit = (name, action) =>
 		})
 
 export default ({}) => {
-	const {id} = useParams()
+	const { id } = useParams()
 	console.log(id, parsedArticles)
-	const theOne = parsedArticles.find(({id: id2}) => id === id2)
+	const theOne = parsedArticles.find(({ id: id2 }) => id === id2)
 
 	const [lastEditDate, setLastEditDate] = useState(null)
 
 	const {
-		attributes: {titre, date, image, sombre},
+		attributes: { titre, date, image, sombre },
 		body,
 	} = theOne
 
@@ -77,7 +76,7 @@ export default ({}) => {
 							<span>
 								Mis à jour le{' '}
 								<a
-									href={`https://github.com/${repo}/blob/master/articles/${id}.md`}
+									href={`https://github.com/${repo}/blob/master/src/articles/${id}.md`}
 								>
 									{lastEditDate}
 								</a>
@@ -91,7 +90,6 @@ export default ({}) => {
 		</div>
 	)
 }
-
 
 const articleStyle = `
 	max-width: 700px;
