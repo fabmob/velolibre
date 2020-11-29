@@ -13,6 +13,15 @@ const isChosen = (c) =>
 			c.alternatives[0].marque &&
 			c.alternatives[0].modèle))
 
+const firstBuyLinkAttribute = (c, attribute) =>
+	(c && c[attribute]) ||
+	(c && c.alternatives && c.alternatives[0][attribute]) ||
+	(c &&
+		c.alternatives &&
+		c.alternatives[0].achat &&
+		c.alternatives[0].achat[0][attribute])
+
+const getPrice = (el) => (el ? +el.replace('€', '') : 0)
 export default ({}) => {
 	const composants = Object.entries(vélo.composants),
 		chosen = composants.filter(([, d]) => isChosen(d)),
@@ -27,6 +36,10 @@ export default ({}) => {
 		),
 		notChosen = composants.filter(
 			([c, d]) => !isChosen(d) && !inclus.find((i) => i === c)
+		),
+		prixTotal = chosen.reduce(
+			(memo, [, c]) => memo + getPrice(firstBuyLinkAttribute(c, 'prix')),
+			0
 		)
 
 	return (
@@ -55,12 +68,16 @@ export default ({}) => {
 							rgba(0, 212, 255, 1) 100%
 						);
 						text-align: center;
+						border-radius: 0.3rem;
 					`}
 				>
 					Stade actuel : conception
 				</div>
 			</Link>
 			<p>{vélo.description}</p>
+			<p>
+				Prix provisoire : <strong>{prixTotal} €</strong>
+			</p>
 			<ul css="margin-top: 3rem">
 				{chosen.map((item) => (
 					<Composant item={item} />
