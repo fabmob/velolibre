@@ -7,11 +7,21 @@ import {useState} from 'react'
 import {Link} from 'react-router-dom'
 
 
-export default ({}) => (
-	<div>
-		<div
+const isChosen = c => c && ((c.marque && c.modèle) || c.alternatives?.length && (c.alternatives[0].marque && c.alternatives[0].modèle))
 
-			css={`
+export default ({}) => {
+	const composants = Object.entries(vélo.composants)
+		, chosen = composants.filter(([, d]) => isChosen(d)),
+		inclus = chosen.reduce((memo, next) => [...memo, ...(next[1].inclus || (next[1].alternatives && next[1].alternatives[0].inclus) || [])], [])
+		, notChosen = composants.filter(([c, d]) => !isChosen(d) && !inclus.find((i) => i === c))
+
+	console.log('AA', inclus)
+
+	return (
+		<div>
+			<div
+
+				css={`
 			max-width: 700px;
 			margin: 0 auto;
 				ul {
@@ -27,19 +37,26 @@ export default ({}) => (
 					margin-right: 1rem;
 				}
 			`}
-		><h1>{vélo.nom}</h1>
-			<Link to="/documentation/avancement"><div css={` font-weight: bold;
+			><h1>{vélo.nom}</h1>
+				<Link to="/documentation/avancement"><div css={` font-weight: bold;
 	padding: .1rem 1rem; border-radius: .1rem; color: white; background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 74%, rgba(0,212,255,1) 100%); text-align: center;
 	`}>Stade actuel : conception</div></Link>
-			<p>{vélo.description}</p>
-			<ul>
-				{Object.entries(vélo.composants).map(
-					item => <Composant item={item} />
-				)}
-			</ul>
+				<p>{vélo.description}</p>
+				<ul>
+					{chosen.map(
+						item => <Composant item={item} />
+					)}
+				</ul>
+				<h3>Composants pas encore choisis</h3>
+				<ul>
+					{notChosen.map(
+						item => <Composant item={item} />
+					)}
+				</ul>
+			</div >
 		</div >
-	</div >
-)
+	)
+}
 
 const ComposantImage = ({composant}) =>
 
@@ -63,7 +80,7 @@ const ComposantChoices = ({data, composant}) => {
 		, {modèle, marque} = chosen
 		, sold = chosen.achat ? chosen.achat[0] : chosen,
 		{prix, url} = sold,
-		inclus = chosen.inclus || sold.inclus
+		inclus = data.inclus || chosen.inclus || sold.inclus
 	return (
 		<div>
 			<Note data={note} />

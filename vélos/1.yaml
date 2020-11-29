@@ -207,6 +207,10 @@ composants:
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
   roues: 
+    inclus: 
+      - moyeu arrière
+      - moyeu avant
+      - corps de roue libre
     note: |
       Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready.
 
@@ -227,9 +231,8 @@ composants:
       - marque: Mavic
         modèle: Aksium disk
         prix: 200€
-        note: Pas une roue gravel à proprement parler, mais semble quand même convenir. Vérifier la largeur des pneus et si tubeless ready.
+        note: Pas une roue gravel à proprement parler, mais semble quand même convenir. Vérifier la largeur des pneus et si tubeless ready. Voir si disques centerlock ou 6 bolts.
         url: https://www.alltricks.com/F-46291-roues-route_ville_fixie/P-461643-mavic_aksium_disc_wheelset_2019___12_9x100mm___12x142mm_9x135mm___centerlock
-        note: Voir si disques centerlock ou 6 bolts.
       - marque: Mach1
         modèle: Stormer disc tubeless ready
         url: https://velox.fr/fr/252-mach1-stormer-disc-tubeless-ready
@@ -243,7 +246,6 @@ composants:
 
           Regarder si la version Stormer moyeu velox est faite en France ?
 
-        url: https://velox.fr/fr/251-mach1-gravel-disc
       - marque: Mavic
         modèle: Allroad UST disc
         note: L'entrée de la gamme Mavic gravel.
@@ -262,8 +264,6 @@ composants:
   pédales: 
   potence: 
   jeu de direction: 
-  guidon: 
-  roue libre: 
   moyeu arrière: 
   moyeu avant: 
   axe de pédalier: 
