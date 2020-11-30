@@ -136,6 +136,14 @@ composants:
       On m'a conseillé sinon le Richtey ventura max WCS.
 
       Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
+
+      
+      Decathlon donne ces tailles pour la largeur du cintre axe-axe sur la page de son gravel RC520 : 
+
+    > XS / S : 420 mm.
+      M / L : 440 mm.
+      XL : 460 mm.
+
     alternatives: 
       - marque: Decathlon
         modèle: Btwin cintre vélo gravel
@@ -273,7 +281,14 @@ composants:
   selle: 
   pédales: 
   potence: 
-    note: Il nous faut une potence de 28,575 mm (1,125 pouces) côté fourche. Vérifier qu'elle va bien avec le cintre.
+    note: |
+      Il nous faut une potence de 28,575 mm (1,125 pouces) côté fourche. Vérifier qu'elle va bien avec le cintre. 
+      Decathlon donne ces tailles pour la potence sur la page de son gravel RC520 : 
+
+      > XS / S : 80 mm.
+        M : 100 mm.
+        L : 110 mm.
+        XL : 120 mm
     marque: Decathlon
     modèle: Potence route performance noir satin
     prix: 20€
