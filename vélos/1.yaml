@@ -283,16 +283,24 @@ composants:
   potence: 
     note: |
       Il nous faut une potence de 28,575 mm (1,125 pouces) côté fourche. Vérifier qu'elle va bien avec le cintre. 
+
       Decathlon donne ces tailles pour la potence sur la page de son gravel RC520 : 
 
       > XS / S : 80 mm.
         M : 100 mm.
         L : 110 mm.
         XL : 120 mm
-    marque: Decathlon
-    modèle: Potence route performance noir satin
-    prix: 20€
-    url: https://www.decathlon.fr/p/potence-velo-route-performance-noire-satin/_/R-p-308976
+    alternatives: 
+      - marque: Decathlon
+        modèle: Potence route performance noir satin
+        note: Semble être la potence du [gravel carbone Van Rysel](https://www.decathlon.fr/p/velo-cyclo-cross-rcx-van-rysel-grx-1x/_/R-p-324261#zoom=opened).
+        prix: 20€
+        url: https://www.decathlon.fr/p/potence-velo-route-performance-noire-satin/_/R-p-308976
+      - marque: Decathlon
+        modèle: Triban 100
+        prix: 18€
+        note: La potence utilisée sur le [gravel RC520](https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901). Le marquage "100" fait tache je trouve.
+        url: https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901
   jeu de direction: 
   moyeu arrière: 
   moyeu avant: 
