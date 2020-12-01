@@ -250,11 +250,6 @@ composants:
       Pour l'instant, on va éviter l'étape du rayonnage des jantes. Pour aller plus loin, voir [cette explication](https://breizhbamboo.bike/les-rayons/) du super Breizhbamboobike sur le sujet.
 
     alternatives: 
-      - marque: Mavic
-        modèle: Aksium disk
-        prix: 200€
-        note: Pas une roue gravel à proprement parler, mais semble quand même convenir. Vérifier la largeur des pneus et si tubeless ready. Voir si disques centerlock ou 6 bolts.
-        url: https://www.alltricks.com/F-46291-roues-route_ville_fixie/P-461643-mavic_aksium_disc_wheelset_2019___12_9x100mm___12x142mm_9x135mm___centerlock
       - marque: Mach1
         modèle: Stormer disc tubeless ready
         url: https://velox.fr/fr/252-mach1-stormer-disc-tubeless-ready
@@ -268,6 +263,11 @@ composants:
 
           Regarder si la version Stormer moyeu velox est faite en France ?
 
+      - marque: Mavic
+        modèle: Aksium disk
+        prix: 200€
+        note: Pas une roue gravel à proprement parler, mais semble quand même convenir. Vérifier la largeur des pneus et si tubeless ready. Voir si disques centerlock ou 6 bolts.
+        url: https://www.alltricks.com/F-46291-roues-route_ville_fixie/P-461643-mavic_aksium_disc_wheelset_2019___12_9x100mm___12x142mm_9x135mm___centerlock
       - marque: Mavic
         modèle: Allroad UST disc
         note: L'entrée de la gamme Mavic gravel.
@@ -289,14 +289,14 @@ composants:
         taille: 35mm
         couleur: noir
         url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html
-        prix: 28€
+        prix: 56€
       - marque: Hutchinson
         modèle: Overide Reinforced Tubeless Ready 700x38mm
 
         taille: 38mm
         couleur: beige
         url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html#/18530410001-8-coloris-noir/1909-dimension_pneu-700x35/1918-type_de_pneumatique-tubeless_ready/2164-tringles_pneus-souples
-        prix: 30€
+        prix: 60€
 
   collier de selle:
   tige de selle: 
