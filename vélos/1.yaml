@@ -29,8 +29,13 @@ composants:
           > Front Axle: 12 x 100 Thru-axle (included)
           > Rear Axle: 142 x 12mm Thru-axle (included)
 
+          > Includes: Thru axles and headset
+
+          J'en déduis que le jeu de direction complet est inclus, y compris l'étoile.
+
         inclus: 
           - fourche
+          - jeu de direction
         #  - axe avant
         #  - axe arrière
         poids: 2100g # mettre {taille M: 2100, L: etc}
@@ -137,12 +142,11 @@ composants:
 
       Voir [ce guide gravel](https://caminade.eu/quel.cintre.choisir.pour.votre.velo.gravel-33-762.php).
 
-      
       Decathlon donne ces tailles pour la largeur du cintre axe-axe sur la page de son gravel RC520 : 
 
-    > XS / S : 420 mm.
-      M / L : 440 mm.
-      XL : 460 mm.
+      > XS / S : 420 mm.
+        M / L : 440 mm.
+        XL : 460 mm.
 
     alternatives: 
       - marque: Decathlon
@@ -276,6 +280,24 @@ composants:
 
       Pour la taille, on va viser du 35mm minimum pour être confortable sur chemins mais avec un usage majoritairement route.
 
+      Un [guide de Caminade](https://caminade.eu/comment.choisir.vos.pneus.gravel-33-1117.php) pour choisir les pneus, avec 4 choix et un tableau comparatif.
+      
+      Un [autre guide](https://www.velomag.com/destinations/quebec/la-route-verte-insoupconnee/) qui semble plus conservateur (- épais) sur les tailles de pneus.
+    alternatives: 
+      - marque: Hutchinson
+        modèle: Overide Reinforced Tubeless Ready 700x35mm
+        taille: 35mm
+        couleur: noir
+        url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html
+        prix: 28€
+      - marque: Hutchinson
+        modèle: Overide Reinforced Tubeless Ready 700x38mm
+
+        taille: 38mm
+        couleur: beige
+        url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html#/18530410001-8-coloris-noir/1909-dimension_pneu-700x35/1918-type_de_pneumatique-tubeless_ready/2164-tringles_pneus-souples
+        prix: 30€
+
   collier de selle:
   tige de selle: 
   selle: 
@@ -301,6 +323,3 @@ composants:
         prix: 18€
         note: La potence utilisée sur le [gravel RC520](https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901). Le marquage "100" fait tache je trouve.
         url: https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901
-  jeu de direction: 
-  moyeu arrière: 
-  moyeu avant: 
