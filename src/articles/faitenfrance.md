@@ -8,4 +8,5 @@ Ici des conseils avisés : https://breizhbamboo.bike/velos/options/ et https://b
 
 On peut voir ici [un beau reportage illustré](https://www.vojomag.com/mach-1-visite-made-in-france-meconnu/) sur l'usine Mach1, qui fait des jantes et rayons.
 
+Une [super carte](http://www.velo-design.com/velo-made-in-france/) qui liste les marques françaises **qui construisent leur cadre**.
 
