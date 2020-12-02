@@ -300,7 +300,31 @@ composants:
 
   collier de selle:
   tige de selle: 
+    note: |
+      J'ai remarqué que les tiges de selle en carbone apportent un certain confort. Mais elles coûtent bien plus cher, de 40€ pour la decathlon (mais pas le bon diamètre) à 70€ pour l'entrée de gamme des marques.
+
+      Les choix ici sont faits un peu au pif.
+
+      Voir ce lien éventuellement https://www.merlincycles.com/search?w=seatpost&seatpost_diameter=31-6mm&sort=price-min
+
+      Il faut juste accorder la tige à la selle choisie. Peut-être partir de la selle du coup.
+    alternatives: 
+      - marque: Deda ZERO Recul 18 mm
+        taille: 31,6/350mm
+        url: https://www.probikeshop.fr/tige-de-selle-deda-zero-recul-18-mm/133910.html
+        prix: 15€
+      - marque: Pro
+        modèle: LT recul 20mm aluminium 
+        taille: 31,6/400mm
+        url: https://www.materiel-velo.com/1852011-tige-de-selle-velo-route-pro-lt-recul-20mm-aluminium-noir.html
+        prix: 25€
   selle: 
+    alternatives: 
+      - marque: Decathlon
+        modèle: Triban sport 900 light
+        url: https://www.decathlon.fr/p/selle-velo-sport-900-light/_/R-p-168776
+        prix: 30€
+        poids: 260g
   pédales: 
   potence: 
     note: |
