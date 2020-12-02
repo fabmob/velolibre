@@ -111,6 +111,8 @@ Peut-être est-ce une réflexion débile, mais j'ai l'impression que les vélos 
 
 A vérifier, mais je crois bien que seul le bois peut être sourcé entièrement en France : nous n'avons plus aucune mine de métal, mais peut-être que l'on peut recycler l'aluminium existant. Pour le carbone, j'imagine qu'on peut "facilement" produire de la fibre de carbone, mais que la résine provient des hydrocarbures... ? Et puis les cadres en bois ou carbone comportent des "inserts" en métal.
 
+On peut trouver ici [une liste et carte](http://www.velo-design.com/velo-made-in-france/) des marques qui créent leur propre cadre. D'après les premiers liens que j'ai parcourus, on reste sur la tendance des cadres sur-mesure, particulier ou luxe à plus de 1000€. Mais on peut peut-être y dénicher des cadreurs moins haut de gamme.
+
 ### En pratique
 
 Ce serait intéressant de faire un stage chez ces professionnels :
