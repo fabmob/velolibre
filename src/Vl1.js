@@ -5,6 +5,7 @@ import { domain } from './utils'
 import { Markdown } from './utils'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import velos from './velos.yaml'
 
 const isChosen = (c) =>
 	c &&
@@ -40,7 +41,8 @@ export default ({}) => {
 		prixTotal = chosen.reduce(
 			(memo, [, c]) => memo + getPrice(firstBuyLinkAttribute(c, 'prix')),
 			0
-		)
+		),
+		image = velos.find(({ nom }) => nom === vélo.nom).image
 
 	return (
 		<div
@@ -56,7 +58,10 @@ export default ({}) => {
 				}
 			`}
 		>
-			<h1>{vélo.nom}</h1>
+			<div css="display: flex; align-items: center; >img {margin-right: 1rem}">
+				{image && <img src={require('./' + image).default} />}
+				<h1>{vélo.nom}</h1>
+			</div>
 			<Link to="/documentation/avancement">
 				<div
 					css={`
