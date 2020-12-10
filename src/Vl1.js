@@ -51,6 +51,9 @@ export default ({}) => {
 				ul {
 					list-style-type: none;
 				}
+				> a {
+					text-decoration: none;
+				}
 			`}
 		>
 			<h1>{vélo.nom}</h1>
@@ -58,14 +61,13 @@ export default ({}) => {
 				<div
 					css={`
 						font-weight: bold;
-						padding: 0.1rem 1rem;
+						padding: 0.3rem 1rem;
 						border-radius: 0.1rem;
 						color: white;
 						background: linear-gradient(
 							90deg,
 							rgba(2, 0, 36, 1) 0%,
-							rgba(9, 9, 121, 1) 74%,
-							rgba(0, 212, 255, 1) 100%
+							rgba(9, 9, 121, 1) 74%
 						);
 						text-align: center;
 						border-radius: 0.3rem;
