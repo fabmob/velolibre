@@ -120,7 +120,7 @@ const cascading = (list) =>
 		const first = Array.isArray(next) ? next[0] : next
 		return next ? { ...memo, ...first } : memo
 	}, {})
-const Alternative = (alternative) => {
+const Alternative = ({ alternative, chosen }) => {
 	const { prix, url, inclus, marque, modèle, rupture } = cascading([
 		alternative,
 		alternative.achat,
@@ -138,7 +138,7 @@ const Alternative = (alternative) => {
 				div {
 					margin-top: 0.4rem;
 				}
-				${rupture ? `border: 2px solid ${ruptureColor}` : ''}
+				${chosen && `border: 4px solid var(--color)`}
 			`}
 		>
 			<div>
@@ -232,8 +232,8 @@ const ComposantChoices = ({ data, composant }) => {
 			`}
 		>
 			<div>
-				{alternatives.map((a) => (
-					<Alternative {...a} />
+				{alternatives.map((alternative, i) => (
+					<Alternative {...{ alternative, chosen: i === 0 }} />
 				))}
 			</div>
 		</div>
