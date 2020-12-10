@@ -23,3 +23,20 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+button.simple {
+	background: var(--color);
+	border: none;
+	padding: 0.1rem 0.6rem;
+	font-size: 100%;
+	font-weight: normal;
+	color: var(--lighterColor);
+}
+button {
+	background: var(--color);
+	border: none;
+	padding: 0.2rem 0.8rem;
+	font-size: 110%;
+	font-weight: bold;
+	color: var(--lighterColor);
+}

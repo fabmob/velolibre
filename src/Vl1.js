@@ -104,7 +104,7 @@ const ComposantImage = ({ composant }) => (
 		`}
 	>
 		<img
-			css="width: 5rem"
+			css="width: 6rem"
 			src={'/composants/' + correspondance[composant] + '.svg'}
 		/>
 		<div css="text-transform: uppercase; font-size: 85%; color: #666">
@@ -273,7 +273,7 @@ const Note = ({ data }) => {
 			css={`
 				p {
 					margin-bottom: 0.3rem;
-					max-width: 20rem;
+					max-width: 30rem;
 				}
 				button {
 					margin: 0.3rem;
@@ -282,7 +282,7 @@ const Note = ({ data }) => {
 		>
 			<Markdown source={open ? data : intro} />
 			<div css="display: flex; justify-content: end; margin-bottom: 1rem; padding-right: 1rem">
-				<button onClick={() => setOpen(!open)}>
+				<button className="simple" onClick={() => setOpen(!open)}>
 					{' '}
 					{open ? 'Réduire' : 'Lire plus'}
 				</button>
