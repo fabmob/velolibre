@@ -92,17 +92,25 @@ composants:
           - url: https://www.materiel-velo.com/1858732-etrier-velo-route-avid-bb7-disque-mecanique.html
             prix: 54€
           - url: https://www.probikeshop.fr/frein-arriere-a-disque-sram-bb7-road/117408.html
-            prix: 85
+            prix: 85€
           - url: https://www.materiel-velo.com/1858732-etrier-velo-route-avid-bb7-disque-mecanique.html
-            prix: 54
+            prix: 54€
         inclus: 
           - disques
       - url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique-arriere/_/R-p-202955
+        modèle: Kit freins disque mécaniques
+        marque: Decathlon
+        prix: 30€
+        note: Semble être une version générique faite pour Decathlon.
+
       - url: https://www.decathlon.fr/p/kit-frein-mecanique-hayes-mx-5-disque-160mm/_/R-p-196567
-      - marque: Décathlon
-        modèle: KIT FREIN A DISQUE MECANIQUE
+        modèle: MX 5
+        marque: Hayes
+        prix: 25€
+      - marque: Decathlon
+        modèle: Kit freins disque mécaniques
         url: https://www.decathlon.fr/p/kit-frein-a-disque-mecanique/_/R-p-141530
-        prix: 29.90€
+        prix: 30€
         note: Alternative bas coût. Quel format, postmount, flatmount ? En tout cas vendu avec adaptateur
       - marque: TRP 
         modèle: Spyre
