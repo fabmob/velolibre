@@ -336,7 +336,8 @@ composants:
 
       Il faut juste accorder la tige à la selle choisie. Peut-être partir de la selle du coup.
     alternatives: 
-      - marque: Deda ZERO Recul 18 mm
+      - marque: Deda 
+        modèle: Zero Recul 18 mm
         taille: 31,6/350mm
         url: https://www.probikeshop.fr/tige-de-selle-deda-zero-recul-18-mm/133910.html
         prix: 15€

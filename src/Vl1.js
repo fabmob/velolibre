@@ -58,37 +58,40 @@ export default ({}) => {
 				}
 			`}
 		>
-			<div css="display: flex; align-items: center; >img {margin-right: 1rem}">
-				{image && <img src={require('./' + image).default} />}
-				<h1>{vélo.nom}</h1>
-			</div>
-			<Link to="/documentation/avancement">
-				<div
-					css={`
-						font-weight: bold;
-						padding: 0.3rem 1rem;
-						border-radius: 0.1rem;
-						color: white;
-						background: linear-gradient(
-							90deg,
-							rgba(2, 0, 36, 1) 0%,
-							rgba(9, 9, 121, 1) 74%
-						);
-						text-align: center;
-						border-radius: 0.3rem;
-					`}
-				>
-					Stade actuel : conception
+			<header css="margin-bottom: 3rem">
+				<div css="display: flex; align-items: center; >img {margin-right: 1rem}">
+					{image && <img src={require('./' + image).default} />}
+					<h1>{vélo.nom}</h1>
 				</div>
-			</Link>
-			<p>{vélo.description}</p>
-			<p>
-				Prix provisoire : <strong>{prixTotal} €</strong>
-				<button css="margin-left: 1rem" onClick={() => alert('Bientôt ;)')}>
-					Assembler
-				</button>
-			</p>
-			<ul css="margin-top: 3rem">
+				<Link to="/documentation/avancement">
+					<div
+						css={`
+							font-weight: bold;
+							padding: 0.3rem 1rem;
+							border-radius: 0.1rem;
+							color: white;
+							background: linear-gradient(
+								90deg,
+								rgba(2, 0, 36, 1) 0%,
+								rgba(9, 9, 121, 1) 74%
+							);
+							text-align: center;
+							border-radius: 0.3rem;
+						`}
+					>
+						Stade actuel : conception
+					</div>
+				</Link>
+				<p>{vélo.description}</p>
+				<p>
+					Prix provisoire : <strong>{prixTotal} €</strong>
+					<button css="margin-left: 1rem" onClick={() => alert('Bientôt ;)')}>
+						Assembler
+					</button>
+				</p>
+			</header>
+			<h2>Les composants</h2>
+			<ul>
 				{chosen.map((item) => (
 					<Composant item={item} />
 				))}
