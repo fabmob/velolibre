@@ -32,6 +32,11 @@ composants:
           > Includes: Thru axles and headset
 
           J'en déduis que le jeu de direction complet est inclus, y compris l'étoile.
+        rupture: 
+          tailles: 
+            - 54
+            - 56
+          réapprovisionnement: avril 2021
 
         inclus: 
           - fourche
@@ -44,14 +49,23 @@ composants:
           - carbone
       - marque: Octane One
         modèle: Gridd Gravel 2019
-        note: Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes contrairement au Merlin.
+        note: |
+          Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes et sans trous pour attacher des portes-bagage. 
+          Ce dernier point n'est pas forcément bloquant, on peut trouver des porte bagages avec attache selle. Reste à voir pour l'attache sur l'axe de roue.
         prix: 369€
-        url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
+        achat: 
+          - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
+          - url: https://www.wiggle.fr/cadre-ns-bikes-gridd-gravel-2019?lang=fr&curr=EUR&dest=11&sku=101698969
+        rupture:
+          note: J'ai pris le dernier en taille L 😅
       - marque: Bike components
         modèle: BC originals Flint
         prix: 554.62€
         rupture: oui
-        note: Ce cadre est intéressant, c'est un cadre "basique" d'un magasin en ligne, moins cher que les cadres de marque, au style... basique donc parfait pour assembler un vélo.
+        note: |
+          Ce cadre est intéressant, c'est un cadre "basique" d'un magasin en ligne, moins cher que les cadres de marque, au style... basique donc parfait pour assembler un vélo.
+          Attaches porte bagage présentes.
+
   étriers de frein: 
     note: |
       Les freins à disque sont incontournables pour le gravel, pour plusieurs raisons pratiques. 
@@ -353,3 +367,4 @@ composants:
         prix: 18€
         note: La potence utilisée sur le [gravel RC520](https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901). Le marquage "100" fait tache je trouve.
         url: https://www.decathlon.fr/p/potence-b-twin-100/_/R-p-197901
+
