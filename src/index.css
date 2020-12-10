@@ -25,18 +25,19 @@ ul {
 }
 
 button.simple {
-	background: var(--color);
-	border: none;
-	padding: 0.1rem 0.6rem;
+	background: none;
+	border: 2px solid var(--color);
+	padding: 0rem 0.6rem;
 	font-size: 100%;
 	font-weight: normal;
-	color: var(--lighterColor);
+	color: var(--color);
+	text-transform: none;
 }
 button {
 	background: var(--color);
 	border: none;
-	padding: 0.2rem 0.8rem;
-	font-size: 110%;
-	font-weight: bold;
+	padding: 0.3rem 1rem;
+	font-size: 120%;
 	color: var(--lighterColor);
+	text-transform: uppercase;
 }
