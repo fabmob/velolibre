@@ -85,7 +85,7 @@ export default ({}) => {
 				<p>{vélo.description}</p>
 				<p>
 					Prix provisoire : <strong>{prixTotal} €</strong>
-					<button css="margin-left: 1rem" onClick={() => alert('Bientôt ;)')}>
+					<button css="margin: 1rem" onClick={() => alert('Bientôt ;)')}>
 						Assembler
 					</button>
 				</p>
