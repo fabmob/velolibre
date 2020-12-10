@@ -33,9 +33,9 @@ composants:
 
           J'en déduis que le jeu de direction complet est inclus, y compris l'étoile.
         rupture: 
-          tailles: 
-            - 54
-            - 56
+          tailles dispo: 
+            - 47cm
+            - 50cm
           réapprovisionnement: avril 2021
 
         inclus: 
@@ -57,6 +57,9 @@ composants:
           - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
           - url: https://www.wiggle.fr/cadre-ns-bikes-gridd-gravel-2019?lang=fr&curr=EUR&dest=11&sku=101698969
         rupture:
+          tailles dispo: 
+            - 47cm
+            - 50cm
           note: J'ai pris le dernier en taille L 😅
       - marque: Bike components
         modèle: BC originals Flint

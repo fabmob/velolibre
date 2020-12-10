@@ -121,13 +121,26 @@ const cascading = (list) =>
 		return next ? { ...memo, ...first } : memo
 	}, {})
 const Alternative = (alternative) => {
-	const { prix, url, inclus, marque, modèle } = cascading([
+	const { prix, url, inclus, marque, modèle, rupture } = cascading([
 		alternative,
 		alternative.achat,
 	])
 
+	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
+		ruptureType =
+			rupture && rupture['tailles dispo'] ? 'tailles limitées' : 'rupture'
+
 	return (
-		<Card css="margin: 1rem 0; width: 12rem; div {margin-top: .4rem}">
+		<Card
+			css={`
+				margin: 1rem 0;
+				width: 12rem;
+				div {
+					margin-top: 0.4rem;
+				}
+				${rupture ? `border: 2px solid ${ruptureColor}` : ''}
+			`}
+		>
 			<div>
 				<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">
 					{marque}
@@ -164,9 +177,20 @@ const Alternative = (alternative) => {
 				</div>
 			)}
 			<div>
-				<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
-					{prix}
-				</span>
+				<div>
+					<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
+						{prix}
+					</span>
+					{rupture && (
+						<span
+							css={`
+								color: ${ruptureColor};
+							`}
+						>
+							{ruptureType}
+						</span>
+					)}
+				</div>
 				<div>
 					{domain(url) && (
 						<a href={url} target="_blank">
