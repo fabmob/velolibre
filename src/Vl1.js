@@ -208,7 +208,7 @@ const Alternative = ({ alternative, chosen }) => {
 const ComposantChoices = ({ data, composant }) => {
 	if (!data) return <Missing />
 
-	const alternatives = data.alternatives || (data.modèle ? data : [])
+	const alternatives = data.alternatives || (data.modèle ? [data] : [])
 
 	const Alternatives = !alternatives.length ? (
 		<Missing />
