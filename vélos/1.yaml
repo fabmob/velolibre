@@ -20,6 +20,21 @@ composants:
 
       Reste donc la possibilité d'aller les chercher à la source, ou d'en construire un soi-même. Voir la page de documentation sur les [cadres de vélo](/documentation/cadre).
     alternatives:
+      - marque: Octane One
+        modèle: Gridd Gravel 2019
+        note: |
+          Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes et sans trous pour attacher des portes-bagage. 
+          Ce dernier point n'est pas forcément bloquant, on peut trouver des porte bagages avec attache selle. Reste à voir pour l'attache sur l'axe de roue.
+        prix: 369€
+        achat: 
+          - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
+          - url: https://www.wiggle.fr/cadre-ns-bikes-gridd-gravel-2019?lang=fr&curr=EUR&dest=11&sku=101698969
+        rupture:
+          tailles dispo: 
+            - 47cm
+            - 50cm
+          note: J'ai pris le dernier en taille L 😅
+        page officielle: https://octane-one.com/part/gridd-gravel-frameset
       - modèle: Malt G2X gravel
         marque: Merlin
         url: https://www.merlincycles.com/merlin-malt-g2x-gravel-frameset-197832.html
@@ -47,20 +62,6 @@ composants:
         matériaux: 
           - aluminium
           - carbone
-      - marque: Octane One
-        modèle: Gridd Gravel 2019
-        note: |
-          Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes et sans trous pour attacher des portes-bagage. 
-          Ce dernier point n'est pas forcément bloquant, on peut trouver des porte bagages avec attache selle. Reste à voir pour l'attache sur l'axe de roue.
-        prix: 369€
-        achat: 
-          - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
-          - url: https://www.wiggle.fr/cadre-ns-bikes-gridd-gravel-2019?lang=fr&curr=EUR&dest=11&sku=101698969
-        rupture:
-          tailles dispo: 
-            - 47cm
-            - 50cm
-          note: J'ai pris le dernier en taille L 😅
       - marque: Bike components
         modèle: BC originals Flint
         prix: 554.62€
