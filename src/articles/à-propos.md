@@ -2,7 +2,7 @@
 
 🏗️ Ce site est en construction, il est déployé au fil de l'eau.
 
-Il participe au <a href="https://www.hackathonvelo.fr">hackathon vélo 2020</a>.
+Il a terminé 2ème au <a href="https://www.hackathonvelo.fr">hackathon vélo 2020</a> 🤩.
 
 L'objectif est d'explorer la possibilité d'un vélo libre, comme on conçoit un logiciel libre.
 
@@ -25,3 +25,9 @@ Phase 2 : **assembler un vélo en France, c'est possible ?** À 70% ? Pour quel 
 Eh oui, dans le monde du logiciel libre, on doit être capable de refabriquer nous-mêmes une pièce de l'ensemble. Impensable si le savoir faire n'est pas documenté et si nous ne disposons pas du savoir faire pratique et des outils localement.
 
 Phase 3 : **explorer la conception elle-même de certains composants**, à commencer par le cadre, le coeur du vélo.
+
+## Qui travaille dessus ? Comment aider ou poser des questions ?
+
+💬 Venez poser des questions sur [ce forum](https://forum.fabmob.io/t/velo-open-source/715/2)
+
+🛠️ Venez mettre les mains dans le cambouis du code sur [github.com/laem/velolibre](https://github.com/laem/velolibre)
