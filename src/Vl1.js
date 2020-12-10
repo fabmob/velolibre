@@ -114,71 +114,86 @@ const ComposantImage = ({ composant }) => (
 )
 
 const Missing = () => <div css="text-align: center; font-size: 200%">🔭</div>
+
+const cascading = (list) =>
+	list.reduce((memo, next) => {
+		const first = Array.isArray(next) ? next[0] : next
+		return next ? { ...memo, ...first } : memo
+	}, {})
+const Alternative = (alternative) => {
+	const { prix, url, inclus, marque, modèle } = cascading([
+		alternative,
+		alternative.achat,
+	])
+
+	return (
+		<Card css="margin: 1rem 0; width: 12rem; div {margin-top: .4rem}">
+			<div>
+				<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">
+					{marque}
+				</span>
+				<span>{modèle}</span>
+			</div>
+			{inclus && (
+				<div
+					css={`
+						ul {
+							padding: 0;
+							display: inline-block;
+							display: flex;
+							align-items: center;
+							justify-content: start;
+						}
+						li {
+							margin: 0 0.6rem;
+						}
+					`}
+				>
+					<ul>
+						<li>+</li>
+						{inclus.map((ci) => (
+							<li>
+								<img
+									alt={ci}
+									css="width: 2rem"
+									src={'/composants/' + correspondance[ci] + '.svg'}
+								/>
+							</li>
+						))}
+					</ul>
+				</div>
+			)}
+			<div>
+				<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
+					{prix}
+				</span>
+				<div>
+					{domain(url) && (
+						<a href={url} target="_blank">
+							{domain(url)}
+						</a>
+					)}
+				</div>
+			</div>
+		</Card>
+	)
+}
+
 const ComposantChoices = ({ data, composant }) => {
 	if (!data) return <Missing />
 
 	const note = data.note,
-		chosen = data.alternatives ? data.alternatives[0] : data,
-		{ modèle, marque } = chosen,
-		sold = chosen.achat ? chosen.achat[0] : chosen,
-		{ prix, url } = sold,
-		inclus = data.inclus || chosen.inclus || sold.inclus
+		alternatives = data.alternatives || (data.modèle ? data : [])
+
+	const Alternatives = !alternatives.length ? (
+		<Missing />
+	) : (
+		alternatives.map((a) => <Alternative {...a} />)
+	)
 	return (
 		<div>
 			<Note data={note} />
-			{modèle ? (
-				<Card css="margin: 1rem 0;width: 18rem; div {margin-top: .4rem}">
-					<div>
-						<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">
-							{marque}
-						</span>
-						<span>{modèle}</span>
-					</div>
-					<div>
-						<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
-							{prix}
-						</span>
-						{domain(url) && (
-							<span>
-								sur{' '}
-								<a href={url} target="_blank">
-									{domain(url)}
-								</a>
-							</span>
-						)}
-					</div>
-					{inclus && (
-						<div
-							css={`
-								ul {
-									padding: 0;
-									display: inline-block;
-									display: flex;
-									align-items: center;
-									justify-content: start;
-								}
-								li {
-									margin: 0 0.6rem;
-								}
-							`}
-						>
-							<ul>
-								{inclus.map((ci) => (
-									<li>
-										<img
-											alt={ci}
-											css="width: 2rem"
-											src={'/composants/' + correspondance[ci] + '.svg'}
-										/>
-									</li>
-								))}
-							</ul>
-						</div>
-					)}
-				</Card>
-			) : (
-				<Missing />
-			)}
+			{Alternatives}
 		</div>
 	)
 }
