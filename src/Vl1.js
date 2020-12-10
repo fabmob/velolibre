@@ -133,7 +133,7 @@ const Alternative = (alternative) => {
 	return (
 		<Card
 			css={`
-				margin: 1rem 0;
+				margin: 1rem;
 				width: 12rem;
 				div {
 					margin-top: 0.4rem;
@@ -206,20 +206,39 @@ const Alternative = (alternative) => {
 const ComposantChoices = ({ data, composant }) => {
 	if (!data) return <Missing />
 
-	const note = data.note,
-		alternatives = data.alternatives || (data.modèle ? data : [])
+	const alternatives = data.alternatives || (data.modèle ? data : [])
 
 	const Alternatives = !alternatives.length ? (
 		<Missing />
 	) : (
-		alternatives.map((a) => <Alternative {...a} />)
-	)
-	return (
-		<div>
-			<Note data={note} />
-			{Alternatives}
+		<div
+			css={`
+				> div {
+					whitespace: nowrap;
+					display: flex;
+					flex-wrap: wrap;
+				}
+				@media (max-width: 800px) {
+					overflow-y: hidden;
+					overflow-x: scroll;
+					height: 16rem;
+					max-width: 90vw;
+					> div {
+						whitespace: nowrap;
+						display: flex;
+						flex-wrap: nowrap;
+					}
+				}
+			`}
+		>
+			<div>
+				{alternatives.map((a) => (
+					<Alternative {...a} />
+				))}
+			</div>
 		</div>
 	)
+	return <div>{Alternatives}</div>
 }
 const Composant = ({ item: [composant, data] }) => {
 	return (
@@ -227,10 +246,10 @@ const Composant = ({ item: [composant, data] }) => {
 			css={`
 				padding: 2rem 0 0rem;
 				display: flex;
+				flex-direction: column;
 				margin: 1rem;
 				align-items: center;
 				justify-content: center;
-				flex-wrap: wrap;
 				img {
 					margin-right: 1rem;
 				}
@@ -238,6 +257,7 @@ const Composant = ({ item: [composant, data] }) => {
 			key={composant}
 		>
 			<ComposantImage composant={composant} />
+			<Note data={data?.note} />
 			<ComposantChoices composant={composant} data={data} />
 		</li>
 	)
