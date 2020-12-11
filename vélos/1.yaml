@@ -25,6 +25,11 @@ composants:
         note: |
           Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes et sans trous pour attacher des portes-bagage. 
           Ce dernier point n'est pas forcément bloquant, on peut trouver des porte bagages avec attache selle. Reste à voir pour l'attache sur l'axe de roue.
+
+          Attention : les questions posées sur CRC indiquent que le cadre peut etre livré avec ou sans potence et collier de selle...
+        specs:
+          tige de selle: 27.2mm
+          collier de selle: 31.8mm
         prix: 369€
         achat: 
           - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
@@ -128,7 +133,13 @@ composants:
 
           D'après [ces retours](https://www.reddit.com/r/gravelcycling/comments/gutw00/mech_disc_brake_suggestions_avid_bb5bb7_trp_spyre/), ils sont meilleurs que les BB7.
         
-  cables et gaines: 
+  cables et gaines dérailleurs:
+    modèle: 
+    url: https://www.materiel-velo.com/1863028-kit-cable-et-gaine-derailleur-vtt-et-route-jagwire-1xsport-shift-kit.html
+    prix: 10€
+    modèle: 1x sport shift kit
+    marque: Jagwire
+  cables et gaines freins: 
     note: |
       Prendre de bons trucs, genre Jagwire kevlar, pour avoir une bonne qualité de freinage.
       Explications du compressionless housing dans [cet article](https://www.cxmagazine.com/mechanical-monday-upgrade-compressionless-brake-housing).
@@ -138,7 +149,10 @@ composants:
 
 
       > For mech discs, I highly recommend compressionless brake housings like Jagwire Pro or Yokozuna. These have many parallel wires like shift housings rather than a single spiral wire. The cables are smoother too. With these cables, mech discs can feel nearly as solid, smooth and frictionless as hydro. The downside to these housings is that they're considerably stiffer than the spiral housings so a bit trickier to install.
-      url: https://www.bike-components.de/fr/Jagwire/Set-de-Cables-de-Frein-Mountain-Pro-p56901/
+    achat: 
+      - url: https://www.materiel-velo.com/1847388-kit-cables-et-gaines-freins-vtt-jagwire-mountain-pro.html
+        prix: 25€
+      - url: https://www.bike-components.de/fr/Jagwire/Set-de-Cables-de-Frein-Mountain-Pro-p56901/
   poignée droite: 
     alternatives:
       - 
@@ -328,6 +342,13 @@ composants:
         prix: 60€
 
   collier de selle:
+    alternatives:
+      - url: https://www.decathlon.fr/p/collier-selle-31-8-mm-pour-tige-de-selle-carbone/_/R-p-180
+        marque: Decathlon
+        modèle: Collier de selle pour tige carbone
+        specs:
+          collier de selle: 31.8mm
+
   tige de selle: 
     note: |
       J'ai remarqué que les tiges de selle en carbone apportent un certain confort. Mais elles coûtent bien plus cher, de 40€ pour la decathlon (mais pas le bon diamètre) à 70€ pour l'entrée de gamme des marques.
@@ -338,6 +359,12 @@ composants:
 
       Il faut juste accorder la tige à la selle choisie. Peut-être partir de la selle du coup.
     alternatives: 
+      - marque: Decathlon
+        prix: 40€
+        modèle: Tige de selle carbone
+        specs: 
+          tige de selle: 27.2mm
+        note: La tige en carbone la moins chère trouvée. Le flex de la tige semble important pour le confort vertical.
       - marque: Deda 
         modèle: Zero Recul 18 mm
         taille: 31,6/350mm
