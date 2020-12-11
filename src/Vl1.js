@@ -1,11 +1,8 @@
-import correspondance from './correspondance-icônes.yaml'
 import vélo from '../vélos/1.yaml'
-import { Card } from './ui'
-import { domain } from './utils'
-import { Markdown } from './utils'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Route, Link, Switch } from 'react-router-dom'
 import velos from './velos.yaml'
+import Composant from './Composant'
 
 const isChosen = (c) =>
 	c &&
@@ -83,223 +80,79 @@ export default ({}) => {
 					</div>
 				</Link>
 				<p>{vélo.description}</p>
-				<p>
-					Prix provisoire : <strong>{prixTotal} €</strong>
-					<button css="margin: 1rem" onClick={() => alert('Bientôt ;)')}>
-						Assembler
-					</button>
-				</p>
 			</header>
-			<h2>Les composants</h2>
-			<ul>
-				{chosen.map((item) => (
-					<Composant item={item} />
-				))}
-			</ul>
-			<h3>Composants pas encore choisis</h3>
-			<ul>
-				{notChosen.map((item) => (
-					<Composant item={item} />
-				))}
-			</ul>
+			<Switch>
+				<Route path="/vélos/vl1/assembler">
+					<Tableau {...{ composants, chosen, notChosen, prixTotal }} />
+				</Route>
+				<Route path="/vélos/vl1">
+					<Specifications {...{ prixTotal, chosen, notChosen }} />
+				</Route>
+			</Switch>
 		</div>
 	)
 }
 
-const ComposantImage = ({ composant }) => (
-	<div
-		css={`
-			text-align: center;
-			max-width: 6rem;
-			@media (min-width: 600px) {
-				margin-right: 3rem;
-			}
-		`}
-	>
-		<img
-			css="width: 6rem"
-			src={'/composants/' + correspondance[composant] + '.svg'}
-		/>
-		<div css="text-transform: uppercase; font-size: 85%; color: #666">
-			{composant}
-		</div>
-	</div>
-)
+const selectedStyle = `
+						background: var(--color) !important;
+						color: white !important;
+					`
 
-const Missing = () => <div css="text-align: center; font-size: 200%">🔭</div>
-
-const cascading = (list) =>
-	list.reduce((memo, next) => {
-		const first = Array.isArray(next) ? next[0] : next
-		return next ? { ...memo, ...first } : memo
-	}, {})
-const Alternative = ({ alternative, chosen }) => {
-	const { prix, url, inclus, marque, modèle, rupture } = cascading([
-		alternative,
-		alternative.achat,
-	])
-
-	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
-		ruptureType =
-			rupture && rupture['tailles dispo'] ? 'tailles limitées' : 'rupture'
+const Tableau = ({ chosen, notChosen, composants, prixTotal }) => {
+	const [mode, setMode] = useState('groupé')
 
 	return (
-		<Card
-			css={`
-				margin: 1rem;
-				width: 12rem;
-				div {
-					margin-top: 0.4rem;
-				}
-				${chosen && `border: 4px solid var(--color)`}
-			`}
-		>
-			<div>
-				<span css="font-size: 90%; font-weight: bold; margin-right: .4rem">
-					{marque}
-				</span>
-				<span>{modèle}</span>
-			</div>
-			{inclus && (
-				<div
-					css={`
-						ul {
-							padding: 0;
-							display: inline-block;
-							display: flex;
-							align-items: center;
-							justify-content: start;
-						}
-						li {
-							margin: 0 0.6rem;
-						}
-					`}
-				>
-					<ul>
-						<li>+</li>
-						{inclus.map((ci) => (
-							<li>
-								<img
-									alt={ci}
-									css="width: 2rem"
-									src={'/composants/' + correspondance[ci] + '.svg'}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
-			<div>
-				<div>
-					<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
-						{prix}
-					</span>
-					{rupture && (
-						<span
-							css={`
-								color: ${ruptureColor};
-							`}
-						>
-							{ruptureType}
-						</span>
-					)}
-				</div>
-				<div>
-					{domain(url) && (
-						<a href={url} target="_blank">
-							{domain(url)}
-						</a>
-					)}
-				</div>
-			</div>
-		</Card>
-	)
-}
-
-const ComposantChoices = ({ data, composant }) => {
-	if (!data) return <Missing />
-
-	const alternatives = data.alternatives || (data.modèle ? [data] : [])
-
-	const Alternatives = !alternatives.length ? (
-		<Missing />
-	) : (
-		<div
-			css={`
-				> div {
-					whitespace: nowrap;
-					display: flex;
-					flex-wrap: wrap;
-				}
-				@media (max-width: 800px) {
-					overflow-y: hidden;
-					overflow-x: scroll;
-					height: 16rem;
-					max-width: 90vw;
-					> div {
-						whitespace: nowrap;
-						display: flex;
-						flex-wrap: nowrap;
+		<div>
+			<div
+				css={`
+					> button {
+						margin: 1rem;
 					}
-				}
-			`}
-		>
-			<div>
-				{alternatives.map((alternative, i) => (
-					<Alternative {...{ alternative, chosen: i === 0 }} />
-				))}
-			</div>
-		</div>
-	)
-	return <div>{Alternatives}</div>
-}
-const Composant = ({ item: [composant, data] }) => {
-	return (
-		<li
-			css={`
-				padding: 2rem 0 0rem;
-				display: flex;
-				flex-direction: column;
-				margin: 1rem;
-				align-items: center;
-				justify-content: center;
-				img {
-					margin-right: 1rem;
-				}
-			`}
-			key={composant}
-		>
-			<ComposantImage composant={composant} />
-			<Note data={data?.note} />
-			<ComposantChoices composant={composant} data={data} />
-		</li>
-	)
-}
-
-const Note = ({ data }) => {
-	const [open, setOpen] = useState(false)
-	if (!data) return null
-	const [intro] = data.split('\n')
-
-	return (
-		<div
-			css={`
-				p {
-					margin-bottom: 0.3rem;
-					max-width: 30rem;
-				}
-				button {
-					margin: 0.3rem;
-				}
-			`}
-		>
-			<Markdown source={open ? data : intro} />
-			<div css="display: flex; justify-content: end; margin-bottom: 1rem; padding-right: 1rem">
-				<button className="simple" onClick={() => setOpen(!open)}>
-					{' '}
-					{open ? 'Réduire' : 'Lire plus'}
+				`}
+			>
+				<button
+					css={mode === 'prix' ? selectedStyle : ''}
+					className="simple"
+					onClick={() => setMode('prix')}
+				>
+					Mode plus bas prix
+				</button>
+				<button
+					css={mode === 'groupé' ? selectedStyle : ''}
+					className="simple"
+					onClick={() => setMode('groupé')}
+				>
+					Mode commandes groupées
 				</button>
 			</div>
+			<ul>
+				{composants.map(([name, data]) => (
+					<li>{name}</li>
+				))}
+			</ul>
 		</div>
 	)
 }
+
+const Specifications = ({ chosen, notChosen, prixTotal }) => (
+	<div>
+		<p>
+			Prix provisoire : <strong>{prixTotal} €</strong>
+			<Link to="/vélos/vl1/assembler">
+				<button css="margin: 1rem">Assembler</button>
+			</Link>
+		</p>
+		<h2>Les composants</h2>
+		<ul>
+			{chosen.map((item) => (
+				<Composant item={item} />
+			))}
+		</ul>
+		<h3>Composants pas encore choisis</h3>
+		<ul>
+			{notChosen.map((item) => (
+				<Composant item={item} />
+			))}
+		</ul>
+	</div>
+)
