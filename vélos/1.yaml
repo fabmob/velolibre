@@ -170,10 +170,8 @@ composants:
         marque: SRAM
         modèle: APEX
         achat: 
-          - url: https://www.bike-components.de/fr/SRAM/Levier-de-Frein-Vitesses-Apex-11-11-vitesses-p57152
+          - https: https://www.bike-components.de/fr/SRAM/Levier-de-Frein-Vitesses-Apex-11-11-vitesses-p57152/
             prix: 87€
-          - https://www.bike-components.de/fr/SRAM/Levier-de-Frein-Vitesses-Apex-11-11-vitesses-p57152/
-            prix: 86€
   poignée gauche:
     marque: SRAM
     modèle: Rival 1 monoplateau
