@@ -282,7 +282,7 @@ composants:
     à faire: le cadre est bien en BSA, mais y a-t-il une mesure à faire ?
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
-  roues avant: 
+  roue avant: 
     inclus: 
       - moyeu avant
       - rayons
@@ -302,6 +302,24 @@ composants:
       Pour l'instant, on va éviter l'étape du rayonnage des jantes. Pour aller plus loin, voir [cette explication](https://breizhbamboo.bike/les-rayons/) du super Breizhbamboobike sur le sujet.
 
     alternatives: 
+      - marque: Fulcrum
+        modèle: Racing 7 DB
+        note: La roue avant de ce kit accueille un axe en 12mm comme en 15mm avec un kit fourni, ce qui est parfait pour notre cadre capricieux.
+        url: https://www.probikeshop.fr/paire-de-roues-fulcrum-racing-7-disc-a-pneus-centerlock/149739.html
+        prix: 190€
+        inclus: 
+          - roue arrière
+        specs:
+          fixations disques: centerlock
+      - marque: Fulcrum
+        modèle: Racing 6 DB
+        note: La roue avant de ce kit accueille un axe en 12mm comme en 15mm avec un kit fourni, ce qui est parfait pour notre cadre capricieux.
+        url: https://www.materiel-velo.com/1853582-roues-velo-route-fulcrum-racing-6-disc-brake-a-pneus.html
+        prix: 275€
+        specs:
+          fixations disques: centerlock
+        inclus: 
+          - roue arrière
       - marque: Mach1
         modèle: 'Traxx 29" disc tubeless ready'
         note: |
