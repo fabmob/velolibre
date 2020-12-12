@@ -30,6 +30,9 @@ composants:
         specs:
           tige de selle: 27.2mm
           collier de selle: 31.8mm
+          axe roue arrière: 142mm * 12mm
+          axe roue avant: 100mm * 15mm
+          boitier de pédalier: BSA 68mm
         prix: 369€
         achat: 
           - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
@@ -279,15 +282,13 @@ composants:
     à faire: le cadre est bien en BSA, mais y a-t-il une mesure à faire ?
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
-  roues: 
+  roues avant: 
     inclus: 
-      - moyeu arrière
       - moyeu avant
-      - corps de roue libre
+      - rayons
+      - jante
     note: |
-      Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready.
-
-      Pas facile de trouver cette roue (jante, moyeu, rayonnée, corps de roue libre) à moins de 200€.
+      Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready. Pas facile de trouver cette roue (jante, moyeu, rayonnée, corps de roue libre) à moins de 200€.
 
       ### Diamètre des roues : 700c ou 650b ? 
 
@@ -302,11 +303,28 @@ composants:
 
     alternatives: 
       - marque: Mach1
+        modèle: 'Traxx 29" disc tubeless ready'
+        note: |
+          La fourche du cadre Octane One Gridd nous oblige à prendre une roue à moyeu adapté à un axe de 15mm, donc à la gamme de roues VTT. 
+
+          On aura donc dans cette configuration une roue avant plus large, ce qui peut paraître bizarre. Mais on garde une compatibilité avec des pneus au minimum de 35mm, voir ce magnifique tableau de [wiklou](https://wiklou.org/w/images/9/94/Aper%C3%A7u_panneauTaille_roue_pneu.jpg).
+
+          L'autre solution serait de rester sur des roues Stormer avant / arrière, mais avec un adaptateur pour passer d'un axe de 15mm à un 12mm. Est-ce que ça existe ? 
+        prix: 72.2€
+        url: https://velox.fr/fr/roues-mach1-traxx-29/675-roue-avant-mach1-traxx-29-shimano-alivio-mt400-tx15100-3660429059217.html
+        specs: 
+          fixations disques: centerlock
+          axe roue avant: 100mm x 15mm
+        fabrication: partiellement France
+      - marque: Mach1
         modèle: Stormer disc tubeless ready
-        url: https://velox.fr/fr/252-mach1-stormer-disc-tubeless-ready
-        prix: 223€
+        prix: 94.6€
+        url: https://velox.fr/fr/mach1-stormer-disc-tubeless-ready/732-roue-avant-mach1-stormer-tubeless-ready-shimano-rs470-tx12100-11v-3660429016289.html
         option: Shimano RS470
-        fabrication: France
+        specs: 
+          fixations disques: centerlock
+          axe roue avant: 100mm x 12mm
+        fabrication: partiellement France
         note: |
           Je n'ai pas trouvé de roues gravel et tubeless ready chez Mach1, des roues faites en France. Dommage, à suivre.
 
@@ -316,13 +334,29 @@ composants:
 
       - marque: Mavic
         modèle: Aksium disk
-        prix: 200€
+        prix: 100€
         note: Pas une roue gravel à proprement parler, mais semble quand même convenir. Vérifier la largeur des pneus et si tubeless ready. Voir si disques centerlock ou 6 bolts.
         url: https://www.alltricks.com/F-46291-roues-route_ville_fixie/P-461643-mavic_aksium_disc_wheelset_2019___12_9x100mm___12x142mm_9x135mm___centerlock
       - marque: Mavic
         modèle: Allroad UST disc
         note: L'entrée de la gamme Mavic gravel.
+        prix: 125€ # 250€/2
         url: https://www.probikeshop.fr/paire-de-roues-mavic-allroad-ust-disc-road-a-pneus-2-aa9/154567.html
+  roue arrière: 
+    inclus: 
+      - moyeu arrière
+      - rayons
+      - jante
+    alternatives:
+      - marque: Mach1
+        modèle: Stormer disc tubeless ready
+        prix: 129
+        url: https://velox.fr/fr/mach1-stormer-disc-tubeless-ready/731-roue-arriere-mach1-stormer-tubeless-ready-shimano-rs470-tx12142-11v-3660429016487.html
+        option: Shimano RS470
+        specs: 
+          fixations disques: centerlock
+          axe roue avant: 142mm x 12mm
+        fabrication: partiellement France
   pneus: 
     note: |
       Le tubeless semble important pour le confort. On va donc partir sur du tubeless ready ([guide ici](https://www.cycletyres.fr/blog/tubetype-tubeless-ready-tubeless-quelles-differences.html)), comme le recommandent les marques [Caminade](https://caminade.eu/un.velo.gravel.pourquoi.faire-33-131.php) ou encore Decathlon qui s'est lancé à fond dans la gamme Gravel (5 vélos en 2 ans) :
