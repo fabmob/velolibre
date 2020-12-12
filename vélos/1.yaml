@@ -126,16 +126,36 @@ composants:
         note: Alternative bas coût. Quel format, postmount, flatmount ? En tout cas vendu avec adaptateur
       - marque: TRP 
         modèle: Spyre
-        rupture: partout
-        prix: 70.58€
-        url: https://www.bike24.com/p2225128.html?menu=1000,4,322
+        prix: 70€
+        url: https://www.bike-components.de/fr/TRP/Etrier-de-Frein-Spyre-p55357/
         note: |
           J'ai pu essayer ces freins, ils ne sont pas incroyables mais font bien l'affaire pour un prix contenu.
           
           A noter : les plaquettes bougent des deux côtés du disque, ce qui semble mieux pour éviter de le voiler. 
 
           D'après [ces retours](https://www.reddit.com/r/gravelcycling/comments/gutw00/mech_disc_brake_suggestions_avid_bb5bb7_trp_spyre/), ils sont meilleurs que les BB7.
+      - marque: TRP
+        modèle: Spyre SLC 
+        url: https://www.chainreactioncycles.com/mobile/fr/fr/etrier-trp-spyre/rp-prod150520?gs=1
+        prix: 50€
+        specs:
+          taille des disques: 140mm
+          fixations disques: flatmount
+        note: Nécessite un adaptateur postmount et achat séparé de disques.
         
+  disques: 
+    note: Pour les avantages et inconvénients entre centerlock et 6 bolts, [un bon fil](https://bicycles.stackexchange.com/questions/56879/6-bolt-vs-centre-lock-pros-and-cons). 
+    url: https://www.materiel-velo.com/1846929-disque-de-frein-vtt-shimano-sm-rt54-centerlock.html
+    prix: 12€
+    marque: Shimano
+    modèle: SM-RT54
+    specs: 
+      fixations disques: centerlock
+  adaptateur disques:
+    marque: Shimano
+    modèle: Disque 6 trous sur roue centerlock
+    url: https://www.materiel-velo.com/1306800-adaptateur-shimano-6-trous-vers-centerlock.html
+    prix: 12€
   cables et gaines dérailleurs:
     url: https://www.materiel-velo.com/1863028-kit-cable-et-gaine-derailleur-vtt-et-route-jagwire-1xsport-shift-kit.html
     prix: 10€
