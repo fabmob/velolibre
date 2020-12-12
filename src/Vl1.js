@@ -148,11 +148,15 @@ const Specifications = ({ chosen, notChosen, prixTotal }) => (
 				<Composant item={item} />
 			))}
 		</ul>
-		<h3>Composants pas encore choisis</h3>
-		<ul>
-			{notChosen.map((item) => (
-				<Composant item={item} />
-			))}
-		</ul>
+		{notChosen.length != 0 && (
+			<>
+				<h3>Composants pas encore choisis</h3>
+				<ul>
+					{notChosen.map((item) => (
+						<Composant item={item} />
+					))}
+				</ul>
+			</>
+		)}
 	</div>
 )

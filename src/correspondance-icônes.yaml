@@ -20,7 +20,8 @@ jeu de direction: headset
 corps de roue libre: freehub-body
 étriers de frein: étrier-frein-disque
 disques: disque-frein 
-cables et gaines: cable-housing
+cables et gaines freins: cable-housing-brake
+cables et gaines dérailleurs: cable-housing-shifter
 cintre: handlebar-road
 poignée droite: road-brakeonly-lever
 poignée gauche: road-brakeonly-lever
