@@ -19,7 +19,14 @@ const firstBuyLinkAttribute = (c, attribute) =>
 		c.alternatives[0].achat &&
 		c.alternatives[0].achat[0][attribute])
 
-const getPrice = (el) => (el ? +el.replace('€', '') : 0)
+const getPrice = (el) =>
+	typeof el === 'number'
+		? (() => {
+				throw Error("Il semble manquer une unité sur l'attribut 'prix'")
+		  })()
+		: el
+		? +el.replace('€', '')
+		: 0
 export default ({}) => {
 	const composants = Object.entries(vélo.composants),
 		chosen = composants.filter(([, d]) => isChosen(d)),
