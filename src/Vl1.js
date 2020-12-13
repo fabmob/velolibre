@@ -10,8 +10,9 @@ const hasMinimumAttributes = (el) => el.marque && el.modèle && el.prix && el.ur
 export const reduceComponent = (c) =>
 	cascading([
 		c,
-		...(c.achat || []),
+		...(c.achat || []).reverse(),
 		c.alternatives?.[0],
+		//TODO bug here : this is OK only if the price of each item is set, else one item without a price could get the former's
 		...(c.alternatives?.[0].achat || []).reverse(),
 	])
 

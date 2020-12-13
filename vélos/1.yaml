@@ -173,6 +173,7 @@ composants:
       - url: https://www.materiel-velo.com/1847388-kit-cables-et-gaines-freins-vtt-jagwire-mountain-pro.html
         prix: 25€
       - url: https://www.bike-components.de/fr/Jagwire/Set-de-Cables-de-Frein-Mountain-Pro-p56901/
+        prix: 25€
   poignée droite: 
     alternatives:
       - 
@@ -314,7 +315,7 @@ composants:
     modèle: PC-1130 11V 
     url: https://www.materiel-velo.com/1843264-chaine-velo-route-sram-pc-1130-11v.html
     prix: 16.50€
-  boîtier: 
+  boîtier de pédalier: 
     marque: SRAM
     modèle: SRAM GXP
     option: BSA 1.37x24
