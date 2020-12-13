@@ -29,8 +29,10 @@ const getPrice = (el) =>
 		: 0
 export default ({}) => {
 	const composants = Object.entries(vélo.composants),
-		chosen = composants.filter(([, d]) => isChosen(d)),
-		inclus = chosen.reduce(
+		// components that have been researched, that have a candidate witnullh a brand, name, buy url, etc.
+		// but one of them could be also included in another chosen components !
+		chosenRaw = composants.filter(([, d]) => isChosen(d)),
+		inclus = chosenRaw.reduce(
 			(memo, next) => [
 				...memo,
 				...(next[1].inclus ||
@@ -39,8 +41,9 @@ export default ({}) => {
 			],
 			[]
 		),
+		chosen = chosenRaw.filter(([c]) => !inclus.includes(c)),
 		notChosen = composants.filter(
-			([c, d]) => !isChosen(d) && !inclus.find((i) => i === c)
+			([c, d]) => !isChosen(d) && !inclus.includes(c)
 		),
 		prixTotal = chosen.reduce(
 			(memo, [, c]) =>

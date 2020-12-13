@@ -320,7 +320,10 @@ composants:
     à faire: le cadre est bien en BSA, mais y a-t-il une mesure à faire ?
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
-  roue avant: 
+  roues: 
+    inclus: 
+      - roue avant
+      - roue arrière
     note: |
       Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready. Pas facile de trouver cette roue (jante, moyeu, rayonnée, corps de roue libre) à moins de 200€.
 
@@ -339,8 +342,6 @@ composants:
       - marque: Fulcrum
         modèle: Racing 7 DB
         note: La roue avant de ce kit accueille un axe en 12mm comme en 15mm avec un kit fourni, ce qui est parfait pour notre cadre capricieux.
-        inclus: 
-          - roue arrière
         specs:
           fixations disques: centerlock
         achat: 
@@ -358,8 +359,7 @@ composants:
         prix: 275€
         specs:
           fixations disques: centerlock
-        inclus: 
-          - roue arrière
+  roue avant: 
       - marque: Mach1
         modèle: 'Traxx 29" disc tubeless ready'
         note: |
