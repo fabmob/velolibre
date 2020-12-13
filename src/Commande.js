@@ -18,6 +18,18 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 		return { ...memo, [shop]: [...(memo[shop] || []), { ...item, name }] }
 	}, {})
 
+	// I don't want to import Ramda or a similar library
+	// TODO but this should be clarified
+	const totalPrice = Object.values(grouped).reduce(
+		(m, n) =>
+			m +
+			n.reduce(
+				(mm, { prix, quantité }) => mm + (quantité || 1) * getPrice(prix),
+				0
+			),
+		0
+	)
+
 	return (
 		<div>
 			<Link to="/vélos/vl1">⬅ Retour aux spécifications</Link>
@@ -43,6 +55,7 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 					Mode commandes groupées
 				</button>
 			</div>
+			Total : {totalPrice}€
 			<ul>
 				{Object.entries(grouped)
 					.sort(([, i1], [, i2]) => i1.length < i2.length)
