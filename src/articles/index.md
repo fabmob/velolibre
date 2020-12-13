@@ -4,3 +4,4 @@
 - [le cadre](/documentation/cadre)
 - [composants français](/documentation/faitenfrance)
 - [tutoriels existants](/documentation/tutos)
+- [contribuer](/documentation/contribuer)

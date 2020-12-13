@@ -129,6 +129,9 @@ const articleStyle = `
 		background: #eee;
 		padding: 0.1rem 0.4rem;
 		border-radius: 0.3rem;
+		max-width: 100%;
+		display: inline-block;
+		overflow: auto;
 	}
 
 aside {
