@@ -7,10 +7,17 @@ const selectedStyle = `
 				color: white !important;
 					`
 
-export default ({ chosen, notChosen, composants, prixTotal }) => {
-	const [mode, setMode] = useState('prix')
+const modes = {
+	'à la main':
+		"On suit simplement l'ordre des liens d'achat dans la configuration, le premier sera affiché ici, les autres ignorés.",
+	'plus bas prix':
+		"Le lien d'achat le moins chers est sélectionné pour chaque composant. ⏳ mode pas encore dispo.",
+	'commandes groupées':
+		'On prévilégie automatiquement le peu de magasins différents, plutôt que le prix. ⏳ Mode pas encore dispo.',
+}
 
-	if (mode === 'groupé') return <div>Pas encore implémenté ! </div>
+export default ({ chosen, notChosen, composants, prixTotal }) => {
+	const [mode, setMode] = useState('à la main')
 
 	const grouped = chosen.reduce((memo, [name, data]) => {
 		const item = reduceComponent(data)
@@ -35,65 +42,68 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 			<Link to="/vélos/vl1">⬅ Retour aux spécifications</Link>
 			<div
 				css={`
+					margin: 1rem 0;
 					> button {
-						margin: 1rem;
+						margin: 0 0.4rem;
 					}
 				`}
 			>
-				<button
-					css={mode === 'prix' ? selectedStyle : ''}
-					className="simple"
-					onClick={() => setMode('prix')}
-				>
-					Mode plus bas prix
-				</button>
-				<button
-					css={mode === 'groupé' ? selectedStyle : ''}
-					className="simple"
-					onClick={() => setMode('groupé')}
-				>
-					Mode commandes groupées
-				</button>
+				{Object.entries(modes).map(([m, explication]) => (
+					<button
+						css={mode === m ? selectedStyle : ''}
+						className="simple"
+						onClick={() => setMode(m)}
+					>
+						Mode {m}
+					</button>
+				))}
 			</div>
-			Total : {totalPrice}€
-			<ul>
-				{Object.entries(grouped)
-					.sort(([, i1], [, i2]) => i1.length < i2.length)
-					.map(([shop, items]) => {
-						const price = items.reduce(
-							(memo, i) => memo + (i.quantité || 1) * getPrice(i.prix),
-							0
-						)
-						return (
-							<li css="margin-bottom: 1rem">
-								<div>
-									{shop} {price}€
-								</div>
-								{items.map(({ name, url, prix }) => (
-									<li
-										css={`
-											a {
-												display: inline-block;
-												text-decoration: none;
-												border: 1px solid var(--color);
-												padding: 0.1rem 0.3rem;
-												margin: 0.1rem 1rem;
-											}
-											a > span {
-												margin: 0 1rem;
-											}
-										`}
-									>
-										<a href={url} target="_blank">
-											<span>{name}</span>
-											<span>{prix}</span>
-										</a>
+			<p>
+				<em>{modes[mode]}</em>
+			</p>
+			{mode === 'à la main' && (
+				<>
+					Total : {totalPrice}€
+					<ul>
+						{Object.entries(grouped)
+							.sort(([, i1], [, i2]) => i1.length < i2.length)
+							.map(([shop, items]) => {
+								const price = items.reduce(
+									(memo, i) => memo + (i.quantité || 1) * getPrice(i.prix),
+									0
+								)
+								return (
+									<li css="margin-bottom: 1rem">
+										<div>
+											{shop} {price}€
+										</div>
+										{items.map(({ name, url, prix }) => (
+											<li
+												css={`
+													a {
+														display: inline-block;
+														text-decoration: none;
+														border: 1px solid var(--color);
+														padding: 0.1rem 0.3rem;
+														margin: 0.1rem 1rem;
+													}
+													a > span {
+														margin: 0 1rem;
+													}
+												`}
+											>
+												<a href={url} target="_blank">
+													<span>{name}</span>
+													<span>{prix}</span>
+												</a>
+											</li>
+										))}
 									</li>
-								))}
-							</li>
-						)
-					})}
-			</ul>
+								)
+							})}
+					</ul>
+				</>
+			)}
 		</div>
 	)
 }
