@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { reduceComponent, extractDomain } from './Vl1'
+import { getPrice, reduceComponent, extractDomain } from './Vl1'
 import { Link } from 'react-router-dom'
 
 const selectedStyle = `
@@ -46,32 +46,40 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 			<ul>
 				{Object.entries(grouped)
 					.sort(([, i1], [, i2]) => i1.length < i2.length)
-					.map(([shop, items]) => (
-						<li css="margin-bottom: 1rem">
-							<div>{shop}</div>
-							{items.map(({ name, url, prix }) => (
-								<li
-									css={`
-										a {
-											display: inline-block;
-											text-decoration: none;
-											border: 1px solid var(--color);
-											padding: 0.1rem 0.3rem;
-											margin: 0.1rem 1rem;
-										}
-										a > span {
-											margin: 0 1rem;
-										}
-									`}
-								>
-									<a href={url} target="_blank">
-										<span>{name}</span>
-										<span>{prix}</span>
-									</a>
-								</li>
-							))}
-						</li>
-					))}
+					.map(([shop, items]) => {
+						const price = items.reduce(
+							(memo, i) => memo + (i.quantité || 1) * getPrice(i.prix),
+							0
+						)
+						return (
+							<li css="margin-bottom: 1rem">
+								<div>
+									{shop} {price}€
+								</div>
+								{items.map(({ name, url, prix }) => (
+									<li
+										css={`
+											a {
+												display: inline-block;
+												text-decoration: none;
+												border: 1px solid var(--color);
+												padding: 0.1rem 0.3rem;
+												margin: 0.1rem 1rem;
+											}
+											a > span {
+												margin: 0 1rem;
+											}
+										`}
+									>
+										<a href={url} target="_blank">
+											<span>{name}</span>
+											<span>{prix}</span>
+										</a>
+									</li>
+								))}
+							</li>
+						)
+					})}
 			</ul>
 		</div>
 	)

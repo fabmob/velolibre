@@ -25,7 +25,7 @@ const firstBuyLinkAttribute = (c, attribute) =>
 		c.alternatives[0].achat &&
 		c.alternatives[0].achat[0][attribute])
 
-const getPrice = (el) =>
+export const getPrice = (el) =>
 	typeof el === 'number'
 		? (() => {
 				throw Error("Il semble manquer une unité sur l'attribut 'prix'")
