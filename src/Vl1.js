@@ -12,7 +12,7 @@ export const reduceComponent = (c) =>
 		c,
 		...(c.achat || []),
 		c.alternatives?.[0],
-		...(c.alternatives?.[0].achat || []),
+		...(c.alternatives?.[0].achat || []).reverse(),
 	])
 
 const isChosen = (c) => hasMinimumAttributes(reduceComponent(c))
