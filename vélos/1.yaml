@@ -351,6 +351,7 @@ composants:
     alternatives: 
       - marque: Fulcrum
         modèle: Racing 7 DB
+        poids: 1740g
         note: La roue avant de ce kit accueille un axe en 12mm comme en 15mm avec un kit fourni, ce qui est parfait pour notre cadre capricieux.
         specs:
           fixations disques: centerlock
@@ -459,21 +460,39 @@ composants:
 
   tige de selle: 
     note: |
-      J'ai remarqué que les tiges de selle en carbone apportent un certain confort. Mais elles coûtent bien plus cher, de 40€ pour la decathlon (mais pas le bon diamètre) à 70€ pour l'entrée de gamme des marques.
-
-      Les choix ici sont faits un peu au pif.
-
-      Voir ce lien éventuellement https://www.merlincycles.com/search?w=seatpost&seatpost_diameter=31-6mm&sort=price-min
-
-      Il faut juste accorder la tige à la selle choisie. Peut-être partir de la selle du coup.
+      J'ai remarqué que les tiges de selle en carbone apportent un certain confort. Est-ce dans la tête ? En tout cas, elles coûtent bien plus cher, de 40€ pour la decathlon (mais pas le bon diamètre) à 70€ pour l'entrée de gamme des marques.
     alternatives: 
+      - marque: Humpert
+        modèle: Patent
+        specs: 
+          tige de selle: 27.2mm
+          longueur: 350mm
+        poids: 350g
+        prix: 10€
+        url: https://www.xxcycle.fr/tige-de-selle-humpert-patent-272-mm-350-mm,,fr.php
+      - marque: Decathlon
+        prix: 50€
+        modèle: Tige de selle carbone
+        specs: 
+          tige de selle: 27.2mm
+          longueur: 375mm # fiche produit dit 400m, le commentaire dit 37cm réels
+        url: https://www.decathlon.fr/p/tige-de-selle-27-2mm-carbone/_/R-p-194789
       - marque: Decathlon
         prix: 40€
         modèle: Tige de selle carbone
-        url: https://www.decathlon.fr/p/tige-de-selle-van-rysel-carbone/_/R-p-200431
+        url: https://www.decathlon.fr/p/tige-de-selle-27-2mm-carbone/_/R-p-194789
         specs: 
           tige de selle: 27.2mm
+        rupture: 
+          tailles dispo: 250mm
         note: La tige en carbone la moins chère trouvée. Le flex de la tige semble important pour le confort vertical.
+      - marque: Decathlon
+        prix: 15€
+        modèle: Tige de selle rockrider
+        specs: 
+          tige de selle: 27.2mm
+          longueur: 375mm # fiche produit dit 400m, le commentaire dit 37cm réels
+        url: https://www.decathlon.fr/p/tige-de-selle-27-2mm-carbone/_/R-p-194789
       - marque: Deda 
         modèle: Zero Recul 18 mm
         taille: 31,6/350mm
