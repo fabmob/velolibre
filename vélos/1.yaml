@@ -90,7 +90,7 @@ composants:
       Les freins à disques sont plus complexes, chers, lourds. En particulier les freins hydrauliques, malgré leur confort de freinage nettement meilleur. Ces derniers souffrent aussi d'un entretien bien plus compliqué, même si contrairement aux mécaniques, pas besoin d'ajuster les vis avec une clé alen quand les patins s'usent. 
 
       Pour que le prix et la difficulté de montage restent contenus, nous partons sur des freins disque mécaniques.
-
+    quantité: 2
     alternatives:
       - marque: TRP 
         modèle: Spyre
@@ -147,6 +147,7 @@ composants:
     note: Pour les avantages et inconvénients entre centerlock et 6 bolts, [un bon fil](https://bicycles.stackexchange.com/questions/56879/6-bolt-vs-centre-lock-pros-and-cons). 
     url: https://www.materiel-velo.com/1846929-disque-de-frein-vtt-shimano-sm-rt54-centerlock.html
     prix: 12€
+    quantité: 2
     marque: Shimano
     modèle: SM-RT54
     specs: 
@@ -320,10 +321,6 @@ composants:
     url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
   roue avant: 
-    inclus: 
-      - moyeu avant
-      - rayons
-      - jante
     note: |
       Nous devons choisir des roues disque, 17c ou 19c (pour pneus de 35mm), tubeless ready. Pas facile de trouver cette roue (jante, moyeu, rayonnée, corps de roue libre) à moins de 200€.
 
@@ -404,10 +401,6 @@ composants:
         prix: 125€ # 250€/2
         url: https://www.probikeshop.fr/paire-de-roues-mavic-allroad-ust-disc-road-a-pneus-2-aa9/154567.html
   roue arrière: 
-    inclus: 
-      - moyeu arrière
-      - rayons
-      - jante
     alternatives:
       - marque: Mach1
         modèle: Stormer disc tubeless ready
@@ -432,17 +425,18 @@ composants:
     alternatives: 
       - marque: Hutchinson
         modèle: Overide Reinforced Tubeless Ready 700x35mm
+        quantité: 2
         taille: 35mm
         couleur: noir
         url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html
-        prix: 56€
+        prix: 28€
       - marque: Hutchinson
         modèle: Overide Reinforced Tubeless Ready 700x38mm
-
         taille: 38mm
         couleur: beige
         url: https://www.materiel-velo.com/1853041-pneu-gravel-bike-hutchinson-overide-tubeless-ready-reinforced-tringles-souples.html#/18530410001-8-coloris-noir/1909-dimension_pneu-700x35/1918-type_de_pneumatique-tubeless_ready/2164-tringles_pneus-souples
-        prix: 60€
+        quantité: 2
+        prix: 30€
 
   collier de selle:
     alternatives:

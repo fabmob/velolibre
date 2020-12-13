@@ -43,7 +43,10 @@ export default ({}) => {
 			([c, d]) => !isChosen(d) && !inclus.find((i) => i === c)
 		),
 		prixTotal = chosen.reduce(
-			(memo, [, c]) => memo + getPrice(firstBuyLinkAttribute(c, 'prix')),
+			(memo, [, c]) =>
+				memo +
+				(firstBuyLinkAttribute(c, 'quantité') || 1) *
+					getPrice(firstBuyLinkAttribute(c, 'prix')),
 			0
 		),
 		image = velos.find(({ nom }) => nom === vélo.nom).image
