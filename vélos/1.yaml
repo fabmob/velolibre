@@ -32,7 +32,7 @@ composants:
           collier de selle: 31.8mm
           axe roue arrière: 142mm * 12mm
           axe roue avant: 100mm * 15mm
-          boitier de pédalier: BSA 68mm
+          boîtier de pédalier: BSA 68mm
         prix: 369€
         achat: 
           - url: https://www.chainreactioncycles.com/fr/fr/cadre-octane-one-gridd-gravel-2019/rp-prod179138
@@ -152,6 +152,7 @@ composants:
     modèle: SM-RT54
     specs: 
       fixations disques: centerlock
+      taille: 160mm
   cables et gaines dérailleurs:
     url: https://www.materiel-velo.com/1863028-kit-cable-et-gaine-derailleur-vtt-et-route-jagwire-1xsport-shift-kit.html
     prix: 10€
@@ -286,9 +287,13 @@ composants:
   pédalier:
     note: |
       Un [article d'expérience et documenté](https://caminade.eu/le.mono.plateau.sur.le.route-33-1626.php) qui fait l'éloge du monoplateau.
+
+      Pour choisir la longueur de manivelle, [cet article] très fourni propose de multiplier la longue d'entrejambe (par exemple 85cm) par 0.2.
     alternatives: 
       - marque: SRAM
         modèle: Rival 1 GXP 11v
+        specs: 
+          pédalier: GXP
         à faire: Il semble que la ligne de chaîne soit un paramètre très important à étudier pour un monoplateau. Trouver de la doc.
 
         note: |
@@ -318,9 +323,12 @@ composants:
   boîtier de pédalier: 
     marque: SRAM
     modèle: SRAM GXP
-    option: BSA 1.37x24
+    option:
+    specs: 
+      pédalier: GXP
+      boîtier de pédalier: BSA 68-73mm
     à faire: le cadre est bien en BSA, mais y a-t-il une mesure à faire ?
-    url: https://www.materiel-velo.com/1340100-boitier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
+    url: https://www.materiel-velo.com/1340100-boîtier-de-pedalier-velo-route-et-vtt-sram-gxp-acier.html
     prix: 29€
   roues: 
     inclus: 
