@@ -1,10 +1,13 @@
 # À propos
 
+> Les oiseaux savent voler, mais nous on a inventé le vélo
+
+C'est encore mieux si on peut comprendre comment il fonctionne. L'objectif est d'explorer la possibilité d'un vélo libre, comme on conçoit un logiciel libre.
+
 🏗️ Ce site est en construction, il est déployé au fil de l'eau.
 
 Il a terminé 2ème au <a href="https://www.hackathonvelo.fr">hackathon vélo 2020</a> 🤩.
 
-L'objectif est d'explorer la possibilité d'un vélo libre, comme on conçoit un logiciel libre.
 
 ## 🤔 C'est-à-dire ?
 
