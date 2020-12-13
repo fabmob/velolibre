@@ -130,6 +130,7 @@ const Alternative = ({ alternative, chosen }) => {
 							<li>
 								<img
 									alt={ci}
+									title={ci}
 									css="width: 2rem"
 									src={'/composants/' + correspondance[ci] + '.svg'}
 								/>
