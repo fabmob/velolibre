@@ -99,6 +99,10 @@ export default ({}) => {
 						Stade actuel : conception
 					</div>
 				</Link>
+				<p>
+					⚠️ Attention : l'algorithme qqui sélectionne les liens d'achat et les
+					prix a des bugs.
+				</p>
 			</header>
 			<Switch>
 				<Route path="/vélos/vl1/assembler">

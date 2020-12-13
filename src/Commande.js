@@ -77,7 +77,7 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 										<div>
 											{shop} {price}€
 										</div>
-										{items.map(({ name, url, prix }) => (
+										{items.map(({ quantité, name, url, prix }) => (
 											<li
 												css={`
 													a {
@@ -95,6 +95,7 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 												<a href={url} target="_blank">
 													<span>{name}</span>
 													<span>{prix}</span>
+													{quantité && <span> x {quantité}</span>}
 												</a>
 											</li>
 										))}

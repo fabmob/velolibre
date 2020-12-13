@@ -181,9 +181,10 @@ composants:
         note: Les questions-réponses du lien probikeshop explicitent le fait que la poignée est adaptée au monoplateau.
         poids: 166g
         achat: 
+          - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
+            prix: 93€
           - url: https://www.alltricks.fr/F-114951-commandes-de-vitesses---arriere/P-77560-sram-manette-rival-22-droit-double-tap-11-vitesses
             prix: 90€
-          - url: https://www.materiel-velo.com/1846265-poignee-droite-velo-route-sram-rival-22.html
           - url: https://www.probikeshop.fr/levier-droit-sram-rival-22-11v-noir/99506.html
             prix: 95€
       - 
@@ -193,14 +194,14 @@ composants:
           - https: https://www.bike-components.de/fr/SRAM/Levier-de-Frein-Vitesses-Apex-11-11-vitesses-p57152/
             prix: 87€
   poignée gauche:
-    marque: SRAM
-    modèle: Rival 1 monoplateau
-    achat: 
-      - url: https://www.probikeshop.fr/levier-gauche-sram-rival-1-mono/115838.html
-        prix: 45€
-      - url: https://www.materiel-velo.com/1846262-poignee-gauche-velo-route-cyclo-cross-sram-rival-1-monoplateau.html
-        prix: 47€
     alternatives: 
+      - marque: SRAM
+        modèle: Rival 1 monoplateau
+        achat: 
+          - url: https://www.materiel-velo.com/1846262-poignee-gauche-velo-route-cyclo-cross-sram-rival-1-monoplateau.html
+            prix: 47€
+          - url: https://www.probikeshop.fr/levier-gauche-sram-rival-1-mono/115838.html
+            prix: 45€
       - marque: SRAM
         modèle: Apex 1 monoplateau
         url: https://www.bike-components.de/fr/SRAM/Levier-de-Frein-Apex-1-1-vitesse-p57151
