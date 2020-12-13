@@ -2,14 +2,19 @@ import vélo from '../vélos/1.yaml'
 import { useState } from 'react'
 import { Route, Link, Switch } from 'react-router-dom'
 import velos from './velos.yaml'
-import Composant from './Composant'
+import Composant, { cascading } from './Composant'
 
-const isChosen = (c) =>
-	c &&
-	((c.marque && c.modèle) ||
-		(c.alternatives?.length &&
-			c.alternatives[0].marque &&
-			c.alternatives[0].modèle))
+const hasMinimumAttributes = (el) => el.marque && el.modèle && el.prix && el.url
+
+const reduceComponent = (c) =>
+	cascading([
+		c,
+		...(c.achat || []),
+		c.alternatives?.[0],
+		...(c.alternatives?.[0].achat || []),
+	])
+
+const isChosen = (c) => hasMinimumAttributes(reduceComponent(c))
 
 const firstBuyLinkAttribute = (c, attribute) =>
 	(c && c[attribute]) ||
@@ -41,6 +46,7 @@ export default ({}) => {
 			],
 			[]
 		),
+		// don't take into account components included in other chosen components
 		chosen = chosenRaw.filter(([c]) => !inclus.includes(c)),
 		notChosen = composants.filter(
 			([c, d]) => !isChosen(d) && !inclus.includes(c)
@@ -92,7 +98,6 @@ export default ({}) => {
 						Stade actuel : conception
 					</div>
 				</Link>
-				<p>{vélo.description}</p>
 			</header>
 			<Switch>
 				<Route path="/vélos/vl1/assembler">
@@ -111,8 +116,22 @@ const selectedStyle = `
 						color: white !important;
 					`
 
+const extractDomain = (url) => {
+	const tmp = document.createElement('a')
+	tmp.href = url
+	return tmp.hostname.replace('www.', '')
+}
+
 const Tableau = ({ chosen, notChosen, composants, prixTotal }) => {
-	const [mode, setMode] = useState('groupé')
+	const [mode, setMode] = useState('prix')
+
+	if (mode === 'groupé') return <div>Pas encore implémenté ! </div>
+
+	const grouped = chosen.reduce((memo, [name, data]) => {
+		const item = reduceComponent(data)
+		const shop = extractDomain(item.url)
+		return { ...memo, [shop]: [...(memo[shop] || []), { ...item, name }] }
+	}, {})
 
 	return (
 		<div>
@@ -139,9 +158,34 @@ const Tableau = ({ chosen, notChosen, composants, prixTotal }) => {
 				</button>
 			</div>
 			<ul>
-				{composants.map(([name, data]) => (
-					<li>{name}</li>
-				))}
+				{Object.entries(grouped)
+					.sort(([, i1], [, i2]) => i1.length < i2.length)
+					.map(([shop, items]) => (
+						<li css="margin-bottom: 1rem">
+							<div>{shop}</div>
+							{items.map(({ name, url, prix }) => (
+								<li
+									css={`
+										a {
+											display: inline-block;
+											text-decoration: none;
+											border: 1px solid var(--color);
+											padding: 0.1rem 0.3rem;
+											margin: 0.1rem 1rem;
+										}
+										a > span {
+											margin: 0 1rem;
+										}
+									`}
+								>
+									<a href={url} target="_blank">
+										<span>{name}</span>
+										<span>{prix}</span>
+									</a>
+								</li>
+							))}
+						</li>
+					))}
 			</ul>
 		</div>
 	)
@@ -149,6 +193,9 @@ const Tableau = ({ chosen, notChosen, composants, prixTotal }) => {
 
 const Specifications = ({ chosen, notChosen, prixTotal }) => (
 	<div>
+		<header>
+			<p>{vélo.description}</p>
+		</header>
 		<p>
 			Prix provisoire : <strong>{prixTotal} €</strong>
 			<Link to="/vélos/vl1/assembler">

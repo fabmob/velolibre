@@ -460,6 +460,7 @@ composants:
       - marque: Decathlon
         prix: 40€
         modèle: Tige de selle carbone
+        url: https://www.decathlon.fr/p/tige-de-selle-van-rysel-carbone/_/R-p-200431
         specs: 
           tige de selle: 27.2mm
         note: La tige en carbone la moins chère trouvée. Le flex de la tige semble important pour le confort vertical.

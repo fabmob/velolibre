@@ -77,16 +77,15 @@ const ComposantImage = ({ composant }) => (
 
 const Missing = () => <div css="text-align: center; font-size: 200%">🔭</div>
 
-const cascading = (list) =>
+export const cascading = (list) =>
 	list.reduce((memo, next) => {
-		const first = Array.isArray(next) ? next[0] : next
-		return next ? { ...memo, ...first } : memo
+		return next ? { ...memo, ...next } : memo
 	}, {})
 const Alternative = ({ data, alternative, chosen }) => {
 	const { prix, url, inclus, marque, modèle, rupture, quantité } = cascading([
 		data,
 		alternative,
-		alternative.achat,
+		alternative.achats,
 	])
 
 	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
