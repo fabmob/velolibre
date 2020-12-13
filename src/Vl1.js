@@ -1,12 +1,13 @@
+import { Link, Route, Switch } from 'react-router-dom'
 import vélo from '../vélos/1.yaml'
-import { useState } from 'react'
-import { Route, Link, Switch } from 'react-router-dom'
+import Commande from './Commande'
+import { cascading } from './Composant'
+import Specifications from './Specifications'
 import velos from './velos.yaml'
-import Composant, { cascading } from './Composant'
 
 const hasMinimumAttributes = (el) => el.marque && el.modèle && el.prix && el.url
 
-const reduceComponent = (c) =>
+export const reduceComponent = (c) =>
 	cascading([
 		c,
 		...(c.achat || []),
@@ -69,7 +70,7 @@ export default ({}) => {
 				ul {
 					list-style-type: none;
 				}
-				> a {
+				a {
 					text-decoration: none;
 				}
 			`}
@@ -101,122 +102,18 @@ export default ({}) => {
 			</header>
 			<Switch>
 				<Route path="/vélos/vl1/assembler">
-					<Tableau {...{ composants, chosen, notChosen, prixTotal }} />
+					<Commande {...{ composants, chosen, notChosen, prixTotal }} />
 				</Route>
 				<Route path="/vélos/vl1">
-					<Specifications {...{ prixTotal, chosen, notChosen }} />
+					<Specifications {...{ vélo, prixTotal, chosen, notChosen }} />
 				</Route>
 			</Switch>
 		</div>
 	)
 }
 
-const selectedStyle = `
-						background: var(--color) !important;
-						color: white !important;
-					`
-
-const extractDomain = (url) => {
+export const extractDomain = (url) => {
 	const tmp = document.createElement('a')
 	tmp.href = url
 	return tmp.hostname.replace('www.', '')
 }
-
-const Tableau = ({ chosen, notChosen, composants, prixTotal }) => {
-	const [mode, setMode] = useState('prix')
-
-	if (mode === 'groupé') return <div>Pas encore implémenté ! </div>
-
-	const grouped = chosen.reduce((memo, [name, data]) => {
-		const item = reduceComponent(data)
-		const shop = extractDomain(item.url)
-		return { ...memo, [shop]: [...(memo[shop] || []), { ...item, name }] }
-	}, {})
-
-	return (
-		<div>
-			<div
-				css={`
-					> button {
-						margin: 1rem;
-					}
-				`}
-			>
-				<button
-					css={mode === 'prix' ? selectedStyle : ''}
-					className="simple"
-					onClick={() => setMode('prix')}
-				>
-					Mode plus bas prix
-				</button>
-				<button
-					css={mode === 'groupé' ? selectedStyle : ''}
-					className="simple"
-					onClick={() => setMode('groupé')}
-				>
-					Mode commandes groupées
-				</button>
-			</div>
-			<ul>
-				{Object.entries(grouped)
-					.sort(([, i1], [, i2]) => i1.length < i2.length)
-					.map(([shop, items]) => (
-						<li css="margin-bottom: 1rem">
-							<div>{shop}</div>
-							{items.map(({ name, url, prix }) => (
-								<li
-									css={`
-										a {
-											display: inline-block;
-											text-decoration: none;
-											border: 1px solid var(--color);
-											padding: 0.1rem 0.3rem;
-											margin: 0.1rem 1rem;
-										}
-										a > span {
-											margin: 0 1rem;
-										}
-									`}
-								>
-									<a href={url} target="_blank">
-										<span>{name}</span>
-										<span>{prix}</span>
-									</a>
-								</li>
-							))}
-						</li>
-					))}
-			</ul>
-		</div>
-	)
-}
-
-const Specifications = ({ chosen, notChosen, prixTotal }) => (
-	<div>
-		<header>
-			<p>{vélo.description}</p>
-		</header>
-		<p>
-			Prix provisoire : <strong>{prixTotal} €</strong>
-			<Link to="/vélos/vl1/assembler">
-				<button css="margin: 1rem">Assembler</button>
-			</Link>
-		</p>
-		<h2>Les composants</h2>
-		<ul>
-			{chosen.map((item) => (
-				<Composant item={item} />
-			))}
-		</ul>
-		{notChosen.length != 0 && (
-			<>
-				<h3>Composants pas encore choisis</h3>
-				<ul>
-					{notChosen.map((item) => (
-						<Composant item={item} />
-					))}
-				</ul>
-			</>
-		)}
-	</div>
-)
