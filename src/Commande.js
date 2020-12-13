@@ -61,6 +61,10 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 			<p>
 				<em>{modes[mode]}</em>
 			</p>
+			<p>
+				💡 Astuce : pour vérifier que la commande est complète, vérifier bien
+				que le prix colle à 1€ près dans chaque panier.
+			</p>
 			{mode === 'à la main' && (
 				<>
 					Total : {totalPrice}€
