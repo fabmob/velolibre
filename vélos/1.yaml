@@ -294,10 +294,10 @@ composants:
         modèle: Rival 1 GXP 11v
         specs: 
           pédalier: GXP
-        à faire: Il semble que la ligne de chaîne soit un paramètre très important à étudier pour un monoplateau. Trouver de la doc.
-
         note: |
           Notons qu'il est possible de changer le plateau du pédalier, par exemple passer à du 46, [48](https://www.materiel-velo.com/1846664-plateau-sram-rival-1-x-sync-48-dents.html) ou 50 dents si le rapport sur plat et descente est trop faible et qu'on a fait le plein de protéines (végétales).
+
+          Une chose à regarder : [la ligne de chaine](https://www.lecyclo.com/outils/mesurer-regler-ligne-de-chaine-velo.html). Notre montage ne me semble pas risqué vu que [le vélo](https://octane-one.com/bike/gridd-gravel-bike/) proposé par la marque du cadre est aussi en monoplateau SRAM.
 
         achat: 
           - url: https://www.materiel-velo.com/1846655-pedalier-velo-route-cyclo-cross-mono-plateau-sram-rival-1-gxp-11v-avec-plateau.html
