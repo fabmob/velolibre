@@ -97,7 +97,7 @@ export default ({}) => {
 							border-radius: 0.3rem;
 						`}
 					>
-						Stade actuel : conception
+						Stade actuel : montage v0
 					</div>
 				</Link>
 				<p>
