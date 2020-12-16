@@ -68,6 +68,8 @@ Si le coût pouvait être baissé à niveau de sécurité et poids constant, le 
 
 Tuto (150+ hours) : https://www.instructables.com/id/How-I-built-a-walnut-triathlon-bicycle-frame
 
+Sur le super forum [vélo artisanal](https://www.veloartisanal.fr) on peut voir [le périple](https://www.veloartisanal.fr/topic/377/péripéties-d-une-construction-de-cadre-en-bambou/8) d'une fabrication de cadre bambou avec un niveau de détail rare.
+
 ### Bambou + jonctions composite, sans fourche
 
 J'ai commandé ce kit Bamboobicycleclub pour tester : [kit simplifié bambou + jointures carbone](https://www.bamboobicycleclub.org/en/product/lugged-kit-frame/). L'association fait aussi des kits où les jointures sont à faire nous même, à partir de fibre de lin + résine epoxy.
