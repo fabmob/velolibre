@@ -1,18 +1,16 @@
 # Stades d'avancement d'un vélo
 
-> Dans ce qui suit, v0 veut dire version 0, v1 version 1 etc. 
+> Dans ce qui suit, v1 veut dire version 1, v2 version 1 etc. 
 
-> Ces stades sont à titres indicatifs, eux-mêmes ne sont pas définitifs 🙂
-
-### Conception v0 
+### Conception v1
 
 On choisit les composants, en les décrivant un à un avec leurs spécifications, des conseils et surtout des liens directs pour les acheter en ligne
 
-### Montage v0
+### Montage v1
 
 Le vélo est en cours de montage : il fonctionne en théorie, mais juste en théorie ! 
 
-### v1 validée 
+### Validation v1 
 
 Le vélo roule ! Et freine, c'est utile aussi. 
 

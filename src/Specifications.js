@@ -1,14 +1,20 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Composant from './Composant'
-export default  ({ vélo, chosen, notChosen, prixTotal }) => (
-	<div>
+export default ({ vélo, chosen, notChosen, prixTotal }) => (
+	<div css="p {margin: .3rem 0}">
 		<header>
 			<p>{vélo.description}</p>
 		</header>
 		<p>
-			Prix provisoire : <strong>{prixTotal} €</strong>
-			<Link to="/vélos/vl1/assembler">
-				<button css="margin: 1rem">Assembler</button>
+			Prix indicatif: <strong>{prixTotal} €</strong>
+			<Link to="/vélos/vl1/commande">
+				<button css="margin: 1rem">Commander</button>
+			</Link>
+		</p>
+		<p>
+			Version : <strong>{vélo.version}</strong>{' '}
+			<Link css="margin: 0 .3rem" to="/documentation/avancement">
+				<em>quoi ?</em>
 			</Link>
 		</p>
 		<h2>Les composants</h2>

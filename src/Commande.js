@@ -39,7 +39,7 @@ export default ({ chosen, notChosen, composants, prixTotal }) => {
 
 	return (
 		<div>
-			<Link to="/vélos/vl1">⬅ Retour aux spécifications</Link>
+			<p>Vélolibre ne vend rien, mais vous guide dans l'achat des pièces.</p>
 			<div
 				css={`
 					margin: 1rem 0;

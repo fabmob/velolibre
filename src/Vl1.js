@@ -1,6 +1,7 @@
-import { Link, Route, Switch } from 'react-router-dom'
+import { useLocation, Link, Route, Switch } from 'react-router-dom'
 import vélo from '../vélos/1.yaml'
 import Commande from './Commande'
+import Montage from './Montage'
 import { cascading } from './Composant'
 import Specifications from './Specifications'
 import velos from './velos.yaml'
@@ -60,7 +61,13 @@ export default ({}) => {
 					getPrice(firstBuyLinkAttribute(c, 'prix')),
 			0
 		),
-		image = velos.find(({ nom }) => nom === vélo.nom).image
+		image = velos.find(({ nom }) => nom === vélo.nom).image,
+		{ pathname } = useLocation(),
+		selectedStyle = `
+		background: white;
+color: var(--darkColor)
+; padding: .1rem .3rem
+		`
 
 	return (
 		<div
@@ -81,32 +88,47 @@ export default ({}) => {
 					{image && <img src={require('./' + image).default} />}
 					<h1>{vélo.nom}</h1>
 				</div>
-				<Link to="/documentation/avancement">
-					<div
-						css={`
-							font-weight: bold;
-							padding: 0.3rem 1rem;
-							border-radius: 0.1rem;
-							color: white;
-							background: linear-gradient(
-								90deg,
-								rgba(2, 0, 36, 1) 0%,
-								rgba(9, 9, 121, 1) 74%
-							);
-							text-align: center;
+				<ul
+					css={`
+						font-weight: bold;
+						padding: 0.2rem 1rem;
+						border-radius: 0.1rem;
+						color: white;
+						background: linear-gradient(
+							90deg,
+							rgba(2, 0, 36, 1) 0%,
+							rgba(9, 9, 121, 1) 74%
+						);
+						text-align: center;
+						border-radius: 0.3rem;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-evenly;
+						li {
+							padding: 0.6rem;
 							border-radius: 0.3rem;
-						`}
-					>
-						Stade actuel : montage v0
-					</div>
-				</Link>
-				<p>
-					⚠️ Attention : l'algorithme qqui sélectionne les liens d'achat et les
-					prix a des bugs.
-				</p>
+						}
+						li a {
+							color: inherit;
+						}
+					`}
+				>
+					<li css={pathname === '/vélos/vl1' && selectedStyle}>
+						<Link to="/vélos/vl1">Conception</Link>
+					</li>
+					<li css={pathname.includes('commande') && selectedStyle}>
+						<Link to="/vélos/vl1/commande">Commande</Link>
+					</li>
+					<li css={pathname.includes('montage') && selectedStyle}>
+						<Link to="/vélos/vl1/montage">Montage</Link>
+					</li>
+				</ul>
 			</header>
 			<Switch>
-				<Route path="/vélos/vl1/assembler">
+				<Route path="/vélos/vl1/montage">
+					<Montage {...{ vélo, composants, chosen, notChosen, prixTotal }} />
+				</Route>
+				<Route path="/vélos/vl1/commande">
 					<Commande {...{ composants, chosen, notChosen, prixTotal }} />
 				</Route>
 				<Route path="/vélos/vl1">
