@@ -8,6 +8,8 @@ C'est encore mieux si on peut comprendre comment il fonctionne. L'objectif est d
 
 Il a terminé 2ème au <a href="https://www.hackathonvelo.fr">hackathon vélo 2020</a> 🤩.
 
+Voila [la présentation du projet](https://hackmd.io/@laem/velolibre).
+
 
 ## 🤔 C'est-à-dire ?
 
