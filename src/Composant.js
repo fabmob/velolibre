@@ -103,8 +103,7 @@ const Alternative = ({ data, alternative, chosen }) => {
 
 	const { prix, url, inclus, marque, modèle, rupture, quantité } = attributes
 	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
-		ruptureType =
-			rupture && rupture['tailles dispo'] ? 'tailles limitées' : 'rupture'
+		ruptureType = rupture && rupture['tailles dispo'] ? 'tailles' : 'rupture'
 
 	return (
 		<Card
