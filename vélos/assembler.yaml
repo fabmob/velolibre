@@ -31,8 +31,6 @@ outils:
     achat: 
       - url: https://www.decathlon.fr/p/derive-chaine-velo-500/_/R-p-202?mc=8315960
         prix: 10€
-
-      
   graisse: 
     usage: Gresser les vis du boitier de pédalier, de la cassette, des pédales, etc.
     achat: 
@@ -40,6 +38,9 @@ outils:
         url: https://www.decathlon.fr/p/graisse-velo-teflon-tube/_/R-p-144605
   liquide pneus tubeles:
     usage: Indispensable pour les pneus tubeless ready, pour boucher automatiquement les crevaisons. Une chambre à air liquide ! 
+    achat: 
+      - url: https://www.decathlon.fr/p/liquide-preventif-pour-montage-de-pneus-et-jantes-tubless-ready/_/R-p-309241
+        prix: 10€
   frein filet: 
     usage: Eviter que certaines vis ne se dévissent en mettant un peu de pâte sur la vis. 
     note: Se renseigner sur l'usage, la couleur (rouge, bleu), pour quelles vis et tout.
@@ -53,4 +54,8 @@ outils:
         Il semble qu'il soit mieux de "facer", c'est-à-dire enlever les imperfections (peinture, métal qui dépasse) du profil du boîtier de pédalier. Voir [cette vidéo limpide](https://m.youtube.com/watch?v=tpVRhax6SvI).
 
         Cependant, les cadres neufs peuvent être livrés nickels.
+    installer le boitier: 
+      description: |
+        AFAIRE : https://www.youtube.com/watch?v=D1UHtUt_V2Q
+
 
