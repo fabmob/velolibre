@@ -123,36 +123,6 @@ const Alternative = ({ data, alternative, chosen }) => {
 				</span>
 				<span>{modèle}</span>
 			</div>
-			{inclus && (
-				<div
-					css={`
-						ul {
-							padding: 0;
-							display: inline-block;
-							display: flex;
-							align-items: center;
-							justify-content: start;
-						}
-						li {
-							margin: 0 0.6rem;
-						}
-					`}
-				>
-					<ul>
-						<li>+</li>
-						{inclus.map((ci) => (
-							<li>
-								<img
-									alt={ci}
-									title={ci}
-									css="width: 2rem"
-									src={'/composants/' + correspondance[ci] + '.svg'}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
 			<div>
 				<div>
 					<span css="background: var(--lighterColor); padding: .1rem .3rem; border-radius: .3rem; margin-right: .3rem">
@@ -176,6 +146,7 @@ const Alternative = ({ data, alternative, chosen }) => {
 					)}
 				</div>
 			</div>
+			{inclus && <Inclus data={inclus} />}
 		</Card>
 	)
 }
@@ -217,3 +188,36 @@ const ComposantChoices = ({ data, composant }) => {
 	)
 	return <div>{Alternatives}</div>
 }
+
+const Inclus = ({ data }) => (
+	<div
+		css={`
+			ul {
+				padding: 0;
+				display: inline-block;
+				display: flex;
+				align-items: center;
+				justify-content: start;
+			}
+			li {
+				margin: 0 0.1rem;
+			}
+
+			li img {
+				width: 1.6rem;
+			}
+		`}
+	>
+		<ul>
+			{data.map((ci) => (
+				<li>
+					<img
+						alt={ci}
+						title={ci}
+						src={'/composants/' + correspondance[ci] + '.svg'}
+					/>
+				</li>
+			))}
+		</ul>
+	</div>
+)

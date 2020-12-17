@@ -24,10 +24,14 @@ composants:
       - marque: Octane One
         modèle: Gridd Gravel 2019
         note: |
-          Un cadre intéressant au style sobre, pas si cher sur chainreactioncycles.com, mais aux passages de cables externes et sans trous pour attacher des portes-bagage. 
-          Ce dernier point n'est pas forcément bloquant, on peut trouver des porte bagages avec attache selle. Reste à voir pour l'attache sur l'axe de roue.
+          Un cadre intéressant au style sobre, le moins chers des cadres gravel en vente, mais aux passages de cables externes.
 
-          Attention : les questions posées sur CRC indiquent que le cadre peut etre livré avec ou sans potence et collier de selle...
+          Je constate en recevant le cadre que contrairement aux spécifications officielles, il y a tous les oeill arrières nécessaires pour un porte bagage. Idem pour la potence et le collier de selle.
+        inclus: 
+          - fourche
+          - jeu de direction
+          - potence
+          - collier de selle
         specs:
           tige de selle: 27.2mm
           collier de selle: 31.8mm
