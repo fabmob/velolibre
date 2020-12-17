@@ -85,7 +85,7 @@ const Alternative = ({ data, alternative, chosen }) => {
 	const { prix, url, inclus, marque, modèle, rupture, quantité } = cascading([
 		data,
 		alternative,
-		alternative.achats,
+		alternative.achat?.[0],
 	])
 
 	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
