@@ -75,6 +75,23 @@ const ComposantImage = ({ composant }) => (
 	</div>
 )
 
+const Data = ({ d }) =>
+	d == null ? null : typeof d === 'object' ? (
+		<ul>
+			{Object.entries(d).map(([k, v]) =>
+				typeof v === 'object' ? (
+					<Data d={v} />
+				) : (
+					<li key={k}>
+						{k} : {v}
+					</li>
+				)
+			)}
+		</ul>
+	) : (
+		d
+	)
+
 const Missing = () => <div css="text-align: center; font-size: 200%">🔭</div>
 
 export const cascading = (list) =>
@@ -82,12 +99,9 @@ export const cascading = (list) =>
 		return next ? { ...memo, ...next } : memo
 	}, {})
 const Alternative = ({ data, alternative, chosen }) => {
-	const { prix, url, inclus, marque, modèle, rupture, quantité } = cascading([
-		data,
-		alternative,
-		alternative.achat?.[0],
-	])
+	const attributes = cascading([data, alternative, alternative.achat?.[0]])
 
+	const { prix, url, inclus, marque, modèle, rupture, quantité } = attributes
 	const ruptureColor = rupture && (rupture['tailles dispo'] ? 'orange' : 'red'),
 		ruptureType =
 			rupture && rupture['tailles dispo'] ? 'tailles limitées' : 'rupture'
