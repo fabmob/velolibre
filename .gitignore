@@ -12,6 +12,7 @@
 /dist/*
 !/dist/composants/
 !/dist/_redirects
+!/dist/images/
 
 # misc
 .DS_Store

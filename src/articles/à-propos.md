@@ -10,6 +10,10 @@ Il a terminé 2ème au <a href="https://www.hackathonvelo.fr">hackathon vélo 20
 
 Voila [la présentation du projet](https://hackmd.io/@laem/velolibre).
 
+C'est un projet porté par la [FabMob](https://fabmob.io). 
+
+[![](/images/logo-fabmob-noir-mini.png)](https://fabmob.io)
+
 
 ## 🤔 C'est-à-dire ?
 
