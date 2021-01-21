@@ -69,10 +69,11 @@ export default ({}) => {
 
 const ImageRenderer = (dir) => ({ src }) => {
 	const imageBase = 'https://velolibre-images.netlify.app/'
+	const ext = 'webp'
 
 	return (
-		<a href={`${imageBase}${dir}/${src}.webp`}>
-			<img src={`${imageBase}${dir}/${src}.medium.webp`} />
+		<a href={`${imageBase}${dir}/${src}.${ext}`}>
+			<img src={`${imageBase}${dir}/${src}.medium.${ext}`} />
 		</a>
 	)
 }
