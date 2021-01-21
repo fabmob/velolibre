@@ -46,12 +46,16 @@ export default ({}) => {
 						)}
 					</small>
 				</p>
-				<Markdown source={body} />
+				<Markdown imageRenderer={ImageRenderer(id)} source={body} />
 				<hr />
 			</WikiPage>
 		</div>
 	)
 }
+
+const ImageRenderer = (dir) => ({ src }) => (
+	<img src={`https://velolibre-images.netlify.app/${dir}/${src}`} />
+)
 
 const WikiPage = styled.div`
 	max-width: 700px;
