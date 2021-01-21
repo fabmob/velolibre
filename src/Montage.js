@@ -5,9 +5,10 @@ import { imageResizer } from './utils'
 import { articles } from './Étape'
 
 export default () => (
-	<div css="p {margin: .3rem 0}">
+	<div css="p {margin: 2rem 0} img {margin: 2rem 0}">
 		<p>Suivez pas à pas ce guide, et vous aurez un vélo.</p>
 		<Summary articles={articles} />
+		<img src="https://velolibre-images.netlify.app/enneigé.medium.webp" />
 	</div>
 )
 
