@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom'
 import { imageResizer } from './utils'
-export default ({ vélo, chosen, notChosen, prixTotal }) => (
+
+import { articles } from './Étape'
+
+export default () => (
 	<div css="p {margin: .3rem 0}">
-		<p>Page en cours de construction ;-)</p>
-		<img src={imageResizer('l')('https://imgur.com/FMauafV.png')} />
+		<p>Suivez pas à pas ce guide, et vous aurez un vélo.</p>
+		<ul>
+			{articles.map((a) => (
+				<li key={a.id}>
+					<Link to={'/vélos/vl1/montage/' + a.id}>{a.id}</Link>
+				</li>
+			))}
+		</ul>
 	</div>
 )
