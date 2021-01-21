@@ -1,10 +1,11 @@
 import { useLocation, Link, Route, Switch } from 'react-router-dom'
-import vélo from '../vélos/1.yaml'
+import vélo from '../vélos/1/specs.yaml'
 import Commande from './Commande'
-import Montage from './Montage'
+import Étape from './Étape'
 import { cascading } from './Composant'
 import Specifications from './Specifications'
 import velos from './velos.yaml'
+import Montage from './Montage'
 
 const hasMinimumAttributes = (el) => el.marque && el.modèle && el.prix && el.url
 
@@ -125,8 +126,11 @@ color: var(--darkColor)
 				</ul>
 			</header>
 			<Switch>
-				<Route path="/vélos/vl1/montage">
-					<Montage {...{ vélo, composants, chosen, notChosen, prixTotal }} />
+				<Route exact path="/vélos/vl1/montage">
+					<Montage />
+				</Route>
+				<Route path="/vélos/vl1/montage/:id">
+					<Étape />
 				</Route>
 				<Route path="/vélos/vl1/commande">
 					<Commande {...{ composants, chosen, notChosen, prixTotal }} />
