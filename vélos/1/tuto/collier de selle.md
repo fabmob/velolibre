@@ -10,4 +10,6 @@ Serrer le collier avec votre clef allen.
 
 Contempler votre premier succès.
 
+![](/fin.jpg)
+
 > Si on a un pied d'atelier, on peut maintenant surélever le cadre :).
