@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Markdown } from './utils'
 import { useParams } from 'react-router-dom'
 import { WikiPage, loadPages, getLastEdit } from './wiki'
+import { Summary } from './Montage'
 
 var req = require.context('../vélos/1/tuto', true, /\.md$/)
 export const articles = loadPages(req)
@@ -13,7 +14,7 @@ export default ({}) => {
 
 	const [lastEditDate, setLastEditDate] = useState(null)
 
-	const { body } = theOne
+	const { body, position, title } = theOne
 
 	getLastEdit(id, setLastEditDate)
 
@@ -21,8 +22,22 @@ export default ({}) => {
 		<div
 			css={`
 				padding: 1rem;
+				header {
+					display: flex;
+					align-items: center;
+				}
+				header h2 {
+					margin-right: 1rem;
+				}
 			`}
 		>
+			<Summary articles={articles} />
+			<header>
+				<h2>{title}</h2>
+				<span>
+					{position} / {articles.length}
+				</span>
+			</header>
 			<WikiPage>
 				<p
 					css={`

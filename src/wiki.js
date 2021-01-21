@@ -6,11 +6,18 @@ const loadMdFiles = (req) =>
 		.map((key) => [key.replace('./', '').replace('.md', ''), req(key).default])
 
 const parseArticles = (rawArticles) =>
-	rawArticles.map(([id, string]) => ({
-		body: string,
-		attributes: {}, //no front matter here yet until we need attributes, it would load a yaml library
-		id,
-	}))
+	rawArticles.map(([positionAndId, string]) => {
+		const list = positionAndId.split(/(\d\-)/),
+			id = list.length > 1 ? list[2] : list[0]
+
+		return {
+			body: string,
+			attributes: {}, //no front matter here yet until we need attributes, it would load a yaml library
+			id,
+			title: id[0].toUpperCase() + id.substring(1),
+			position: list.length > 1 ? list[1].replace('-', '') : null,
+		}
+	})
 
 export const loadPages = (req) => parseArticles(loadMdFiles(req))
 
