@@ -1,0 +1,48 @@
+démonte cassette:
+  usage: Pour monter démonter la cassette arrière.
+  note: |
+    A l'arrière, on a soit une roue libre soit une cassette qui s'emboîte sur un corps de cassette attaché au moyeu, [explications ici](https://www.citycle.com/17595-transmission-les-differences-entre-cassette-et-roue-libre/).
+
+    Quel outil est compatible avec notre cassette SRAM ? 
+  achat: 
+    - url: https://www.decathlon.fr/p/demonte-cassette-hg-velo/_/R-p-100525
+      prix: 10€
+fouet à chaine: 
+  usage: |
+    Pour démonter une cassette.
+
+    Est-ce strictement nécessaire ? Pour les curieux, un [fil de discussion](https://forum.velotaf.com/topic/25627-alternative-fouet-a-chaine/), et surtout [cet objet](https://voyageforum.com/discussion/demonter-cassette-velo-avec-seul-outil-sans-fouet-chaine-d6001118/) qui permet d'utiliser la force des pédales pour démonter la cassette :).
+  desription: |
+    Un [tuto vidéo](https://www.youtube.com/watch?v=7WeGW4Ua1kc&index=4&list=PLVYtuDK6gYA_pPeiFIXcWcc3A6jfeStVW) associée au fouet Decathlon.
+  achat: 
+    - url: https://www.decathlon.fr/p/fouet-a-chaine-demonte-cassette/_/R-p-200?mc=8309913
+      prix: 15€
+clef boîtier de pédalier:
+  usage: Pour visser et dévisser les boîtiers de pédalier.
+  note: On trouve aussi des outils d'une autre forme comme [celui-ci](https://www.alltricks.fr/F-11929-outillage/P-441262-cle-demonte-boitier-de-pedalier-race-face-cinch-rotor-enduro-ice-toolz-bsa30) qui remplissent la même fonction.
+  achat: 
+    - url: https://www.decathlon.fr/p/cle-boitier-pedalier-hollowtech-ii/_/R-p-170396?mc=8402079
+      prix: 15€
+    - https://www.alltricks.fr/F-11929-outillage/P-153364-neatt-cle-pour-boitier-de-pedalier--type-shimano
+      prix: 9€
+dérive chaine: 
+  usage: Permet de raccourcir la chaine à l'installation, les vélos (cadre + transmission) étant tous différents.
+  achat: 
+    - url: https://www.decathlon.fr/p/derive-chaine-velo-500/_/R-p-202?mc=8315960
+      prix: 10€
+graisse: 
+  usage: Graisser les vis du boitier de pédalier, de la cassette, des pédales, etc.
+  achat: 
+    - prix: 10€
+      url: https://www.decathlon.fr/p/graisse-velo-teflon-tube/_/R-p-144605
+chiffon à graisse:
+  usage: A chaque fois que vous allez graisser un composant, il vous faudra ensuite vous essuyer les mains ;)
+liquide pneus tubeles:
+  usage: Indispensable pour les pneus tubeless ready, pour boucher automatiquement les crevaisons. Une chambre à air liquide ! 
+  achat: 
+    - url: https://www.decathlon.fr/p/liquide-preventif-pour-montage-de-pneus-et-jantes-tubless-ready/_/R-p-309241
+      prix: 10€
+frein filet: 
+  usage: Eviter que certaines vis ne se dévissent en mettant un peu de pâte sur la vis. 
+  note: Se renseigner sur l'usage, la couleur (rouge, bleu), pour quelles vis et tout.
+
