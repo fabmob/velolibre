@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import Composant from './Composant'
+import { Card } from './ui'
+import { Markdown } from './utils'
 export default ({ vélo, chosen, notChosen, prixTotal }) => (
 	<div css="p {margin: .3rem 0}">
 		<header>
@@ -8,7 +10,7 @@ export default ({ vélo, chosen, notChosen, prixTotal }) => (
 		<p>
 			Prix indicatif: <strong>{prixTotal} €</strong>
 			<Link to="/vélos/vl1/commande">
-				<button css="margin: 1rem">Commander</button>
+				<button css="margin: .4rem 1rem">Commander</button>
 			</Link>
 		</p>
 		<p>
@@ -17,6 +19,7 @@ export default ({ vélo, chosen, notChosen, prixTotal }) => (
 				<em>quoi ?</em>
 			</Link>
 		</p>
+		<Actu actu={vélo.actu} />
 		<h2>Les composants</h2>
 		<ul>
 			{chosen.map((item) => (
@@ -34,4 +37,25 @@ export default ({ vélo, chosen, notChosen, prixTotal }) => (
 			</>
 		)}
 	</div>
+)
+
+const Actu = ({ actu }) => (
+	<Card
+		color={'#fbca71'}
+		css={`
+			margin: 1rem;
+			display: fex;
+			align-items: center;
+			flex-wrap: wrap;
+			> figure {
+				margin: 0 2rem 0 1rem;
+				font-size: 200%;
+			}
+		`}
+	>
+		<figure>📢</figure>
+		<div>
+			<Markdown source={actu} />
+		</div>
+	</Card>
 )
