@@ -74,7 +74,7 @@ module.exports = {
 	},
 
 	entry: {
-		javascript: './src/index.js',
+		javascript: './source/index.js',
 	},
 
 	output: {
@@ -84,7 +84,7 @@ module.exports = {
 	devServer: {
 		historyApiFallback: true,
 		contentBase: path.join(__dirname, 'dist'),
-		hot: true
+		hot: true,
 	},
 
 	plugins: [

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Markdown } from './utils'
 import { useParams } from 'react-router-dom'
+import styled from 'styled-components'
 
 var req = require.context('./articles', true, /\.md$/)
 const rawArticles = [...req.keys()]
@@ -62,7 +63,7 @@ export default ({}) => {
 					: ''}
 			`}
 		>
-			<div css={() => articleStyle}>
+			<ArticleContainer>
 				<p
 					css={`
 						text-align: center;
@@ -86,12 +87,12 @@ export default ({}) => {
 				</p>
 				<Markdown source={body} />
 				<hr />
-			</div>
+			</ArticleContainer>
 		</div>
 	)
 }
 
-const articleStyle = `
+export const ArticleContainer = styled.div`
 	max-width: 700px;
 	margin: 0 auto 4rem;
 	h1 {
@@ -109,11 +110,11 @@ const articleStyle = `
 		display: block;
 	}
 	img + em {
-	color: #666;
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-	margin: 0 auto 1rem;
+		color: #666;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+		margin: 0 auto 1rem;
 	}
 	hr {
 		border: 1px solid #eee;
@@ -134,15 +135,15 @@ const articleStyle = `
 		overflow: auto;
 	}
 
-aside {
-	border: 1px solid #ddd;
-	border-radius: 0.3rem;
-	box-shadow: 1px 3px 8px #ddd;
-	padding: 1rem;
-	margin: 2rem .6rem
+	aside {
+		border: 1px solid #ddd;
+		border-radius: 0.3rem;
+		box-shadow: 1px 3px 8px #ddd;
+		padding: 1rem;
+		margin: 2rem 0.6rem;
 	}
-	aside h2, aside h3 {
-margin: .3rem
+	aside h2,
+	aside h3 {
+		margin: 0.3rem;
 	}
-
-	`
+`

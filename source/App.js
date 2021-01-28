@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import Vl1 from './Vl1'
 import Home from './Home'
 import Article from './Article'
+import News from './News'
 
 function App() {
 	return (
@@ -56,6 +57,7 @@ function App() {
 						</Link>
 						<Link to="/documentation/à-propos">À propos</Link>
 						<Link to="/documentation/index">Documentation</Link>
+						<Link to="/nouveautés">Nouveautés</Link>
 					</nav>
 				</header>
 				<Switch>
@@ -67,6 +69,9 @@ function App() {
 					</Route>
 					<Route path="/accueil/alpha">
 						<Home />
+					</Route>
+					<Route path="/nouveautés">
+						<News />
 					</Route>
 					<Route path="/">
 						<Redirect to="accueil/alpha" />

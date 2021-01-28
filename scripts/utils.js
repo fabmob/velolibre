@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const dataDir = path.resolve(__dirname, '../source/data/')
+const dataDir = path.resolve(__dirname, '../dist/data/')
 
 exports.createDataDir = () => {
 	if (!fs.existsSync(dataDir)) {
