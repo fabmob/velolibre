@@ -93,6 +93,8 @@ Dans mes valeurs, je peux même mettre des liens.
 
 Ou encore des gros bouts de texte, dans ce cas il faut taper le caractère chelou `|` qui devrait être sous la touche 6 de votre clavier (enfin il sert à quelque chose !) puis sauter à la ligne et indenter tout notre roman.
 
+Attention : vous l'avez constaté, on peut simplement écrire `mon attribut: ma valeur super cool`, mais si ma valeur contient un `:` ou un `"` ou encore un `'`, alors tout sera cassé. Le caractère `|` comme présenté ci-dessus est alors nécessaire.
+
 ```yaml
 nom: Bertrand le bouleau
 type: bouleau
@@ -101,7 +103,6 @@ note: |
   Les bouleaux font partie de la famille des bétulacées et du genre Betula. La plupart des espèces sont des arbres ; quelques-unes, comme Betula nana, sont des chaméphytes.
 
   Les bouleaux poussent en général sur les terres pauvres et souvent siliceuses, jusqu'à 2 000 m d'altitude, ainsi que dans les régions arctiques. 
-
 ``` 
 
 Une fois que j'ai décrit mon arbre, je vais évidemment être tenté d'en décrire d'autres, c'est bien le but. En décrivant ce premier, on a construit un *schéma*. Qui dit : "un abre, ça doit avoir un nom, un type, des couleurs, etc". 
