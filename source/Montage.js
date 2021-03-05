@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { imageResizer } from './utils'
 
 import { articles } from './Étape'
 
