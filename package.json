@@ -9,7 +9,8 @@
 	},
 	"scripts": {
 		"prepare": "node scripts/fetch-releases.js",
-		"start": "webpack serve --mode development",
+		"start": "webpack serve --mode development & yarn start-images",
+		"start-images": "http-server ../velolibre-images -p 8081",
 		"compile": "NODE_ENV=production webpack --mode production -c webpack.config.js"
 	},
 	"dependencies": {
@@ -17,6 +18,7 @@
 		"buffer": "^6.0.3",
 		"copy-webpack-plugin": "^6.3.2",
 		"css-loader": "^5.0.1",
+		"http-server": "^0.12.3",
 		"imports-loader": "^1.2.0",
 		"path-browserify": "^1.0.1",
 		"process": "^0.11.10",

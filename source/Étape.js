@@ -68,12 +68,20 @@ export default ({}) => {
 }
 
 const ImageRenderer = (dir) => ({ src }) => {
-	const imageBase = 'https://velolibre-images.netlify.app/'
-	const ext = 'webp'
+	const mode = process.env.NODE_ENV
+	const imageBase =
+		mode === 'development'
+			? 'http://localhost:8081/vl1/'
+			: 'https://velolibre-images.netlify.app/'
+	const ext = mode === 'development' ? 'jpg' : 'webp'
 
 	return (
 		<a href={`${imageBase}${dir}/${src}.${ext}`}>
-			<img src={`${imageBase}${dir}/${src}.medium.${ext}`} />
+			<img
+				src={`${imageBase}${dir}/${src}.${
+					mode === 'development' ? '' : 'medium.'
+				}${ext}`}
+			/>
 		</a>
 	)
 }
