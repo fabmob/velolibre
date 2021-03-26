@@ -1,4 +1,4 @@
-_Eh salut, BB 😎 !_
+_Salut, BB 😎 !_
 
 Eh oui, l'autre petit nom du boîtier de pédalier, c'est BB, bottom bracket en anglais.
 
@@ -25,20 +25,16 @@ Graisser ! Faudrait pas qu'il reste coincé
 
 Maintenant, l'insérer : attention, il faut **visser doucement à la main**. Si vous avez ne serait-ce qu'un peu l'impression de forcer, c'est que ça n'ira pas. Êtes-vous certain de l'avoir mis du bon côté 😏 ? J'ai moi-même fait l'erreur après avoir vérifié dans ma tête plusieurs fois...
 
-Tuto [vidéo ici](https://youtu.be/TU8VppD_zGA)
+Une [vidéo](https://youtu.be/zku_zqTCdPQ) pour vous guider.
+
+Un autre tuto [vidéo ici](https://youtu.be/TU8VppD_zGA).
 
 ![](insertion)
 
-![](inséré)
+![](inseré)
 ![](profil)
 
-Pour serrer, on utilise cette magnifique clef.
+Pour serrer, on utilise cette magnifique clef, et on regarde les indications de couple en Nm : 35-40, donc il faut y aller assez costaud.
 ![](serrage)
 
-> Comme vous l
-
-Pédalier
-C'est vraiment simple
-Ne pas oublier de l'aligner mais si c'est pas le cas c'est drôle aussi
-La manivelle côté sans plateau vous paraîtra loin, c'est normal, elle se rapprochera en vissant
-https://youtu.be/zku_zqTCdPQ
+> Comme vous pouvez le remarquer sur cette photo, le fin cache a tendance à se tomber très facilement. Pas de panique, il faut juste le remettre.
