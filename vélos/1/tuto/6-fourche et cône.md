@@ -34,9 +34,3 @@ L'insertion est évidente.
 Dis-donc, ça commence à ressembler à un vélo tout ça !
 
 ![](pas-mal)
-
-Pour l'ordre des pièces si vous avez foutu le bordel
-
-https://youtu.be/yJq_6oZEK2w
-
-Les entretoises carbone hyper luxueuses (rupture chez Decathlon des alu).
