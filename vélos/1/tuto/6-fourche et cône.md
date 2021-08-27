@@ -34,3 +34,5 @@ L'insertion est évidente.
 Dis-donc, ça commence à ressembler à un vélo tout ça !
 
 ![](pas-mal)
+
+[7. Jeu de direction](jeu de direction)

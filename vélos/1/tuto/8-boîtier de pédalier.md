@@ -38,3 +38,5 @@ Pour serrer, on utilise cette magnifique clef, et on regarde les indications de 
 ![](serrage)
 
 > Comme vous pouvez le remarquer sur cette photo, le fin cache a tendance à se tomber très facilement. Pas de panique, il faut juste le remettre.
+
+[9. Pédalier](pédalier)

@@ -40,3 +40,5 @@ Gonflez (sans oublier d'attacher la pompe à pied avec le levier) aux indication
 > Satisfait, faites rebondir votre roue assemblée comme un gamin, et passez à la roue suivante.
 
 ![](montage6)
+
+[4. Disques](disques)
