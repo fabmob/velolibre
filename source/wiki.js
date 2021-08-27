@@ -33,7 +33,7 @@ const repo = 'laem/velolibre'
 
 export const getLastEdit = (name, action) =>
 	fetch(
-		`https://api.github.com/repos/${repo}/commits?path=src%2Farticles%2F${name}.md&page=1&per_page=1`
+		`https://api.github.com/repos/${repo}/commits?path=source%2Farticles%2F${name}.md&page=1&per_page=1`
 	)
 		.then((res) => res.json())
 		.then((json) => {

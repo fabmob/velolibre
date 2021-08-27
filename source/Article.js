@@ -26,7 +26,7 @@ const repo = 'laem/velolibre'
 
 const getLastEdit = (name, action) =>
 	fetch(
-		`https://api.github.com/repos/${repo}/commits?path=src%2Farticles%2F${name}.md&page=1&per_page=1`
+		`https://api.github.com/repos/${repo}/commits?path=source%2Farticles%2F${name}.md&page=1&per_page=1`
 	)
 		.then((res) => res.json())
 		.then((json) => {
@@ -77,7 +77,7 @@ export default ({}) => {
 							<span>
 								Mis à jour le{' '}
 								<a
-									href={`https://github.com/${repo}/blob/master/src/articles/${id}.md`}
+									href={`https://github.com/${repo}/blob/master/source/articles/${id}.md`}
 								>
 									{lastEditDate}
 								</a>
