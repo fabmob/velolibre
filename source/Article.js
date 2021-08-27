@@ -15,7 +15,7 @@ export const parsedArticles = rawArticles.map(([id, string]) => ({
 }))
 
 export const dateCool = (date) =>
-	date.toLocaleString(undefined, {
+	date.toLocaleString('fr-FR', {
 		weekday: 'long',
 		year: 'numeric',
 		month: 'long',
