@@ -32,5 +32,3 @@ Personnellement je n'ai pas réglé la position horizontale : on verra en pratiq
 ![](selle)
 
 Attention ! À ce stade, ne pas poser son séant sur cette magnifique selle, c'est légèrement prématuré si vous voulez garder votre cadre en vie 😁.
-
-[3. Pneu et chambre à air](pneu et chambre à air)

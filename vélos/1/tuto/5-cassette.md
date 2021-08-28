@@ -42,5 +42,3 @@ Puis sortir le démonte cassette et la clef adaptée qui permet d'avoir un bras 
 Voilà notre roue arrière est complète 👏.
 
 ![](fini)
-
-[6. Fourche et cône](fourche et cône)

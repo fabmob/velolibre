@@ -16,5 +16,3 @@ Je vous préviens : votre lieu d'installation, au moins pour la 1ère, sera un v
 Première étape, oh combien importante pour vos premiers vélos : disposer tous les composants à votre guise pour prendre une photos du mezze de métal et de plastique qui deviendra votre vélo.
 
 ![](mezze)
-
-[2. Selle](selle)

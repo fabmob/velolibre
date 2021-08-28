@@ -29,5 +29,3 @@ Subtilité : il y avait une bague fine en métal... je l'ai enlevée sur l'un, g
 Pour serrer les disques, il est indiqué d'appliquer 40Nm, Newton-mètres. Qu'est-ce que ça veut dire ? C'est simple : 4kg avec un bras de levier de 1m, ou ici de façon plus réaliste 12 kilos sur 30cm (car 30cm c'est la longueur de notre clef et 12\*0,3=4). Vous avez des altères 😄 ?
 
 Bon, soyons pragmatiques : ça vous donne à peu près la force à appliquer, il faut pas y aller de main morte. Pas très rigoureux, mais ce n'est pas un vélo en carbone.
-
-[5. Cassette](cassette)
