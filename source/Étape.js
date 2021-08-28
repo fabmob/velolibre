@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Markdown } from './utils'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { WikiPage, loadPages, getLastEdit } from './wiki'
 import { Summary } from './Montage'
 
@@ -17,6 +17,9 @@ export default ({}) => {
 	const { body, position, title } = theOne
 
 	getLastEdit(id, setLastEditDate)
+	const nextArticle = articles.find(
+		({ title, position }) => +position === +theOne.position + 1
+	)
 
 	return (
 		<div
@@ -63,6 +66,17 @@ export default ({}) => {
 				<Markdown imageRenderer={ImageRenderer(id)} source={body} />
 				<hr />
 			</WikiPage>
+			{nextArticle && (
+				<div>
+					<h3>Prochaine étape</h3>
+					<div>
+						▶️{' '}
+						<Link to={'/vélos/vl1/montage/' + nextArticle.id}>
+							{nextArticle.title}
+						</Link>
+					</div>
+				</div>
+			)}
 		</div>
 	)
 }
