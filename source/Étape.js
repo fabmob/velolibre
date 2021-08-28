@@ -52,7 +52,7 @@ export default ({}) => {
 							<span>
 								Mis à jour le{' '}
 								<a
-									href={`https://github.com/${repo}/blob/master/src/articles/${id}.md`}
+									href={`https://github.com/${repo}/blob/master/source/articles/${id}.md`}
 								>
 									{lastEditDate}
 								</a>

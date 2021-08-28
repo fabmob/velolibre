@@ -30,3 +30,5 @@ Vous sentiriez cependant un énorme jeu du guidon, car la fourche "navigue" dans
 ![](serrage)
 
 On se chargera de la fin de la fourche plus tard, changeons-nous les idées !
+
+[8. Boîtier de pédalier](boîtier de pédalier)
