@@ -6,7 +6,7 @@ Profitez de la vue, c'est la dernière fois que vous verrez ce pneu tout neuf su
 
 ![](moyeu)
 
-Nos jantes `Fulcrum DB` viennent avec un fond de jante installé. Dans ce tuto, on part sur un montage à chambre à air classique, le passage au tubeless ready nécessitant des valves spéciales et un fon de jante caoutchoutés, ainsi qu'une réserver de latex liquide.
+Nos jantes `Fulcrum DB` viennent avec un fond de jante installé. Dans ce tuto, on part sur un montage à chambre à air classique, le passage au tubeless ready nécessitant des valves spéciales et un fond de jante caoutchoutés, ainsi qu'une réserver de latex liquide.
 
 ![](fond-jante)
 
